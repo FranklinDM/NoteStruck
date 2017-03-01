@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "工具列">
+<!ENTITY editor.tools.accessKey "T">
+<!ENTITY editor.tools.tooltip "工具列">
+<!ENTITY editor.menuitem.find "尋找">
+<!ENTITY editor.toolbar1 "筆記簿">
+<!ENTITY editor.toolbar1.accessKey "T">
+<!ENTITY editor.toolbar1.menuitem1 "新增空白筆記">
+<!ENTITY editor.toolbar1.menuitem2 "移除當前筆記">
+<!ENTITY editor.toolbar2 "轉檔">
+<!ENTITY editor.toolbar2.accessKey "R">
+<!ENTITY editor.toolbar2.tooltip "匯出／匯入文字檔">
+<!ENTITY editor.toolbar2.menuitem1 "文字檔匯入當前分頁">
+<!ENTITY editor.toolbar2.menuitem2 "當前分頁匯出成文字檔">
+<!ENTITY editor.toolbar2.menuitem3 "全部匯出成單一文字檔">
+<!ENTITY editor.toolbar3 "設定">
+<!ENTITY editor.toolbar3.accessKey "O">
+<!ENTITY editor.toolbar3.tooltip "設定">
+<!ENTITY editor.toolbar3.label1 "拼字檢查">
+<!ENTITY editor.toolbar3.label2 "每2分鐘自動存檔一次">
+<!ENTITY editor.toolbar3.label2.tooltip "這是額外附加的功能。無論如何，筆記簿在關閉前都會儲存所有內分頁">
+<!ENTITY editor.toolbar3.label3 "按滑鼠中鍵貼上">
+<!ENTITY editor.toolbar3.label4 "選取文字後自動複製">
+<!ENTITY editor.toolbar3.label5 "關閉分頁前先確認">
+<!ENTITY editor.toolbar3.label6 "置於最上層（僅限 Windows）">
+<!ENTITY editor.toolbar3.menu0 "進階設定">
+<!ENTITY editor.toolbar3.menu0.item2 "變更筆記簿字體">
+<!ENTITY editor.toolbar3.menu0.item2.description "變更筆記簿字體（例如 Arial, Courier）">
+<!ENTITY editor.toolbar3.menu2 "滑鼠滾輪操作">
+<!ENTITY editor.toolbar3.menu2.label1 "到底時停止換頁">
+<!ENTITY editor.toolbar3.menu2.label2 "循環切換分頁">
+<!ENTITY editor.toolbar3.GUIEditor "使用者介面">
+<!ENTITY editor.toolbar3.menu1 "字型大小">
+<!ENTITY editor.toolbar3.menu3 "頁籤最小寬度">
+<!ENTITY editor.toolbar3.menu6 "文字顏色">
+<!ENTITY editor.toolbar3.menu4 "背景顏色">
+<!ENTITY editor.toolbar3.menu7 "狀態列圖示">
+<!ENTITY editor.toolbar3.menu7.label1 "左鍵開視窗（右鍵開分頁）">
+<!ENTITY editor.toolbar3.menu7.label2 "左鍵開分頁（右鍵開視窗）">
+<!ENTITY editor.toolbar3.menu7.label3 "左鍵開頁內（右鍵開分頁）">
+<!ENTITY editor.toolbar3.menu5 "&brandShortName; 啟動後打開 &qfneditor;，間隔時間：">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "不使用">
+<!ENTITY editor.toolbar3.10secs "10秒">
+<!ENTITY editor.toolbar3.20secs "20秒">
+<!ENTITY editor.toolbar3.30secs "30秒">
+<!ENTITY editor.toolbar3.40secs "40秒">
+<!ENTITY editor.toolbar3.50secs "50秒">
+<!ENTITY editor.toolbar3.60secs "60秒">
+<!ENTITY editor.toolbar3.menu5.menu "開啟模式:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "新視窗">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "新分頁">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "瀏覽區內">
+<!ENTITY editor.toolbar3.menu9.label1 "自動斷行（必須重開）">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; 必須重新啟動使變更生效。">
+<!ENTITY editor.toolbar3.menu10 "時間格式">
+<!ENTITY editor.toolbar3.menu10.label1 "12 小時 (AM/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 小時">
+<!ENTITY editor.toolbar3.menu11 "顯示／隱藏群組名稱">
+<!ENTITY editor.toolbar3.menu11.label2 "於頁籤上">
+<!ENTITY editor.toolbar3.menu11.label3 "顯示群組名稱">
+<!ENTITY editor.toolbar3.menu11.label4 "隱藏群組名稱">
+<!ENTITY editor.toolbar3.labe10 "更換分冊存放位置">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; 能夠利用「書籤系統」或者「本機磁碟」目錄作為筆記分冊主要的存放位置。">
+<!ENTITY editor.toolbar3.labe7 "保存現有分頁並切換">
+<!ENTITY editor.toolbar3.labe7.description1 "將現用筆記分冊由「書籤系統」的預設目錄移植並切換到「本機磁碟」目錄，或反之">
+<!ENTITY editor.toolbar3.labe7.description2 "「書籤系統」適合已安裝諸如 Xmarks（推薦採用）或 Firefox Sync 等書籤同步附加元件者使用。">
+<!ENTITY editor.toolbar3.labe7.description3 "「本機磁碟」適合已安裝諸如 Dropbox（推薦採用）或 Simplicity、Sugarsync 等資料夾同步軟體者使用。">
+<!ENTITY editor.toolbar3.labe8 "選用「本機磁碟」上的資料夾（不移植）">
+<!ENTITY editor.toolbar3.labe8.description1 "將現用筆記分冊切換到「本機磁碟」上的資料夾，而不清除其中內容，也不合併現前的資料。">
+<!ENTITY editor.toolbar3.labe8.description2 "這個選項會強制 &qfneditor; 使用已藉資料同步軟體進行同步處理的「本機磁碟」資料夾。">
+<!ENTITY editor.toolbar3.labe9 "啟用「書籤系統」預設目錄（不移植）">
+<!ENTITY editor.toolbar3.labe9.description1 "將現用筆記分冊切換到「書籤系統」，而不清除其中內容，也不合併現前的資料。">
+<!ENTITY editor.toolbar3.labe9.description2 "這個選項會強制 &qfneditor; 開啟已藉書籤同步套件進行同步處理的預設書籤資料夾。">
+<!ENTITY editor.toolbar3.labe11 "選擇「書籤系統」預設資料夾">
+<!ENTITY editor.toolbar3.labe11.description "您可以使用分界字元「 / 」在根目錄底下新增資料夾 (例如 QFN/dir01/dir02)">
+<!ENTITY editor.toolbar4 "編輯">
+<!ENTITY editor.toolbar4.accessKey "E">
+<!ENTITY editor.toolbar4.tooltip "內容編輯">
+<!ENTITY editor.toolbar4.menuitem1 "複製">
+<!ENTITY editor.toolbar4.menuitem2 "剪下">
+<!ENTITY editor.toolbar4.menuitem3 "貼上">
+<!ENTITY editor.toolbar4.menuitem4 "插入定位字元">
+<!ENTITY editor.toolbar4.menuitem5 "移除定位字元">
+<!ENTITY editor.toolbar4.menuitem6 "新增選擇區／所在行的複本">
+<!ENTITY editor.toolbar4.menuitem7 "本行上移">
+<!ENTITY editor.toolbar4.menuitem8 "本行下移">
+<!ENTITY editor.toolbar4.menuitem9 "轉大寫">
+<!ENTITY editor.toolbar4.menuitem10 "轉小寫">
+<!ENTITY editor.toolbar4.menuitem11 "選取所在行">
+<!ENTITY editor.toolbar4.menuitem12 "選取上一行">
+<!ENTITY editor.toolbar4.menuitem13 "選取下一行">
+<!ENTITY editor.toolbar6 "收納區">
+<!ENTITY editor.toolbar6.accessKey "C">
+<!ENTITY editor.toolbar6.tooltip1 "收納區 - 分頁送進收納區並從分頁清單除名">
+<!ENTITY editor.toolbar6.tooltip2 "由按鈕左側或 Alt+C 鍵開啟快捷選單">
+<!ENTITY editor.toolbar6.tooltip3 "由按鈕右測或 Alt+J 鍵開啟完整選單">
+<!ENTITY editor.toolbar6.menuitem1 "放進收納區">
+<!ENTITY editor.showSandbox "顯示所有已收納筆記">
+<!ENTITY editor.toolbar6.menuitem2 "全部移回編輯區">
+<!ENTITY editor.toolbar7 "廢頁夾">
+<!ENTITY editor.toolbar8 "關閉&qfneditor; (Esc)">
+<!ENTITY editor.toolbar12 "附加元件">
+<!ENTITY editor.toolbar12.accessKey "A">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor; 擴充套件">
+<!ENTITY editor.toolbar10 "請求支援">
+<!ENTITY editor.toolbar10.accessKey "U">
+<!ENTITY editor.toolbar10.tooltiptext "問題回報、請求支援、意見反應或改進建議">
+<!ENTITY editor.toolbar14 "網路">
+<!ENTITY editor.toolbar14.accessKey "N">
+<!ENTITY editor.toolbar14.tooltip "存取您在 iPhone, iPod touch, iPad, 或 Android 上的筆記">
+<!ENTITY editor.toolbar13 "備份">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "以七天份為循環，每日備份筆記簿所有分頁一次">
+<!ENTITY editor.toolbar15 "網站首頁">
+<!ENTITY editor.toolbar15.accessKey "H">
+<!ENTITY editor.distractionFree.label1 "退出">
+<!ENTITY editor.distractionFree.label2 "切換">
+<!ENTITY editor.distractionFree.label3 "新增">
+<!ENTITY editor.distractionFree.label4 "移除">
+<!ENTITY editor.toolbar.tooltip "左鍵雙連點新增空白筆記；捲動滾輪切換筆記分頁">
+<!ENTITY editor.toolbar.tabs.tooltip "按中鍵送至廢頁夾；左鍵快點送入收納區">
+<!ENTITY editor.panel.label "變更群組與分頁名稱:">
+<!ENTITY editor.panel.iLabel "分頁名稱">
+<!ENTITY editor.panel.iGroup "群組名稱">
+<!ENTITY editor.panel.label2 "樣式:">
+<!ENTITY editor.panel.label3 "粗體">
+<!ENTITY editor.panel.label4 "斜體">
+<!ENTITY editor.panel.label5 "分頁選項:">
+<!ENTITY editor.panel.label6 "防寫">
+<!ENTITY editor.panel.label7 "待辦清單">
+<!ENTITY editor.panel.label8 "更新用工具按鈕計數器">
+<!ENTITY editor.panel2.label1 "搜尋">
+<!ENTITY editor.buttons.newTab "新增空白分頁（Ctrl+T 或雙連點頁籤欄空白處）">
+<!ENTITY editor.buttons.list "編輯區分頁清單 (Ctrl+L)">
+<!ENTITY editor.context.undo "復原">
+<!ENTITY editor.context.undo.accesskey "U">
+<!ENTITY editor.context.redo "重做">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "剪下">
+<!ENTITY editor.context.cut.accesskey "T">
+<!ENTITY editor.context.copy "複製">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "貼上">
+<!ENTITY editor.context.copyHistory "剪貼簿管理員">
+<!ENTITY editor.context.copyHistory.accesskey "L">
+<!ENTITY editor.context.copyHistory.label1 "全部清除">
+<!ENTITY editor.context.copyHistory.label1.accesskey "C">
+<!ENTITY editor.context.paste.accesskey "P">
+<!ENTITY editor.context.delete "刪除">
+<!ENTITY editor.context.delete.accesskey "D">
+<!ENTITY editor.context.selectAll "全選">
+<!ENTITY editor.context.selectAll.accesskey "A">
+<!ENTITY editor.context.email "Email 此頁筆記">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "產生報告（列印）">
+<!ENTITY editor.context.print.accesskey "N">
+<!ENTITY editor.context.addTime "插入時間日期 (F5)">
+<!ENTITY editor.context.addTime.accesskey "I">
+<!ENTITY editor.context.security "加密／解密">
+<!ENTITY editor.context.security.accesskey "P">
+<!ENTITY editor.context.encrypt "加密">
+<!ENTITY editor.context.encrypt.accesskey "E">
+<!ENTITY editor.context.decrypt "解密">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "Google 建議">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Google 用字建議／計算機">
+<!ENTITY editor.context.google.submenu1 "(F1) 針對游標前1個字">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "(F2) 針對游標前2個字">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "(F3) 針對游標前3個字">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "(F4) 針對游標前4個字">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "(Ctrl+G) 針對選取的文字">
+<!ENTITY editor.context.google.submenu5.accesskey "S">
+<!ENTITY editor.context.symbols "插入特殊符號">
+<!ENTITY editor.context.symbols.accesskey "Y">
+<!ENTITY editor.context.symbols.set1 "數學符號類">
+<!ENTITY editor.context.symbols.set1.accesskey "M">
+<!ENTITY editor.context.symbols.set2 "希臘字母類">
+<!ENTITY editor.context.symbols.set2.accesskey "G">
+<!ENTITY editor.context.symbols.set3 "次方與分數">
+<!ENTITY editor.context.symbols.set3.accesskey "P">
+<!ENTITY editor.context.symbols.set4 "勾選項">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "其他">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "新增到拼字檢查字典">
+<!ENTITY editor.context.AddtoDictionary.accesskey "O">
+<!ENTITY editor.context.ignoreDictionary "略過這個字">
+<!ENTITY editor.network.label1 "更新所選位置的資料夾或檔案">
+<!ENTITY editor.network.label2 "複製選定的檔案">
+<!ENTITY editor.network.label3 "刪除選定的資料夾或檔案">
+<!ENTITY editor.network.label4 "插入伺服主機內容到游標所在位置">
+<!ENTITY editor.network.label5 "複製當前筆記到伺服主機成為新檔案">
+<!ENTITY editor.network.label6 "新增資料夾到伺服主機">
+<!ENTITY editor.network.label7 "列出清單">
+<!ENTITY editor.network.label8 "關閉網路面板">
+<!ENTITY editor.network.label9 "以當前筆記覆寫伺服主機上選定的檔案">
+<!ENTITY editor.network.label10 "將本地端筆記備份到選定的伺服主機">
+<!ENTITY editor.network.label11 "中斷與選定伺服主機的連線">
+<!ENTITY editor.network.label12 "載入伺服主機的檔案內容到新建的筆記">
+<!ENTITY editor.searchTool.find "在筆記中搜尋">
+<!ENTITY editor.searchTool.replace "取代">
+<!ENTITY editor.searchTool.next "下一筆">
+<!ENTITY editor.searchTool.prev "前一筆">
+<!ENTITY editor.searchTool.close "關閉搜尋工具">
+<!ENTITY editor.searchTool.replaceAll "全部取代">
+<!ENTITY editor.searchTool.archive "在收納區內搜尋">
+<!ENTITY editor.searchTool.highlight "全部高亮度標示">

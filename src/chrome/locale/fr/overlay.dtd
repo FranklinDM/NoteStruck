@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "Ouvrir dans une nouvelle fenêtre">
+<!ENTITY toolbar.label3 "Ouvrir dans un nouvel onglet">
+<!ENTITY toolbar.label4 "Ouvrir dans l\'espace application">
+<!ENTITY toolbar.label5 "Page d'accueil">
+<!ENTITY toolbar.tooltip "Clic gauche: ouvre dans une fenêtre; Clic central: ouvre dans un onglet; Clic droit: menu contextuel">
+<!ENTITY context.label1 "Envoyer vers &qfneditor;">
+<!ENTITY context.label2 "Envoyer vers &qfneditor; (détails)">
+<!ENTITY status.tooltip1 "Clic gauche pour ouvrir dans une fenêtre; Sinon pour ouvrir dans un onglet">
+<!ENTITY status.tooltip2 "Clic gauche pour ouvrir dans un onglet; Sinon pour ouvrir dans une fenêtre">
+<!ENTITY status.tooltip3 "Clic gauche pour ouvrir dans la fenêtre d\'application; Sinon pour ouvrir dans un onglet">

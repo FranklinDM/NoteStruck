@@ -1,0 +1,14 @@
+.qfn-email-add {
+    list-style-image: url('chrome://qfnotes/skin/email_add_remove.png');
+    -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+.qfn-email-add[disabled=true]{
+    -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.qfn-email-remove {
+    list-style-image: url('chrome://qfnotes/skin/email_add_remove.png');
+    -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+.qfn-email-remove[disabled=true]{
+    -moz-image-region: rect(16px, 32px, 32px, 16px);
+}

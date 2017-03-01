@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "Menedżer dodatków – &qfneditor;">
+<!ENTITY addonman.label.warning "Aby zmiany zostały wprowadzone, należy ponownie uruchomić &qfneditor;.">
+<!ENTITY addonman.label.open "Otwórz folder dodatków">
+<!ENTITY addonman.label.find "Znajdź więcej dodatków">
+<!ENTITY addonman.label.cancel "Anuluj">

@@ -1,0 +1,29 @@
+<!DOCTYPE overlay SYSTEM "chrome://qfnotes/locale/editor.dtd">
+<?xml-stylesheet href="chrome://qfnotes/skin/network.css" type="text/css"?>
+<overlay id="editor-network" xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<vbox id="network-groupbox" width="250px" persist="width">
+  <hbox id="network-toolbar" class="network">
+    <toolbarbutton class="unlink" disabled="true" tooltiptext="&editor.network.label11;" oncommand="QuickFoxNotes.networkScope.toolbar.doUnlink()"/>
+    <toolbarbutton class="sync" disabled="true" tooltiptext="&editor.network.label1;" oncommand="QuickFoxNotes.networkScope.toolbar.doRefresh()"/>
+    <toolbarbutton class="addFolder" disabled="true" tooltiptext="&editor.network.label6;" oncommand="QuickFoxNotes.networkScope.toolbar.doFolder()"/>
+    <toolbarbutton class="newNote" disabled="true" tooltiptext="&editor.network.label12;" oncommand="QuickFoxNotes.networkScope.toolbar.doReadNew()"/>
+    <toolbarbutton class="read" disabled="true" tooltiptext="&editor.network.label4;" oncommand="QuickFoxNotes.networkScope.toolbar.doRead()"/>
+    <toolbarbutton class="addFile" disabled="true" tooltiptext="&editor.network.label5;" oncommand="QuickFoxNotes.networkScope.toolbar.doNewFile()"/>
+    <toolbarbutton class="overwrite" disabled="true" tooltiptext="&editor.network.label9;" oncommand="QuickFoxNotes.networkScope.toolbar.doOverwrite()"/>
+    <toolbarbutton class="qfn-menuitem-delete" disabled="true" tooltiptext="&editor.network.label3;" oncommand="QuickFoxNotes.networkScope.toolbar.doDelete();"/>
+    <toolbarbutton class="backup" disabled="true" tooltiptext="&editor.network.label10;" oncommand="QuickFoxNotes.networkScope.toolbar.doBackup()"/>
+    <spacer flex="1"/>
+    <toolbarbutton class="qfn-menuitem-networkClose" tooltiptext="&editor.network.label8;" oncommand="QuickFoxNotes.networkCommand(true)"/>
+  </hbox>
+  <tree id="network-tree" flex="1" class="network-tree" seltype="single" hidecolumnpicker="true" treelines="true" onselect="QuickFoxNotes.networkScope.toolbar.updateToolbar()">
+    <treecols>
+      <treecol id="element" label="&editor.network.label7;" primary="true" flex="1"/>
+    </treecols>
+    <treechildren/>
+  </tree>
+</vbox>
+
+</overlay>

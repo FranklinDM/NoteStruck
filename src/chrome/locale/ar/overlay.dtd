@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "افتح في نافذة جديدة">
+<!ENTITY toolbar.label3 "افتح في لسان جديد">
+<!ENTITY toolbar.label4 "افتح في محتوى-التطبيق">
+<!ENTITY toolbar.label5 "Homepage">
+<!ENTITY toolbar.tooltip "انقر بالزر الأيسر: للفتح في نافذة جديدة. انقر بعجلة الفأرة: للفتح في لسان جديد">
+<!ENTITY context.label1 "أرسل إلى &qfneditor;">
+<!ENTITY context.label2 "أرسل إلى &qfneditor; (مع رابط الصفحة)">
+<!ENTITY status.tooltip1 "انقر بالزر الأيسر: للفتح في نافذة جديدة. وغير ذلك: للفتح في لسان جديد">
+<!ENTITY status.tooltip2 "انقر بالزر الأيسر: للفتح في لسان جديد. وغير ذلك: للفتح في نافذة جديدة">
+<!ENTITY status.tooltip3 "انقر بالزر الأيسر: للفتح في محتوى-التطبيق. وغير ذلك: للفتح في لسان جديد">

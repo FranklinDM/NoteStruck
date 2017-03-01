@@ -1,0 +1,11 @@
+<!ENTITY email.title "Endereço eletrônico - &qfneditor;">
+<!ENTITY email.send "Enviar">
+<!ENTITY email.from "De:">
+<!ENTITY editor.to "Para:">
+<!ENTITY editor.subject "Assunto:">
+<!ENTITY editor.verification "Código de verificação:">
+<!ENTITY editor.carboncopy "Envie-me uma cópia da mensagem">
+<!ENTITY editor.note2 "Você receberá um código de verificação depois de tentar enviar sua primeira mensagem">
+<!ENTITY editor.note1 "Nota: Todos as mensagens serão enviadas por um canal inseguro via Mozdev.org">
+<!ENTITY email.addnew "Salvar este endereço eletrônico. Formatos válidos:">
+<!ENTITY email.removeold "Remover este endereço eletrônico">

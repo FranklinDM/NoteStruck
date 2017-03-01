@@ -1,0 +1,19 @@
+.top-toolbar {
+    height: 28px;
+}
+
+textbox#editor-tabbox-toolbar-searchbox {
+    border: 1px solid rgb(84, 109, 142);
+}
+tabpanels {
+    -moz-border-top-colors: grey ThreeDHighlight;
+    -moz-border-left-colors: transparent;
+    -moz-border-right-colors: transparent;
+    -moz-border-bottom-colors: transparent;
+}
+#editor-tabbox-tabcontainer > autorepeatbutton {
+    border-width: 0px;
+}
+.net-splitter-img {
+    list-style-image: url('chrome://qfnotes/skin/splitter.png');
+}

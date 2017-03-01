@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "Gerenciador do Complemento - &qfneditor;">
+<!ENTITY addonman.label.warning "&qfneditor; precisa ser reiniciado para que as mudanças tenham efeito.">
+<!ENTITY addonman.label.open "Abrir a pasta de complementos">
+<!ENTITY addonman.label.find "Encontrar mais complementos">
+<!ENTITY addonman.label.cancel "Cancelar">

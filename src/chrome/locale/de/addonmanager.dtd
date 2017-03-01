@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "Add-on Manager - &qfneditor;">
+<!ENTITY addonman.label.warning "Damit die Änderungen wirksam werden, muss der &qfneditor; neu gestartet werden.">
+<!ENTITY addonman.label.open "Erweiterungen Ordner öffnen">
+<!ENTITY addonman.label.find "Weitere Erweiterungen suchen">
+<!ENTITY addonman.label.cancel "Abbrechen">

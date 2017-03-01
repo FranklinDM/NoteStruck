@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "In nieuw venster openen">
+<!ENTITY toolbar.label3 "In nieuw tabblad openen">
+<!ENTITY toolbar.label4 "In toepassingsinhoud openen">
+<!ENTITY toolbar.label5 "Startpagina">
+<!ENTITY toolbar.tooltip "Klik: openen in venster; middelklik: openen in tabblad">
+<!ENTITY context.label1 "Verzenden naar &qfneditor;">
+<!ENTITY context.label2 "Verzenden naar &qfneditor; (details)">
+<!ENTITY status.tooltip1 "Klik om in een venster te openen; anders openen in tabblad">
+<!ENTITY status.tooltip2 "Klik om in een tabblad te openen; anders openen in venster">
+<!ENTITY status.tooltip3 "Klik om in een toepassing te openen; anders openen in tabblad">

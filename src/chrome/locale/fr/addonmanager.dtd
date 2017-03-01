@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "Gestionnaire de modules - &qfneditor;">
+<!ENTITY addonman.label.warning "&qfneditor; doit être redémarré pour voir les changements.">
+<!ENTITY addonman.label.open "Ouvrir le dossier des modules">
+<!ENTITY addonman.label.find "Chercher des modules supplémentaires">
+<!ENTITY addonman.label.cancel "Annuler">

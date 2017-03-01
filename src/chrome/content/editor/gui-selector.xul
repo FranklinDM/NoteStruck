@@ -1,0 +1,61 @@
+<!DOCTYPE overlay SYSTEM "chrome://qfnotes/locale/editor.dtd">
+<?xml-stylesheet href="data:text/css,
+.qfn-popup {
+	-moz-appearance: none;
+	-moz-border-top-colors: grey ThreeDHighlight;
+	-moz-border-left-colors: grey ThreeDHighlight;
+	-moz-border-right-colors: grey ThreeDHighlight;
+	-moz-border-bottom-colors: grey ThreeDHighlight;
+	padding: 1px;
+	background-color: Menu;
+	color: MenuText !important;
+}
+.txt {
+	width: 45px;
+	text-align: center;
+}
+" type="text/css"?>
+<overlay id="editor-gui-selector" xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<menupopup id="editor-tabbox-toolbar-GUI-menupopup" class="qfn-popup" onpopupshown="requirejs('GUI/selector').onpopupshown();">
+	<grid>
+		<columns>
+			<column/>
+			<column/>
+		</columns>
+		<rows>
+			<row>
+				<label value="&editor.toolbar3.menu1;"/>
+				<hbox>
+					<button label="-" type="repeat" oncommand="requirejs('GUI/selector').changeFontSize(false)"/>
+					<hbox align="center">
+						<label id="gui-selector-fontsize" class="txt" crop="center" value="? px"/>
+					</hbox>
+					<button label="+" type="repeat" oncommand="requirejs('GUI/selector').changeFontSize(true)"/>
+				</hbox>
+			</row>
+			<row>
+				<label value="&editor.toolbar3.menu3;"/>
+				<hbox>
+					<button label="-" type="repeat" oncommand="requirejs('GUI/selector').changeTabWidth(false)"/>
+					<hbox align="center">
+						<label id="gui-selector-tabWidth" class="txt" crop="center" value="? px"/>
+					</hbox>
+					<button label="+" type="repeat" oncommand="requirejs('GUI/selector').changeTabWidth(true)"/>
+				</hbox>
+			</row>
+			<row>
+				<label value="&editor.toolbar3.menu6;"/>
+				<hbox id="gui-selector-textcolor" pack="center"/>
+			</row>
+			<row style="padding-top: 5px;">
+				<label value="&editor.toolbar3.menu4;"/>
+				<hbox id="gui-selector-backgroundcolor" pack="center"/>
+			</row>
+		</rows>
+	</grid>
+</menupopup>
+</overlay>
+

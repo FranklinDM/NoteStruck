@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+
+<!--
+Extended from Firebug->content->firebug->firefox->start-button
+-->
+
+<bindings xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<binding id="qfnToolbarbutton" display="xul:menu"
+    extends="chrome://global/content/bindings/toolbarbutton.xml#menu-button">
+    <content>
+        <children includes="menupopup|tooltip"/>
+        <xul:stack>
+            <xul:label value="0"/>
+        </xul:stack>
+        <xul:toolbarbutton class="box-inherit toolbarbutton-menubutton-button" style="padding-left: 6px;"
+            anonid="button" flex="1" allowevents="true"
+            xbl:inherits="disabled,crop,image,label,accesskey,command,align,dir,pack,orient"/>
+        <xul:dropmarker type="menu-button" class="toolbarbutton-menubutton-dropmarker"
+            xbl:inherits="align,dir,pack,orient,disabled,label"/>
+    </content>
+    <implementation>
+        <property name="counter">
+            <getter>
+                <![CDATA[
+                return num = this.getAttribute('counter');
+                ]]>
+            </getter>
+            <setter>
+                <![CDATA[
+                const stack = document.getAnonymousNodes(this)[1];
+                const label = stack.childNodes[0];
+                if (val) {
+                    label.value = val;
+                    stack.style.display = "block";
+                }
+                else
+                    stack.style.display = "none";
+                this.setAttribute('counter', val);
+                ]]>
+            </setter>
+        </property>
+    </implementation>
+</binding>
+
+</bindings>

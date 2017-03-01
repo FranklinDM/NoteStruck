@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "In neuem Fenster öffnen">
+<!ENTITY toolbar.label3 "In neuem Tab öffnen">
+<!ENTITY toolbar.label4 "Im Anwendungsfenster - Tab öffnen">
+<!ENTITY toolbar.label5 "Homepage">
+<!ENTITY toolbar.tooltip "Links-Klick: Im Fenster öffnen; Mittel-Klick: In Tab öffnen; Rechts-Klick: Kontext Menü">
+<!ENTITY context.label1 "Zu &qfneditor; senden">
+<!ENTITY context.label2 "Zu &qfneditor; senden ;(detailliert)">
+<!ENTITY status.tooltip1 "Mit Links-Klick im Fenster öffnen; Ansonsten im Tab öffnen">
+<!ENTITY status.tooltip2 "Mit Links-Klick im Tab öffnen; Ansonsten im Fenster öffnen">
+<!ENTITY status.tooltip3 "Mit Links-Klick im Anwendungsfenster öffnen; Ansonsten im Tab öffnen">

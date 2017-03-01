@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Ferramentas">
+<!ENTITY editor.tools.accessKey "F">
+<!ENTITY editor.tools.tooltip "Ferramentas">
+<!ENTITY editor.menuitem.find "Encontrar">
+<!ENTITY editor.toolbar1 "Notas">
+<!ENTITY editor.toolbar1.accessKey "T">
+<!ENTITY editor.toolbar1.menuitem1 "Nova nota">
+<!ENTITY editor.toolbar1.menuitem2 "Remover a nota atual">
+<!ENTITY editor.toolbar2 "Enviar">
+<!ENTITY editor.toolbar2.accessKey "R">
+<!ENTITY editor.toolbar2.tooltip "Enviar arquivo de/para">
+<!ENTITY editor.toolbar2.menuitem1 "Importar de arquivo de texto...">
+<!ENTITY editor.toolbar2.menuitem2 "Exportar nota atual para arquivo de texto...">
+<!ENTITY editor.toolbar2.menuitem3 "Exportar todas notas para um arquivo de texto...">
+<!ENTITY editor.toolbar3 "Opções">
+<!ENTITY editor.toolbar3.accessKey "S">
+<!ENTITY editor.toolbar3.tooltip "Opções">
+<!ENTITY editor.toolbar3.label1 "Verificar ortografia">
+<!ENTITY editor.toolbar3.label2 "Salvar automaticamente a cada 2 minutos">
+<!ENTITY editor.toolbar3.label2.tooltip "Esta é uma ferramenta opcional. As notas serão salvas antes de serem fechadas.">
+<!ENTITY editor.toolbar3.label3 "Colar com o botão do meio">
+<!ENTITY editor.toolbar3.label4 "Copiar automaticamente o texto selecionado">
+<!ENTITY editor.toolbar3.label5 "Pedir confirmação ao remover aba">
+<!ENTITY editor.toolbar3.label6 "Sempre em cima (apenas no Windows)">
+<!ENTITY editor.toolbar3.menu0 "Configurações avançadas">
+<!ENTITY editor.toolbar3.menu0.item2 "Alterar a família de fontes das notas">
+<!ENTITY editor.toolbar3.menu0.item2.description "Altera a família de fontes das notas (por exemplo, Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "Comportamento do mouse na borda">
+<!ENTITY editor.toolbar3.menu2.label1 "Desabilitar roda (scroll)">
+<!ENTITY editor.toolbar3.menu2.label2 "Girar a roda">
+<!ENTITY editor.toolbar3.GUIEditor "Interface do Usuário">
+<!ENTITY editor.toolbar3.menu1 "Tamanho da fonte">
+<!ENTITY editor.toolbar3.menu3 "Largura mínima da Tab">
+<!ENTITY editor.toolbar3.menu6 "Cor do texto">
+<!ENTITY editor.toolbar3.menu4 "Cor de fundo">
+<!ENTITY editor.toolbar3.menu7 "Ícones da barra de status">
+<!ENTITY editor.toolbar3.menu7.label1 "Abrir em janela">
+<!ENTITY editor.toolbar3.menu7.label2 "Abri na aba">
+<!ENTITY editor.toolbar3.menu7.label3 "Abrir no conteúdo do aplicativo">
+<!ENTITY editor.toolbar3.menu5 "Exibir &qfneditor; quando &brandShortName; começar após:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "Desativado">
+<!ENTITY editor.toolbar3.10secs "10 segundos">
+<!ENTITY editor.toolbar3.20secs "20 segundos">
+<!ENTITY editor.toolbar3.30secs "30 segundos">
+<!ENTITY editor.toolbar3.40secs "40 segundos">
+<!ENTITY editor.toolbar3.50secs "50 segundos">
+<!ENTITY editor.toolbar3.60secs "60 segundos">
+<!ENTITY editor.toolbar3.menu5.menu "Abrir em:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "Nova janela">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "Nova aba">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "Conteúdo do aplicativo">
+<!ENTITY editor.toolbar3.menu9.label1 "Quebra de Palavras (Necessário reiniciar)">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; precisa ser reiniciado para que a mudança tenha efeito.">
+<!ENTITY editor.toolbar3.menu10 "Formato do horário">
+<!ENTITY editor.toolbar3.menu10.label1 "12 horas (AP/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 horas">
+<!ENTITY editor.toolbar3.menu11 "Exibir/Esconder grupos">
+<!ENTITY editor.toolbar3.menu11.label2 "Na aba">
+<!ENTITY editor.toolbar3.menu11.label3 "Exibir grupo de notas">
+<!ENTITY editor.toolbar3.menu11.label4 "Esconder grupo de notas">
+<!ENTITY editor.toolbar3.labe10 "Alterar o Armazenamento do QFN">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; pode usar &quot;Bookmarks&quot; ou pasta do &quot;Hard disk&quot; como seu repositório primário.">
+<!ENTITY editor.toolbar3.labe7 "Alternar e conservar as notas existentes">
+<!ENTITY editor.toolbar3.labe7.description1 "Migra o Armazenamento ativo de \'Favoritos&quot; para o \'Disco rígido\' ou vice-versa">
+<!ENTITY editor.toolbar3.labe7.description2 "\'Favoritos\' é apropriado para aqueles que usam uma extensão de sincronização de favoritos; por exemplo: Xmarks (recomendado), Firefox Sync ...">
+<!ENTITY editor.toolbar3.labe7.description3 "\'Disco rígido\' é melhor para aqueles que usam um software de sincronização de pastas; por exemplo: Dropbox (Recomendado), Symplicity, Sugarsync ...">
+<!ENTITY editor.toolbar3.labe8 "Selecione a pasta \'Disco rígido\' e alterne para ela (sem migrar dados)">
+<!ENTITY editor.toolbar3.labe8.description1 "Altera o Armazenamento ativo para \'Disco rígido\' sem apagar ou migras as notas atuais.">
+<!ENTITY editor.toolbar3.labe8.description2 "Esta opção forçará o &qfneditor; a usar uma pasta do &quot;Hard disk&quot; que já tenha sido sincronizada por um software de sincronia de pastas.">
+<!ENTITY editor.toolbar3.labe9 "Alterne para a pasta padrão \'Favoritos\' (sem migrar dados)">
+<!ENTITY editor.toolbar3.labe9.description1 "Altera o Armazenamento ativo para \'Favoritos\' sem apagar ou migras as notas atuais.">
+<!ENTITY editor.toolbar3.labe9.description2 "Esta opção forçará o &qfneditor; a abrir uma pasta padrão de favoritos que já tenha sido sincronizada por uma extensão de sincronia de favoritos.">
+<!ENTITY editor.toolbar3.labe11 "Altera a pasta \'Favoritos\' padrão">
+<!ENTITY editor.toolbar3.labe11.description "Use \'/\'como um separador para aprofundar os níveis de pastas (por exemplo, QFN/dir01/dir02)">
+<!ENTITY editor.toolbar4 "Editar">
+<!ENTITY editor.toolbar4.accessKey "E">
+<!ENTITY editor.toolbar4.tooltip "Editar texto">
+<!ENTITY editor.toolbar4.menuitem1 "Copiar">
+<!ENTITY editor.toolbar4.menuitem2 "Cortar">
+<!ENTITY editor.toolbar4.menuitem3 "Colar">
+<!ENTITY editor.toolbar4.menuitem4 "Inserir delimitador de Aba">
+<!ENTITY editor.toolbar4.menuitem5 "Remover delimitador de Aba">
+<!ENTITY editor.toolbar4.menuitem6 "Duplicar linha/seleção">
+<!ENTITY editor.toolbar4.menuitem7 "Mover linha para cima">
+<!ENTITY editor.toolbar4.menuitem8 "Mover linha para baixo">
+<!ENTITY editor.toolbar4.menuitem9 "Para letras maiúsculas">
+<!ENTITY editor.toolbar4.menuitem10 "Para letras minúsculas">
+<!ENTITY editor.toolbar4.menuitem11 "Selecionar linha atual">
+<!ENTITY editor.toolbar4.menuitem12 "Selecionar linha anterior">
+<!ENTITY editor.toolbar4.menuitem13 "Selecionar próxima linha">
+<!ENTITY editor.toolbar6 "Arquivo">
+<!ENTITY editor.toolbar6.accessKey "q">
+<!ENTITY editor.toolbar6.tooltip1 "Arquivo">
+<!ENTITY editor.toolbar6.tooltip2 "Clique (lado esquerdo) ou pressione Alt+C para ver o Menu Rápido">
+<!ENTITY editor.toolbar6.tooltip3 "Clique (lado direito) ou pressione Alt+J para ver o Menu Completo">
+<!ENTITY editor.toolbar6.menuitem1 "Adicionar ao arquivo">
+<!ENTITY editor.showSandbox "Exibir todas as notas arquivadas">
+<!ENTITY editor.toolbar6.menuitem2 "Enviar todos de volta ao Editor">
+<!ENTITY editor.toolbar7 "Lixo">
+<!ENTITY editor.toolbar8 "Fechar o &qfneditor; (Esc)">
+<!ENTITY editor.toolbar12 "Complementos">
+<!ENTITY editor.toolbar12.accessKey "C">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor; extensões">
+<!ENTITY editor.toolbar10 "Informe de erros, suporte, comunicados ou sugestões">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Informar falhas,suporte, respostas ou sugestões">
+<!ENTITY editor.toolbar14 "Rede">
+<!ENTITY editor.toolbar14.accessKey "R">
+<!ENTITY editor.toolbar14.tooltip "Acesse sua nota no iPhone, iPod touch, iPhone, ou Android">
+<!ENTITY editor.toolbar13 "Cópias de Segurança">
+<!ENTITY editor.toolbar13.accessKey "S">
+<!ENTITY editor.toolbar13.tooltiptext "Faz uma cópia de segurança de todas as notas diariamente durante 7 dias">
+<!ENTITY editor.toolbar15 "Página">
+<!ENTITY editor.toolbar15.accessKey "P">
+<!ENTITY editor.distractionFree.label1 "Saída">
+<!ENTITY editor.distractionFree.label2 "Chave de Troca">
+<!ENTITY editor.distractionFree.label3 "Novo">
+<!ENTITY editor.distractionFree.label4 "Remover">
+<!ENTITY editor.toolbar.tooltip "Clique duplo para cria nova nota; Roda do mouse para alternar entre Notas">
+<!ENTITY editor.toolbar.tabs.tooltip "Clique do meio para enviar para lixeira; Clique duplo para arquivar">
+<!ENTITY editor.panel.label "Renomear Nota:">
+<!ENTITY editor.panel.iLabel "Rótulo da nota">
+<!ENTITY editor.panel.iGroup "Grupo de Notas">
+<!ENTITY editor.panel.label2 "Estilo">
+<!ENTITY editor.panel.label3 "Negrito">
+<!ENTITY editor.panel.label4 "Itálico">
+<!ENTITY editor.panel.label5 "Opções de Abas">
+<!ENTITY editor.panel.label6 "Protegido">
+<!ENTITY editor.panel.label7 "Lista de Tarefas">
+<!ENTITY editor.panel.label8 "Contador da barra de ferramentas de atualização">
+<!ENTITY editor.panel2.label1 "Busca">
+<!ENTITY editor.buttons.newTab "Adicionar nova Aba (Ctrl+T ou clique duplo na Barra de Abas)">
+<!ENTITY editor.buttons.list "Lista de abas abertas (Crtl+L)">
+<!ENTITY editor.context.undo "Desfazer">
+<!ENTITY editor.context.undo.accesskey "z">
+<!ENTITY editor.context.redo "Refazer">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "Cortar">
+<!ENTITY editor.context.cut.accesskey "t">
+<!ENTITY editor.context.copy "Copiar">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "Colar">
+<!ENTITY editor.context.copyHistory "Gerenciador da Área de Transferência">
+<!ENTITY editor.context.copyHistory.accesskey "G">
+<!ENTITY editor.context.copyHistory.label1 "Limpar tudo">
+<!ENTITY editor.context.copyHistory.label1.accesskey "L">
+<!ENTITY editor.context.paste.accesskey "o">
+<!ENTITY editor.context.delete "Apagar">
+<!ENTITY editor.context.delete.accesskey "p">
+<!ENTITY editor.context.selectAll "Selecionar Tudo">
+<!ENTITY editor.context.selectAll.accesskey "T">
+<!ENTITY editor.context.email "Enviar por correio eletrônico">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "Criar relatório (Imprimir)">
+<!ENTITY editor.context.print.accesskey "m">
+<!ENTITY editor.context.addTime "Inserir Dia e Hora (F5)">
+<!ENTITY editor.context.addTime.accesskey "I">
+<!ENTITY editor.context.security "Segurança">
+<!ENTITY editor.context.security.accesskey "S">
+<!ENTITY editor.context.encrypt "Codificação">
+<!ENTITY editor.context.encrypt.accesskey "C">
+<!ENTITY editor.context.decrypt "Decodificação">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "Sugestões do Google">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Sugestões de palavras do Google/Calculadora">
+<!ENTITY editor.context.google.submenu1 "Baseado em 1 palavra (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "Baseado em 2 palavras (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "Baseado em 3 palavras (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "Baseado em 4 palavras (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "Baseado no texto selecionado (Crtl+G)">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Inserir Símbolos">
+<!ENTITY editor.context.symbols.accesskey "b">
+<!ENTITY editor.context.symbols.set1 "Símbolos matemáticos">
+<!ENTITY editor.context.symbols.set1.accesskey "m">
+<!ENTITY editor.context.symbols.set2 "Símbolos gregos">
+<!ENTITY editor.context.symbols.set2.accesskey "g">
+<!ENTITY editor.context.symbols.set3 "Símbolos de energia e fração">
+<!ENTITY editor.context.symbols.set3.accesskey "f">
+<!ENTITY editor.context.symbols.set4 "Marcar caixas">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "Miscelânea">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "Acrescentar ao dicionário">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "Ignorar esta palavra">
+<!ENTITY editor.network.label1 "Atualize pastas ou arquivos selecionados">
+<!ENTITY editor.network.label2 "Copia o arquivo selecionado">
+<!ENTITY editor.network.label3 "Excluir pasta ou arquivo selecionado">
+<!ENTITY editor.network.label4 "Inserir o conteúdo do servidor para o Editor QFN">
+<!ENTITY editor.network.label5 "Inserir conteúdo QFN para servidor como um novo arquivo">
+<!ENTITY editor.network.label6 "Adicionar uma nova pasta para o servidor">
+<!ENTITY editor.network.label7 "Lista">
+<!ENTITY editor.network.label8 "Fechar rede">
+<!ENTITY editor.network.label9 "Overwrite selected file">
+<!ENTITY editor.network.label10 "Armazenar notas locias no servidor selecionado">
+<!ENTITY editor.network.label11 "Desconectar do servidor selecionado">
+<!ENTITY editor.network.label12 "Inserir o conteúdo do servidor como uma nova nota">
+<!ENTITY editor.searchTool.find "Buscar na nota">
+<!ENTITY editor.searchTool.replace "Substituir">
+<!ENTITY editor.searchTool.next "Encontrar próxima correspondência">
+<!ENTITY editor.searchTool.prev "Encontrar correspondência anterior">
+<!ENTITY editor.searchTool.close "Fechar ferramenta de busca">
+<!ENTITY editor.searchTool.replaceAll "Substituir todos">
+<!ENTITY editor.searchTool.archive "Buscar no arquivo">
+<!ENTITY editor.searchTool.highlight "Destacar todas correspondências">

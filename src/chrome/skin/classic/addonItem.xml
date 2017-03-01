@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+		  xmlns:xbl="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<binding id="addonItem">
+	<content>	  
+		<xul:hbox id='item' flex="1" style="
+			border-right:none; 
+			border-left:none; 
+			border-top:none; 
+			border-bottom:dotted ThreeDDarkShadow 1px;
+			margin-top: 3px;
+			margin-bottom: 3px;" >
+			<xul:vbox flex="1">
+				<xul:hbox>
+					<xul:label style="font-weight: bold;" xbl:inherits="value=name"/>
+					<xul:label xbl:inherits="value=version"/>
+				</xul:hbox>
+				<xul:hbox>
+					<xul:label xbl:inherits="value=developerLocal"/>
+					<xul:label xbl:inherits="value=developer"/>
+				</xul:hbox>
+				<xul:hbox>
+					<xul:label xbl:inherits="value=compatibleLocal"/>
+					<xul:label xbl:inherits="value=compilerVersion"/>
+				</xul:hbox>
+				<xul:hbox>
+					<xul:label value="GUID:"/>
+					<xul:label xbl:inherits="value=GUID"/>
+				</xul:hbox>
+				<xul:label xbl:inherits="value=description" crop="end"/>
+			</xul:vbox>
+			<xul:vbox pack="center">
+					<xul:button xbl:inherits="label=btLabel"/>
+			</xul:vbox>
+		</xul:hbox>
+	</content>
+</binding>
+</bindings>

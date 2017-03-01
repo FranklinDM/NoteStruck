@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "Abrir em nova janela">
+<!ENTITY toolbar.label3 "Abrir em nova aba">
+<!ENTITY toolbar.label4 "Abrir no Conteúdo do Aplicativo">
+<!ENTITY toolbar.label5 "Página">
+<!ENTITY toolbar.tooltip "Clique esquerdo: Abre em Janela; Clique do Meio: Abre em Aba; Clique direito: menu de contexto">
+<!ENTITY context.label1 "Enviar para &qfneditor;">
+<!ENTITY context.label2 "Enviar para &qfneditor; (detalhes)">
+<!ENTITY status.tooltip1 "Clique esquerdo para abrir em Janela; outro botão para abrir em aba">
+<!ENTITY status.tooltip2 "Clique esquerdo para abrir em Aba; outro botão para abrir em Janela">
+<!ENTITY status.tooltip3 "Clique esquerdo para abrir menu de contexto; outro botão para abrir em Aba">

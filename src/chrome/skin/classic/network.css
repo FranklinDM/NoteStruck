@@ -1,0 +1,163 @@
+.network .sync,
+.network .addFolder,
+.network .addFile,
+.network .read,
+.network .overwrite,
+.network .backup,
+.network .unlink,
+.network .newNote {
+  list-style-image: url('network.png');
+}
+
+.network .sync {
+  -moz-image-region: rect(0px, 16px, 16px, 0px);
+}
+.network .sync[disabled='true']{
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.network .addFolder {
+  -moz-image-region: rect(16px, 16px, 32px, 0px);
+}
+.network .addFolder[disabled='true']{
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+.network .addFile {
+  -moz-image-region: rect(32px, 16px, 48px, 0px);
+}
+.network .addFile[disabled='true']{
+  -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+.network .read {
+  -moz-image-region: rect(48px, 16px, 64px, 0px);
+}
+.network .read[disabled='true']{
+  -moz-image-region: rect(48px, 32px, 64px, 16px);
+}
+.network .overwrite {
+  -moz-image-region: rect(64px, 16px, 80px, 0px);
+}
+.network .overwrite[disabled='true']{
+  -moz-image-region: rect(64px, 32px, 80px, 16px);
+}
+.network .backup {
+  -moz-image-region: rect(80px, 16px, 96px, 0px);
+}
+.network .backup[disabled='true']{
+  -moz-image-region: rect(80px, 32px, 96px, 16px);
+}
+.network .unlink {
+  -moz-image-region: rect(96px, 16px, 112px, 0px);
+}
+.network .unlink[disabled='true']{
+  -moz-image-region: rect(96px, 32px, 112px, 16px);
+}
+.network .newNote {
+  -moz-image-region: rect(112px, 16px, 128px, 0px);
+}
+.network .newNote[disabled='true']{
+  -moz-image-region: rect(112px, 32px, 128px, 16px);
+}
+
+.network-tree>treechildren::-moz-tree-image {
+    margin-right: 5px;
+}
+.network-tree>treechildren::-moz-tree-cell(leaf) ,
+.network-tree>treechildren::-moz-tree-image(leaf){
+     cursor: default;
+    list-style-image: url('applications/_blank.png');
+}
+.network-tree>treechildren::-moz-tree-image(container){
+    list-style-image: url('applications/folder.png');
+}
+.network-tree>treechildren::-moz-tree-image(server){
+    list-style-image: url('applications/server.png');
+}
+.network-tree>treechildren::-moz-tree-image(dat){
+    list-style-image: url('applications/dat.png');
+}
+.network-tree>treechildren::-moz-tree-image(ics){
+    list-style-image: url('applications/ics.png');
+}
+.network-tree>treechildren::-moz-tree-image(pdf){
+    list-style-image: url('applications/pdf.png');
+}
+.network-tree>treechildren::-moz-tree-image(rtf){
+    list-style-image: url('applications/rtf.png');
+}
+.network-tree>treechildren::-moz-tree-image(dll),
+.network-tree>treechildren::-moz-tree-image(exe){
+    list-style-image: url('applications/exe.png');
+}
+.network-tree>treechildren::-moz-tree-image(reg),
+.network-tree>treechildren::-moz-tree-image(txt){
+    list-style-image: url('applications/txt.png');
+}
+.network-tree>treechildren::-moz-tree-image(sqlite),
+.network-tree>treechildren::-moz-tree-image(sql){
+    list-style-image: url('applications/sql.png');
+}
+.network-tree>treechildren::-moz-tree-image(odf),
+.network-tree>treechildren::-moz-tree-image(otp),
+.network-tree>treechildren::-moz-tree-image(ppt){
+    list-style-image: url('applications/ppt.png');
+}
+.network-tree>treechildren::-moz-tree-image(ots),
+.network-tree>treechildren::-moz-tree-image(ods),
+.network-tree>treechildren::-moz-tree-image(xlsx),
+.network-tree>treechildren::-moz-tree-image(xls),
+.network-tree>treechildren::-moz-tree-image(dotx),
+.network-tree>treechildren::-moz-tree-image(docx),
+.network-tree>treechildren::-moz-tree-image(doc){
+    list-style-image: url('applications/doc.png');
+}
+.network-tree>treechildren::-moz-tree-image(psd),
+.network-tree>treechildren::-moz-tree-image(dwg),
+.network-tree>treechildren::-moz-tree-image(jpeg),
+.network-tree>treechildren::-moz-tree-image(jpg),
+.network-tree>treechildren::-moz-tree-image(eps),
+.network-tree>treechildren::-moz-tree-image(tga),
+.network-tree>treechildren::-moz-tree-image(tiff),
+.network-tree>treechildren::-moz-tree-image(gif),
+.network-tree>treechildren::-moz-tree-image(png),
+.network-tree>treechildren::-moz-tree-image(bmp){
+    list-style-image: url('applications/image.png');
+}
+.network-tree>treechildren::-moz-tree-image(m),
+.network-tree>treechildren::-moz-tree-image(hpp),
+.network-tree>treechildren::-moz-tree-image(rb),
+.network-tree>treechildren::-moz-tree-image(key),
+.network-tree>treechildren::-moz-tree-image(rtf),
+.network-tree>treechildren::-moz-tree-image(py),
+.network-tree>treechildren::-moz-tree-image(html),
+.network-tree>treechildren::-moz-tree-image(php),
+.network-tree>treechildren::-moz-tree-image(xml),
+.network-tree>treechildren::-moz-tree-image(xul),
+.network-tree>treechildren::-moz-tree-image(css),
+.network-tree>treechildren::-moz-tree-image(js),
+.network-tree>treechildren::-moz-tree-image(java),
+.network-tree>treechildren::-moz-tree-image(cpp),
+.network-tree>treechildren::-moz-tree-image(h),
+.network-tree>treechildren::-moz-tree-image(c){
+    list-style-image: url('applications/code.png');
+}
+.network-tree>treechildren::-moz-tree-image(flv),
+.network-tree>treechildren::-moz-tree-image(wav),
+.network-tree>treechildren::-moz-tree-image(mid),
+.network-tree>treechildren::-moz-tree-image(mp3){
+    list-style-image: url('applications/audio.png');
+}
+.network-tree>treechildren::-moz-tree-image(mpg),
+.network-tree>treechildren::-moz-tree-image(mp4),
+.network-tree>treechildren::-moz-tree-image(avi),
+.network-tree>treechildren::-moz-tree-image(wmv),
+.network-tree>treechildren::-moz-tree-image(mkv){
+    list-style-image: url('applications/video.png');
+}
+.network-tree>treechildren::-moz-tree-image(xpi),
+.network-tree>treechildren::-moz-tree-image(iso),
+.network-tree>treechildren::-moz-tree-image(dmg),
+.network-tree>treechildren::-moz-tree-image(tgz),
+.network-tree>treechildren::-moz-tree-image(rar),
+.network-tree>treechildren::-moz-tree-image(zip){
+    list-style-image: url('applications/zip.png');
+}

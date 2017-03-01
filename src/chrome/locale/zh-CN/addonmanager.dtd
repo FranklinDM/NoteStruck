@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "插件管理器-&qfneditor;">
+<!ENTITY addonman.label.warning "&qfneditor;需要重启才能生效.">
+<!ENTITY addonman.label.open "打开附加组件文件夹">
+<!ENTITY addonman.label.find "查找更多组件">
+<!ENTITY addonman.label.cancel "取消">

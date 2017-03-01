@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Outils">
+<!ENTITY editor.tools.accessKey "t">
+<!ENTITY editor.tools.tooltip "Outils">
+<!ENTITY editor.menuitem.find "Chercher">
+<!ENTITY editor.toolbar1 "Notes">
+<!ENTITY editor.toolbar1.accessKey "N">
+<!ENTITY editor.toolbar1.menuitem1 "Nouvelle note">
+<!ENTITY editor.toolbar1.menuitem2 "Supprimer cette Note">
+<!ENTITY editor.toolbar2 "Transfert">
+<!ENTITY editor.toolbar2.accessKey "T">
+<!ENTITY editor.toolbar2.tooltip "Transfert vers/depuis un fichier">
+<!ENTITY editor.toolbar2.menuitem1 "Importer un fichier texte dans cette note">
+<!ENTITY editor.toolbar2.menuitem2 "Exporter la note vers un fichier texte">
+<!ENTITY editor.toolbar2.menuitem3 "Exporter toutes les notes vers un fichier texte">
+<!ENTITY editor.toolbar3 "Options">
+<!ENTITY editor.toolbar3.accessKey "O">
+<!ENTITY editor.toolbar3.tooltip "Options">
+<!ENTITY editor.toolbar3.label1 "Vérifier orthographe">
+<!ENTITY editor.toolbar3.label2 "Enregistrement Auto toutes les 2 min">
+<!ENTITY editor.toolbar3.label2.tooltip "Fonction optionnelle. Les Notes seront de toute façon sauvegardées avant la fermeture">
+<!ENTITY editor.toolbar3.label3 "Coller avec clic central">
+<!ENTITY editor.toolbar3.label4 "Copie auto du texte sélectionné">
+<!ENTITY editor.toolbar3.label5 "Confirmer suppression onglets">
+<!ENTITY editor.toolbar3.label6 "Fenêtre toujours au 1er plan (Windows)">
+<!ENTITY editor.toolbar3.menu0 "Réglages avancés">
+<!ENTITY editor.toolbar3.menu0.item2 "Changer la police">
+<!ENTITY editor.toolbar3.menu0.item2.description "ex. Arial, Courier, ...">
+<!ENTITY editor.toolbar3.menu2 "Défilement souris aux limites du document">
+<!ENTITY editor.toolbar3.menu2.label1 "Arrêter le défilement">
+<!ENTITY editor.toolbar3.menu2.label2 "Cycler le défilement">
+<!ENTITY editor.toolbar3.GUIEditor "Interface utilisateur">
+<!ENTITY editor.toolbar3.menu1 "Taille police">
+<!ENTITY editor.toolbar3.menu3 "Largeur minimale des onglets">
+<!ENTITY editor.toolbar3.menu6 "Couleur du texte">
+<!ENTITY editor.toolbar3.menu4 "Couleur de fond">
+<!ENTITY editor.toolbar3.menu7 "Icône barre d\'état">
+<!ENTITY editor.toolbar3.menu7.label1 "Ouvrir dans une fenêtre">
+<!ENTITY editor.toolbar3.menu7.label2 "Ouvrir dans un onglet">
+<!ENTITY editor.toolbar3.menu7.label3 "Ouvrir dans le panneau d\'application">
+<!ENTITY editor.toolbar3.menu5 "Montrer &qfneditor; dès que &brandShortName; démarre après:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "Désactivé">
+<!ENTITY editor.toolbar3.10secs "10 secs">
+<!ENTITY editor.toolbar3.20secs "20 secs">
+<!ENTITY editor.toolbar3.30secs "30 secs">
+<!ENTITY editor.toolbar3.40secs "40 secs">
+<!ENTITY editor.toolbar3.50secs "50 secs">
+<!ENTITY editor.toolbar3.60secs "60 secs">
+<!ENTITY editor.toolbar3.menu5.menu "Ouvrir dans:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "Nouvelle fenêtre">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "Nouvel onglet">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "Panneau d\'application">
+<!ENTITY editor.toolbar3.menu9.label1 "Retour à la ligne automatique (QFN devra être redémarré)">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; doit être redémarré pour voir les changements.">
+<!ENTITY editor.toolbar3.menu10 "Format horaire">
+<!ENTITY editor.toolbar3.menu10.label1 "12 heures (AM/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 heures">
+<!ENTITY editor.toolbar3.menu11 "Montrer/Cacher groupe">
+<!ENTITY editor.toolbar3.menu11.label2 "Dans un onglet">
+<!ENTITY editor.toolbar3.menu11.label3 "Montrer le groupe de note">
+<!ENTITY editor.toolbar3.menu11.label4 "Cacher le groupe de note">
+<!ENTITY editor.toolbar3.labe10 "Changer le répertoire de QFN">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; peut utiliser un &quot;Marque-page&quot; ou un répertoire du &quot;disque dur&quot; où conserver les notes.">
+<!ENTITY editor.toolbar3.labe7 "Changer et conserver les notes">
+<!ENTITY editor.toolbar3.labe7.description1 "Migrer les notes depuis les &quot;marques-pages&quot; vers un dossier du disque dur ou vice versa">
+<!ENTITY editor.toolbar3.labe7.description2 "&quot;Marque-Pages&quot; est la solution la plus appropriée pour ceux qui synchronisent leurs marque-pages avec Xmarks ou autres.">
+<!ENTITY editor.toolbar3.labe7.description3 "&quot;Disque Dur&quot; est la solution la plus appropriée pour ceux qui synchronisent leurs fichiers locaux avec Dropbox ou autres.">
+<!ENTITY editor.toolbar3.labe8 "Sélectionner un dossier &quot;Disque Dur&quot; et basculer vers celui-ci (mais sans migrer les notes contenues dans les &quot;marque-pages&quot;)">
+<!ENTITY editor.toolbar3.labe8.description1 "Changer le répertoire courant des notes pour un dossier &quot;Disque Dur&quot; sans effacer ni migrer les notes actuelles.">
+<!ENTITY editor.toolbar3.labe8.description2 "Cette option forcera &qfneditor; à utiliser un dossier &quot;disque dur&quot; qui a déjà été synchronisé par une autre application.">
+<!ENTITY editor.toolbar3.labe9 "Basculer vers le dossier &quot;Marque-Pages&quot; (sans migration)">
+<!ENTITY editor.toolbar3.labe9.description1 "Changer le répertoire courant des notes pour un dossier &quot;Marque-Pages&quot; sans effacer ni migrer les notes actuelles.">
+<!ENTITY editor.toolbar3.labe9.description2 "Cette option forcera &qfneditor; à ouvrir le dossier &quot;Marque-page&quot; par défaut qui a déjà été synchronisé par un autre module.">
+<!ENTITY editor.toolbar3.labe11 "Changer le dossier &quot;Marque-Pages&quot; par défaut.">
+<!ENTITY editor.toolbar3.labe11.description "Utiliser \'/\' comme séparateur pour créer une arborescence dans le dossier &quot;Marque-Pages&quot; (ex: QFN/dir01/dir02)">
+<!ENTITY editor.toolbar4 "Édition">
+<!ENTITY editor.toolbar4.accessKey "d">
+<!ENTITY editor.toolbar4.tooltip "Éditer le texte">
+<!ENTITY editor.toolbar4.menuitem1 "Copier">
+<!ENTITY editor.toolbar4.menuitem2 "Couper">
+<!ENTITY editor.toolbar4.menuitem3 "Coller">
+<!ENTITY editor.toolbar4.menuitem4 "Insérer Tabulation">
+<!ENTITY editor.toolbar4.menuitem5 "Supprimer Tabulation">
+<!ENTITY editor.toolbar4.menuitem6 "Dupliquer la ligne/sélection">
+<!ENTITY editor.toolbar4.menuitem7 "Monter la ligne">
+<!ENTITY editor.toolbar4.menuitem8 "Descendre la ligne">
+<!ENTITY editor.toolbar4.menuitem9 "Tout en MAJUSCULE">
+<!ENTITY editor.toolbar4.menuitem10 "Tout en minuscule">
+<!ENTITY editor.toolbar4.menuitem11 "Selectionner la ligne">
+<!ENTITY editor.toolbar4.menuitem12 "Selectionner la ligne précédente">
+<!ENTITY editor.toolbar4.menuitem13 "Selectionner la ligne suivante">
+<!ENTITY editor.toolbar6 "Archives">
+<!ENTITY editor.toolbar6.accessKey "A">
+<!ENTITY editor.toolbar6.tooltip1 "Archives">
+<!ENTITY editor.toolbar6.tooltip2 "Cliquer sur \'Archive\' ou presser Alt+C pour le menu simple">
+<!ENTITY editor.toolbar6.tooltip3 "Cliquer la petite flèche ou presser Alt+J pour le menu complet">
+<!ENTITY editor.toolbar6.menuitem1 "Mettre aux archives">
+<!ENTITY editor.showSandbox "Montrer toutes les notes archivées">
+<!ENTITY editor.toolbar6.menuitem2 "Retirer toutes les Archives">
+<!ENTITY editor.toolbar7 "Corbeille">
+<!ENTITY editor.toolbar8 "Fermer &qfneditor; (Esc)">
+<!ENTITY editor.toolbar12 "Modules">
+<!ENTITY editor.toolbar12.accessKey "M">
+<!ENTITY editor.toolbar12.tooltiptext "Modules &qfneditor;">
+<!ENTITY editor.toolbar10 "Rapport de Bug, support, retour et suggestions">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Rapport d\'erreurs, support, retours et suggestions">
+<!ENTITY editor.toolbar14 "Réseau">
+<!ENTITY editor.toolbar14.accessKey "R">
+<!ENTITY editor.toolbar14.tooltip "Accéder à vos notes sur votre iPhone, iPod touch, iPad, ou Android">
+<!ENTITY editor.toolbar13 "Sauvegardes">
+<!ENTITY editor.toolbar13.accessKey "S">
+<!ENTITY editor.toolbar13.tooltiptext "Sauvegarde toutes les notes une fois par jour pendant 7 jours">
+<!ENTITY editor.toolbar15 "Page d'accueil">
+<!ENTITY editor.toolbar15.accessKey "a">
+<!ENTITY editor.distractionFree.label1 "Quitter">
+<!ENTITY editor.distractionFree.label2 "Permuter">
+<!ENTITY editor.distractionFree.label3 "Nouveau">
+<!ENTITY editor.distractionFree.label4 "Effacer">
+<!ENTITY editor.toolbar.tooltip "Double-clic pour créer une nouvelle note; Molette de la souris pour basculer entre les notes">
+<!ENTITY editor.toolbar.tabs.tooltip "Clic central pour envoyer dans la corbeille; Double clic pour archiver la note">
+<!ENTITY editor.panel.label "Renommer la Note">
+<!ENTITY editor.panel.iLabel "Titre de la note">
+<!ENTITY editor.panel.iGroup "Groupe de note">
+<!ENTITY editor.panel.label2 "Style">
+<!ENTITY editor.panel.label3 "Gras">
+<!ENTITY editor.panel.label4 "Italic">
+<!ENTITY editor.panel.label5 "Options des Onglets:">
+<!ENTITY editor.panel.label6 "Écriture protégée">
+<!ENTITY editor.panel.label7 "Pense-bête">
+<!ENTITY editor.panel.label8 "Mettre à jour le compteur de la barre d'outils">
+<!ENTITY editor.panel2.label1 "Chercher">
+<!ENTITY editor.buttons.newTab "Ajouter un nouvel onglet (Ctrl+T ou double clic sur la barre d\'onglets)">
+<!ENTITY editor.buttons.list "Liste des onglets ouverts (Ctrl+L)">
+<!ENTITY editor.context.undo "Annuler">
+<!ENTITY editor.context.undo.accesskey "U">
+<!ENTITY editor.context.redo "Rétablir">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "Couper">
+<!ENTITY editor.context.cut.accesskey "p">
+<!ENTITY editor.context.copy "Copier">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "Coller">
+<!ENTITY editor.context.copyHistory "Presse-papier">
+<!ENTITY editor.context.copyHistory.accesskey "i">
+<!ENTITY editor.context.copyHistory.label1 "Effacer tout">
+<!ENTITY editor.context.copyHistory.label1.accesskey "E">
+<!ENTITY editor.context.paste.accesskey "r">
+<!ENTITY editor.context.delete "Effacer">
+<!ENTITY editor.context.delete.accesskey "f">
+<!ENTITY editor.context.selectAll "Tout sélectionner">
+<!ENTITY editor.context.selectAll.accesskey "s">
+<!ENTITY editor.context.email "Envoyer la note par email">
+<!ENTITY editor.context.email.accesskey "m">
+<!ENTITY editor.context.print "Créer un rapport (Imprimer)">
+<!ENTITY editor.context.print.accesskey "m">
+<!ENTITY editor.context.addTime "Insérer l\'heure et la Date (F5)">
+<!ENTITY editor.context.addTime.accesskey "D">
+<!ENTITY editor.context.security "Sécurité">
+<!ENTITY editor.context.security.accesskey "S">
+<!ENTITY editor.context.encrypt "Encrypter">
+<!ENTITY editor.context.encrypt.accesskey "E">
+<!ENTITY editor.context.decrypt "Décrypter">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "Google suggestions">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Google suggestions de mots/Calculette">
+<!ENTITY editor.context.google.submenu1 "Basé sur 1 mot (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "Basé sur 2 mots (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "Basé sur 3 mots (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "Basé sur 4 mots (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "Basé sur le texte sélectionné">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Insérer Symboles">
+<!ENTITY editor.context.symbols.accesskey "y">
+<!ENTITY editor.context.symbols.set1 "Symboles Mathématiques">
+<!ENTITY editor.context.symbols.set1.accesskey "M">
+<!ENTITY editor.context.symbols.set2 "Symboles Grecques">
+<!ENTITY editor.context.symbols.set2.accesskey "q">
+<!ENTITY editor.context.symbols.set3 "Symboles de puissance et fractions">
+<!ENTITY editor.context.symbols.set3.accesskey "p">
+<!ENTITY editor.context.symbols.set4 "Cases à cocher">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "Divers">
+<!ENTITY editor.context.symbols.set5.accesskey "s">
+<!ENTITY editor.context.AddtoDictionary "Ajouter au dictionnaire">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "Ignorer ce mot">
+<!ENTITY editor.network.label1 "Rafraichir dossier/fichiers sélectionnés">
+<!ENTITY editor.network.label2 "Copier fichier sélectionné">
+<!ENTITY editor.network.label3 "Supprimer dossier/fichiers sélectionnés">
+<!ENTITY editor.network.label4 "Insérer contenu du serveur dans QFN">
+<!ENTITY editor.network.label5 "Insérer contenu de QFN au serveur en créant un nouveau fichier">
+<!ENTITY editor.network.label6 "Ajouter un nouveau dossier au serveur">
+<!ENTITY editor.network.label7 "Liste">
+<!ENTITY editor.network.label8 "Fermer réseau">
+<!ENTITY editor.network.label9 "Ecraser le fichier sélectionné">
+<!ENTITY editor.network.label10 "Sauvegarder les notes locales vers un serveur">
+<!ENTITY editor.network.label11 "Se déconnecter du serveur">
+<!ENTITY editor.network.label12 "Insérer le contenu du serveur dans une nouvelle note">
+<!ENTITY editor.searchTool.find "Rechercher dans la note">
+<!ENTITY editor.searchTool.replace "Remplacer">
+<!ENTITY editor.searchTool.next "Chercher occurrence suivante">
+<!ENTITY editor.searchTool.prev "Chercher occurrence précédente">
+<!ENTITY editor.searchTool.close "Fermer l'outil de recherche">
+<!ENTITY editor.searchTool.replaceAll "Remplacer toutes les occurrences">
+<!ENTITY editor.searchTool.archive "Rechercher dans les Archives">
+<!ENTITY editor.searchTool.highlight "Surligner toutes les occurrences">

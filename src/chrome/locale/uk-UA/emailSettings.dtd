@@ -1,0 +1,11 @@
+<!ENTITY email.title "Електронна пошта - &qfneditor;">
+<!ENTITY email.send "Відіслати">
+<!ENTITY email.from "Від:">
+<!ENTITY editor.to "Кому:">
+<!ENTITY editor.subject "Тема:">
+<!ENTITY editor.verification "Код підтвердження:">
+<!ENTITY editor.carboncopy "Відсилати мені копію кожного листа">
+<!ENTITY editor.note2 "Ви отримаєте код підтвердження після першої спроби відіслати електронного листа">
+<!ENTITY editor.note1 "Увага: всі листи відсилатимуться Mozdev.org незахищеним каналом">
+<!ENTITY email.addnew "Запам\'ятати цю адресу. Доступні формати:">
+<!ENTITY email.removeold "Вилучити цю адресу">

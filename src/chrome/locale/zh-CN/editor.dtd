@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "工具">
+<!ENTITY editor.tools.accessKey "T">
+<!ENTITY editor.tools.tooltip "工具">
+<!ENTITY editor.menuitem.find "查找">
+<!ENTITY editor.toolbar1 "标签页">
+<!ENTITY editor.toolbar1.accessKey "T">
+<!ENTITY editor.toolbar1.menuitem1 "新增标签页">
+<!ENTITY editor.toolbar1.menuitem2 "删除标签页">
+<!ENTITY editor.toolbar2 "导入或导出">
+<!ENTITY editor.toolbar2.accessKey "R">
+<!ENTITY editor.toolbar2.tooltip "导入或导出文件">
+<!ENTITY editor.toolbar2.menuitem1 "导入当前标签页">
+<!ENTITY editor.toolbar2.menuitem2 "当前标签页导出">
+<!ENTITY editor.toolbar2.menuitem3 "全部标签页导出">
+<!ENTITY editor.toolbar3 "选项">
+<!ENTITY editor.toolbar3.accessKey "S">
+<!ENTITY editor.toolbar3.tooltip "选项">
+<!ENTITY editor.toolbar3.label1 "拼字检查">
+<!ENTITY editor.toolbar3.label2 "每2分钟自动保存">
+<!ENTITY editor.toolbar3.label2.tooltip "这是一个可选功能。总之笔记本将被关闭之前保存">
+<!ENTITY editor.toolbar3.label3 "按鼠标中键粘贴">
+<!ENTITY editor.toolbar3.label4 "文字选择时复制">
+<!ENTITY editor.toolbar3.label5 "删除前先确认">
+<!ENTITY editor.toolbar3.label6 "置于最上层(仅限Windows)">
+<!ENTITY editor.toolbar3.menu0 "高级选项">
+<!ENTITY editor.toolbar3.menu0.item2 "更改字型">
+<!ENTITY editor.toolbar3.menu0.item2.description "更改字体类型 (例如： Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "鼠标滚轮">
+<!ENTITY editor.toolbar3.menu2.label1 "边界停止滚动">
+<!ENTITY editor.toolbar3.menu2.label2 "边界循环滚动">
+<!ENTITY editor.toolbar3.GUIEditor "用户接口">
+<!ENTITY editor.toolbar3.menu1 "字体大小">
+<!ENTITY editor.toolbar3.menu3 "最小标签页宽度">
+<!ENTITY editor.toolbar3.menu6 "文本颜色">
+<!ENTITY editor.toolbar3.menu4 "背景颜色">
+<!ENTITY editor.toolbar3.menu7 "状态栏图标">
+<!ENTITY editor.toolbar3.menu7.label1 "窗口打开">
+<!ENTITY editor.toolbar3.menu7.label2 "新标签页打开">
+<!ENTITY editor.toolbar3.menu7.label3 "侧边栏打开">
+<!ENTITY editor.toolbar3.menu5 "展示&qfneditor;&brandShortName;启动后:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "停用">
+<!ENTITY editor.toolbar3.10secs "10秒">
+<!ENTITY editor.toolbar3.20secs "20秒">
+<!ENTITY editor.toolbar3.30secs "30秒">
+<!ENTITY editor.toolbar3.40secs "40秒">
+<!ENTITY editor.toolbar3.50secs "50秒">
+<!ENTITY editor.toolbar3.60secs "60秒">
+<!ENTITY editor.toolbar3.menu5.menu "启动方式">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "新窗口">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "新标签页">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "侧边栏">
+<!ENTITY editor.toolbar3.menu9.label1 "邮件设置">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; 需要重启才能生效.">
+<!ENTITY editor.toolbar3.menu10 "时间格式">
+<!ENTITY editor.toolbar3.menu10.label1 "12 小时(AM/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 小时">
+<!ENTITY editor.toolbar3.menu11 "显示/隐藏 分组名称">
+<!ENTITY editor.toolbar3.menu11.label2 "标签栏">
+<!ENTITY editor.toolbar3.menu11.label3 "显示笔记分组名称">
+<!ENTITY editor.toolbar3.menu11.label4 "隐藏笔记分组名称">
+<!ENTITY editor.toolbar3.labe10 "更改资料库地址">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor;将使用&quot;书签&quot;或者&quot;硬盘&quot;文件夹作为首选存储库.">
+<!ENTITY editor.toolbar3.labe7 "请选择要保留的笔记">
+<!ENTITY editor.toolbar3.labe7.description1 "资料库从书签迁移到本地文件夹，反之亦可">
+<!ENTITY editor.toolbar3.labe7.description2 "书签适合使用书签同步扩展，比如：Xmarks（推荐）,火狐同步等">
+<!ENTITY editor.toolbar3.labe7.description3 "本地文件夹适合使用文件夹同步软件，比如：Dropbox（推荐），Simplicity， Sugarsync等">
+<!ENTITY editor.toolbar3.labe8 "选择本地文件夹并转向它（不迁移）">
+<!ENTITY editor.toolbar3.labe8.description1 "更改正在使用的资料库到本地文件夹（不清除或者迁移当前笔记）">
+<!ENTITY editor.toolbar3.labe8.description2 "此选项将强制&qfneditor;使用&quot;硬盘&quot;文件.">
+<!ENTITY editor.toolbar3.labe9 "转到默认书签（不迁移）">
+<!ENTITY editor.toolbar3.labe9.description1 "改变正在使用的资料库到书签（不清除或者迁移当前笔记）">
+<!ENTITY editor.toolbar3.labe9.description2 "这个选项将强制&qfneditor;打开默认书签目录即使已经同步.">
+<!ENTITY editor.toolbar3.labe11 "更改默认书签目录">
+<!ENTITY editor.toolbar3.labe11.description "用“/”分隔符分离书签根目录（比如：QFN/dir01/dir02）">
+<!ENTITY editor.toolbar4 "编辑">
+<!ENTITY editor.toolbar4.accessKey "E">
+<!ENTITY editor.toolbar4.tooltip "编辑文本">
+<!ENTITY editor.toolbar4.menuitem1 "复制">
+<!ENTITY editor.toolbar4.menuitem2 "剪切">
+<!ENTITY editor.toolbar4.menuitem3 "粘贴">
+<!ENTITY editor.toolbar4.menuitem4 "插入跳格">
+<!ENTITY editor.toolbar4.menuitem5 "移除跳格">
+<!ENTITY editor.toolbar4.menuitem6 "所选/本行新增副本">
+<!ENTITY editor.toolbar4.menuitem7 "本行上移">
+<!ENTITY editor.toolbar4.menuitem8 "本行下移">
+<!ENTITY editor.toolbar4.menuitem9 "转为大写">
+<!ENTITY editor.toolbar4.menuitem10 "转为小写">
+<!ENTITY editor.toolbar4.menuitem11 "选择当前行">
+<!ENTITY editor.toolbar4.menuitem12 "选择上一行">
+<!ENTITY editor.toolbar4.menuitem13 "选择下一行">
+<!ENTITY editor.toolbar6 "收藏夹">
+<!ENTITY editor.toolbar6.accessKey "c">
+<!ENTITY editor.toolbar6.tooltip1 "收藏夹">
+<!ENTITY editor.toolbar6.tooltip2 "开启快捷菜单 -- 左键点击 或者 按 Alt+C">
+<!ENTITY editor.toolbar6.tooltip3 "开启完整菜单 -- 右键单击 或者 按 Alt+J">
+<!ENTITY editor.toolbar6.menuitem1 "添加到收藏夹">
+<!ENTITY editor.showSandbox "展示所有有效笔记">
+<!ENTITY editor.toolbar6.menuitem2 "全部移出收藏夹">
+<!ENTITY editor.toolbar7 "回收站">
+<!ENTITY editor.toolbar8 "关闭&qfneditor; (Esc)">
+<!ENTITY editor.toolbar12 "附加组件">
+<!ENTITY editor.toolbar12.accessKey "A">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor; 扩展">
+<!ENTITY editor.toolbar10 "错误报告，请求支援、反馈或建议">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "问题报告，支持，反馈或者建议">
+<!ENTITY editor.toolbar14 "网络">
+<!ENTITY editor.toolbar14.accessKey "N">
+<!ENTITY editor.toolbar14.tooltip "在iPhone, iPod touch, iPad, 或者 Android 上获取您的笔记">
+<!ENTITY editor.toolbar13 "备份">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "备份所有笔记每七天一次">
+<!ENTITY editor.toolbar15 "主页">
+<!ENTITY editor.toolbar15.accessKey "H">
+<!ENTITY editor.distractionFree.label1 "退出">
+<!ENTITY editor.distractionFree.label2 "转换">
+<!ENTITY editor.distractionFree.label3 "新建">
+<!ENTITY editor.distractionFree.label4 "移除">
+<!ENTITY editor.toolbar.tooltip "双击即可创建新笔记；鼠标滚轮即可切换笔记">
+<!ENTITY editor.toolbar.tabs.tooltip "鼠标中键删除笔记，双击收藏笔记">
+<!ENTITY editor.panel.label "标签重命名">
+<!ENTITY editor.panel.iLabel "笔记标签">
+<!ENTITY editor.panel.iGroup "笔记分组">
+<!ENTITY editor.panel.label2 "样式">
+<!ENTITY editor.panel.label3 "粗体">
+<!ENTITY editor.panel.label4 "斜体">
+<!ENTITY editor.panel.label5 "标签选项:">
+<!ENTITY editor.panel.label6 "写保护">
+<!ENTITY editor.panel.label7 "工作表">
+<!ENTITY editor.panel.label8 "更新工具栏计数器">
+<!ENTITY editor.panel2.label1 "搜索">
+<!ENTITY editor.buttons.newTab "打开新标签页 (Ctrl+T 或者 双击标签栏)">
+<!ENTITY editor.buttons.list "已打开的标签列表（Ctrl+L）">
+<!ENTITY editor.context.undo "撤销">
+<!ENTITY editor.context.undo.accesskey "U">
+<!ENTITY editor.context.redo "重复">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "剪切">
+<!ENTITY editor.context.cut.accesskey "t">
+<!ENTITY editor.context.copy "复制">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "粘贴">
+<!ENTITY editor.context.copyHistory "剪贴板管理器">
+<!ENTITY editor.context.copyHistory.accesskey "l">
+<!ENTITY editor.context.copyHistory.label1 "全部清除">
+<!ENTITY editor.context.copyHistory.label1.accesskey "C">
+<!ENTITY editor.context.paste.accesskey "P">
+<!ENTITY editor.context.delete "删除">
+<!ENTITY editor.context.delete.accesskey "D">
+<!ENTITY editor.context.selectAll "全选">
+<!ENTITY editor.context.selectAll.accesskey "A">
+<!ENTITY editor.context.email "作为邮件发送">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "创建报表 (打印)">
+<!ENTITY editor.context.print.accesskey "o">
+<!ENTITY editor.context.addTime "插入时间和日期 (F5)">
+<!ENTITY editor.context.addTime.accesskey "I">
+<!ENTITY editor.context.security "加密/解密">
+<!ENTITY editor.context.security.accesskey "S">
+<!ENTITY editor.context.encrypt "加密">
+<!ENTITY editor.context.encrypt.accesskey "E">
+<!ENTITY editor.context.decrypt "解密">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "谷歌 建议">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "谷歌 建议 或 计算器">
+<!ENTITY editor.context.google.submenu1 "基于一个字 (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "基于两个字 (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "基于三个字 (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "基于四个字 (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "基于所选内容(Ctrl+G)">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "插入符号">
+<!ENTITY editor.context.symbols.accesskey "y">
+<!ENTITY editor.context.symbols.set1 "数学符号">
+<!ENTITY editor.context.symbols.set1.accesskey "M">
+<!ENTITY editor.context.symbols.set2 "希腊字符">
+<!ENTITY editor.context.symbols.set2.accesskey "G">
+<!ENTITY editor.context.symbols.set3 "乘方和分数符号">
+<!ENTITY editor.context.symbols.set3.accesskey "P">
+<!ENTITY editor.context.symbols.set4 "复选框">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "混合">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "添加到字典">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "忽略这个词">
+<!ENTITY editor.network.label1 "刷新选中文件、文件夹">
+<!ENTITY editor.network.label2 "复制选中文件">
+<!ENTITY editor.network.label3 "删除选中文件、文件夹">
+<!ENTITY editor.network.label4 "将服务器内容写入捷狐笔记">
+<!ENTITY editor.network.label5 "将笔记作为新文件写入服务器">
+<!ENTITY editor.network.label6 "在服务器上添加新文件夹">
+<!ENTITY editor.network.label7 "列表">
+<!ENTITY editor.network.label8 "关闭网络">
+<!ENTITY editor.network.label9 "Overwrite selected file">
+<!ENTITY editor.network.label10 "备份本地笔记到选定服务器">
+<!ENTITY editor.network.label11 "断开连接">
+<!ENTITY editor.network.label12 "插入服务器内容">
+<!ENTITY editor.searchTool.find "搜索">
+<!ENTITY editor.searchTool.replace "替换">
+<!ENTITY editor.searchTool.next "下一处">
+<!ENTITY editor.searchTool.prev "上一处">
+<!ENTITY editor.searchTool.close "关闭搜索工具">
+<!ENTITY editor.searchTool.replaceAll "替换所有">
+<!ENTITY editor.searchTool.archive "搜索所有">
+<!ENTITY editor.searchTool.highlight "高亮">

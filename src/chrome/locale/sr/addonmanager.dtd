@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "Управљач додацима - &qfneditor;">
+<!ENTITY addonman.label.warning "&qfneditor; мора се поново покренути да би измене биле примењене.">
+<!ENTITY addonman.label.open "Отвори фасциклу за додатке">
+<!ENTITY addonman.label.find "Пронађи више додатака">
+<!ENTITY addonman.label.cancel "Откажи">

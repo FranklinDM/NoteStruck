@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Инструменты">
+<!ENTITY editor.tools.accessKey "T">
+<!ENTITY editor.tools.tooltip "Инструменты">
+<!ENTITY editor.menuitem.find "Поиск">
+<!ENTITY editor.toolbar1 "Заметки">
+<!ENTITY editor.toolbar1.accessKey "T">
+<!ENTITY editor.toolbar1.menuitem1 "Новая заметка">
+<!ENTITY editor.toolbar1.menuitem2 "Удалить текущую заметку">
+<!ENTITY editor.toolbar2 "Импорт/экспорт">
+<!ENTITY editor.toolbar2.accessKey "R">
+<!ENTITY editor.toolbar2.tooltip "Импортировать файл/Экспортировать в файл">
+<!ENTITY editor.toolbar2.menuitem1 "Импорт из текстового файла...">
+<!ENTITY editor.toolbar2.menuitem2 "Экспорт текущей заметки в текстовый файл...">
+<!ENTITY editor.toolbar2.menuitem3 "Экспорт ВСЕХ заметок в один текстовый файл...">
+<!ENTITY editor.toolbar3 "Настройки">
+<!ENTITY editor.toolbar3.accessKey "O">
+<!ENTITY editor.toolbar3.tooltip "Настройки">
+<!ENTITY editor.toolbar3.label1 "Проверка орфографии">
+<!ENTITY editor.toolbar3.label2 "Автосохранение каждые 2 мин.">
+<!ENTITY editor.toolbar3.label2.tooltip "Это дополнительная функция. Заметки будут сохранены при закрытии в любом случае">
+<!ENTITY editor.toolbar3.label3 "Вставка по средней кнопке мыши">
+<!ENTITY editor.toolbar3.label4 "Автоматически копировать выделенный текст">
+<!ENTITY editor.toolbar3.label5 "Подтверждать удаление вкладки">
+<!ENTITY editor.toolbar3.label6 "Всегда поверх всех окон (только для Windows)">
+<!ENTITY editor.toolbar3.menu0 "Дополнительные настройки">
+<!ENTITY editor.toolbar3.menu0.item2 "Изменить шрифт заметок">
+<!ENTITY editor.toolbar3.menu0.item2.description "Изменить шрифт заметок (например: Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "Переключение фокуса вкладок колесом прокрутки">
+<!ENTITY editor.toolbar3.menu2.label1 "Прокручивать в одну сторону">
+<!ENTITY editor.toolbar3.menu2.label2 "Прокручивать циклически">
+<!ENTITY editor.toolbar3.GUIEditor "Интерфейс пользователя">
+<!ENTITY editor.toolbar3.menu1 "Размер шрифта">
+<!ENTITY editor.toolbar3.menu3 "Мин.ширина вкладки">
+<!ENTITY editor.toolbar3.menu6 "Цвет текста">
+<!ENTITY editor.toolbar3.menu4 "Цвет фона">
+<!ENTITY editor.toolbar3.menu7 "Значки в панели статуса браузера">
+<!ENTITY editor.toolbar3.menu7.label1 "Открыть в окне">
+<!ENTITY editor.toolbar3.menu7.label2 "Открыть во вкладке">
+<!ENTITY editor.toolbar3.menu7.label3 "Открыть в окне браузера">
+<!ENTITY editor.toolbar3.menu5 "Показывать &qfneditor; после &brandShortName; старта через:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "Отключено">
+<!ENTITY editor.toolbar3.10secs "10 сек.">
+<!ENTITY editor.toolbar3.20secs "20 сек.">
+<!ENTITY editor.toolbar3.30secs "30 сек.">
+<!ENTITY editor.toolbar3.40secs "40 сек.">
+<!ENTITY editor.toolbar3.50secs "50 сек.">
+<!ENTITY editor.toolbar3.60secs "60 сек.">
+<!ENTITY editor.toolbar3.menu5.menu "Открывать в:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "Новом окне">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "Новой вкладке">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "В окне браузера">
+<!ENTITY editor.toolbar3.menu9.label1 "Перенос слов (Необходим перезапуск QFN)">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; требует перезапуск для применения изменений.">
+<!ENTITY editor.toolbar3.menu10 "Формат времени">
+<!ENTITY editor.toolbar3.menu10.label1 "12 час (AM/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 час">
+<!ENTITY editor.toolbar3.menu11 "Показать/Скрыть группы">
+<!ENTITY editor.toolbar3.menu11.label2 "Во вкладках">
+<!ENTITY editor.toolbar3.menu11.label3 "Показывать группы заметок">
+<!ENTITY editor.toolbar3.menu11.label4 "Скрыть группы заметок">
+<!ENTITY editor.toolbar3.labe10 "Сменить место хранения заметок QFN">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; может использовать &quot;Закладки&quot; или &quot;Папку на диске&quot; как основное место хранения заметок.">
+<!ENTITY editor.toolbar3.labe7 "Переключится и сохранить существующие заметки">
+<!ENTITY editor.toolbar3.labe7.description1 "Сменить место хранения с папки &quot;Закладки&quot; на &quot;Папку файловой системы&quot; или наоборот">
+<!ENTITY editor.toolbar3.labe7.description2 "Папка &quot;Закладки&quot; предпочтительна для тех, кто использует дополнения для синхронизации закладок, например: Xmarks(Рекомендуется), Firefox Sync.">
+<!ENTITY editor.toolbar3.labe7.description3 "&quot;Папка файловой системы&quot; предпочтительна для тех, кто для синхронизации использует сторонние программы, например: Dropbox(Рекомендуется), Simplicity, Sugarsync.">
+<!ENTITY editor.toolbar3.labe8 "Выбрать &quot;Папку файловой системы&quot; и переключиться на нее (без переноса заметок)">
+<!ENTITY editor.toolbar3.labe8.description1 "Сменить место хранения на &quot;Папку файловой системы&quot; без очистки данной папки и без переноса текущих заметок.">
+<!ENTITY editor.toolbar3.labe8.description2 "Этот параметр заставит &qfneditor; использовать &quot;Папку файловой системы&quot;, которая уже была синхронизирована с помощью сторонних программ синхронизации.">
+<!ENTITY editor.toolbar3.labe9 "Переключиться на папку &quot;Закладки&quot; по умолчанию (без перемещения заметок)">
+<!ENTITY editor.toolbar3.labe9.description1 "Сменить место хранения на папку &quot;Закладки&quot; без очистки данной папки и без переноса текущих заметок.">
+<!ENTITY editor.toolbar3.labe9.description2 "Этот параметр заставит &qfneditor; открывать папку &quot;Закладки&quot;, которая уже синхронизирована с помощью дополнений для синхронизации закладок.">
+<!ENTITY editor.toolbar3.labe11 "Изменить папку &quot;Закладки&quot; по умолчанию">
+<!ENTITY editor.toolbar3.labe11.description "Используйте &quot;/&quot; в качестве разделителя вложенных папок (например: QFN/dir01/dir02)">
+<!ENTITY editor.toolbar4 "Редактирование">
+<!ENTITY editor.toolbar4.accessKey "E">
+<!ENTITY editor.toolbar4.tooltip "Редактировать текст">
+<!ENTITY editor.toolbar4.menuitem1 "Копировать">
+<!ENTITY editor.toolbar4.menuitem2 "Вырезать">
+<!ENTITY editor.toolbar4.menuitem3 "Вставить">
+<!ENTITY editor.toolbar4.menuitem4 "Вставить табуляцию">
+<!ENTITY editor.toolbar4.menuitem5 "Удалить табуляцию">
+<!ENTITY editor.toolbar4.menuitem6 "Дублировать строку/выделенное">
+<!ENTITY editor.toolbar4.menuitem7 "Сдвинуть строку вверх">
+<!ENTITY editor.toolbar4.menuitem8 "Сдвинуть строку вниз">
+<!ENTITY editor.toolbar4.menuitem9 "В верхний регистр">
+<!ENTITY editor.toolbar4.menuitem10 "В нижний регистр">
+<!ENTITY editor.toolbar4.menuitem11 "Выделить текущую строку">
+<!ENTITY editor.toolbar4.menuitem12 "Выделить предыдущую строку">
+<!ENTITY editor.toolbar4.menuitem13 "Выделить следующую строку">
+<!ENTITY editor.toolbar6 "Архив">
+<!ENTITY editor.toolbar6.accessKey "c">
+<!ENTITY editor.toolbar6.tooltip1 "Отправьте заметку в Архив, чтобы скрыть ее из списка вкладок">
+<!ENTITY editor.toolbar6.tooltip2 "Клик (по левой стороне) или Alt+C для вызова быстрого меню архива">
+<!ENTITY editor.toolbar6.tooltip3 "Клик (по правой стороне) или Alt+J для вызова полного меню архива">
+<!ENTITY editor.toolbar6.menuitem1 "Добавить в архив">
+<!ENTITY editor.showSandbox "Показать все архивированные заметки">
+<!ENTITY editor.toolbar6.menuitem2 "Извлечь ВСЕ из архива для редактирования">
+<!ENTITY editor.toolbar7 "Корзина">
+<!ENTITY editor.toolbar8 "Закрыть &qfneditor; (Esc)">
+<!ENTITY editor.toolbar12 "Дополнения">
+<!ENTITY editor.toolbar12.accessKey "A">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor; дополнения">
+<!ENTITY editor.toolbar10 "Поддержка">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Сообщение об ошибке, поддержка, отзыв или предложение">
+<!ENTITY editor.toolbar14 "Сеть">
+<!ENTITY editor.toolbar14.accessKey "N">
+<!ENTITY editor.toolbar14.tooltip "Получите доступ к своим заметкам на iPhone, iPod touch, iPad, или Android">
+<!ENTITY editor.toolbar13 "Резервирование">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "Резервировать раз в день все заметки за последние 7 дней">
+<!ENTITY editor.toolbar15 "Домашняя страница">
+<!ENTITY editor.toolbar15.accessKey "H">
+<!ENTITY editor.distractionFree.label1 "Выход">
+<!ENTITY editor.distractionFree.label2 "Переключить">
+<!ENTITY editor.distractionFree.label3 "Новая заметка">
+<!ENTITY editor.distractionFree.label4 "Удалить">
+<!ENTITY editor.toolbar.tooltip "Двойной клик для создания новой заметки. Колесо прокрутки для переключения между вкладками.">
+<!ENTITY editor.toolbar.tabs.tooltip "Клик средней кнопкой мыши для отправки в Корзину. Двойной клик для отправки заметки в Архив.">
+<!ENTITY editor.panel.label "Переименовать заметку:">
+<!ENTITY editor.panel.iLabel "Ярлык заметки">
+<!ENTITY editor.panel.iGroup "Группа заметки">
+<!ENTITY editor.panel.label2 "Стиль:">
+<!ENTITY editor.panel.label3 "Полужирный">
+<!ENTITY editor.panel.label4 "Курсив">
+<!ENTITY editor.panel.label5 "Настройки вкладки:">
+<!ENTITY editor.panel.label6 "Только для чтения">
+<!ENTITY editor.panel.label7 "Список Задач">
+<!ENTITY editor.panel.label8 "Обновить счетчик на панели инструментов">
+<!ENTITY editor.panel2.label1 "Поиск">
+<!ENTITY editor.buttons.newTab "Добавить новую вкладку (Ctrl+T или двойной клик по панели вкладок)">
+<!ENTITY editor.buttons.list "Список открытых вкладок (Ctrl+L)">
+<!ENTITY editor.context.undo "Отменить">
+<!ENTITY editor.context.undo.accesskey "U">
+<!ENTITY editor.context.redo "Повторить">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "Вырезать">
+<!ENTITY editor.context.cut.accesskey "t">
+<!ENTITY editor.context.copy "Копировать">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "Вставить">
+<!ENTITY editor.context.copyHistory "Менеджер буфера обмена">
+<!ENTITY editor.context.copyHistory.accesskey "l">
+<!ENTITY editor.context.copyHistory.label1 "Очистить все">
+<!ENTITY editor.context.copyHistory.label1.accesskey "C">
+<!ENTITY editor.context.paste.accesskey "P">
+<!ENTITY editor.context.delete "Удалить">
+<!ENTITY editor.context.delete.accesskey "D">
+<!ENTITY editor.context.selectAll "Выделить всё">
+<!ENTITY editor.context.selectAll.accesskey "A">
+<!ENTITY editor.context.email "Отправить заметку по Email">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "Просмотр (Печать)">
+<!ENTITY editor.context.print.accesskey "n">
+<!ENTITY editor.context.addTime "Вставить время и дату (F5)">
+<!ENTITY editor.context.addTime.accesskey "I">
+<!ENTITY editor.context.security "Безопасность">
+<!ENTITY editor.context.security.accesskey "S">
+<!ENTITY editor.context.encrypt "Кодировать">
+<!ENTITY editor.context.encrypt.accesskey "E">
+<!ENTITY editor.context.decrypt "Декодировать">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "Предложения Google">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Предложения Google/Калькулятор">
+<!ENTITY editor.context.google.submenu1 "Основанные на 1 слове (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "Основанные на 2 словах (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "Основанные на 3 словах (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "Основанные на 4 словах (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "Основанные на выделенном тексте (Ctrl+G)">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Вставить символ">
+<!ENTITY editor.context.symbols.accesskey "y">
+<!ENTITY editor.context.symbols.set1 "Математические символы">
+<!ENTITY editor.context.symbols.set1.accesskey "M">
+<!ENTITY editor.context.symbols.set2 "Греческий алфавит">
+<!ENTITY editor.context.symbols.set2.accesskey "G">
+<!ENTITY editor.context.symbols.set3 "Степени и дроби">
+<!ENTITY editor.context.symbols.set3.accesskey "P">
+<!ENTITY editor.context.symbols.set4 "Флажки">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "Разное">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "Добавить в словарь">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "Игнорировать это слово">
+<!ENTITY editor.network.label1 "Обновить выделенные папки/файлы">
+<!ENTITY editor.network.label2 "Копировать выделенный файл">
+<!ENTITY editor.network.label3 "Удалить выделенные папки/файлы">
+<!ENTITY editor.network.label4 "Вставить содержимое с сервера в редактор QFN">
+<!ENTITY editor.network.label5 "Вставить содержимое заметок на сервер новым файлом">
+<!ENTITY editor.network.label6 "Добавить новую папку на сервер">
+<!ENTITY editor.network.label7 "Список">
+<!ENTITY editor.network.label8 "Выйти из сети">
+<!ENTITY editor.network.label9 "Перезаписать выделенный файл">
+<!ENTITY editor.network.label10 "Загрузить локальные заметки на выбранный сервер">
+<!ENTITY editor.network.label11 "Отключится от выбранного сервера">
+<!ENTITY editor.network.label12 "Вставить содержимое с сервера как новую заметку">
+<!ENTITY editor.searchTool.find "Поиск в заметке">
+<!ENTITY editor.searchTool.replace "Заменить">
+<!ENTITY editor.searchTool.next "Найти следующее">
+<!ENTITY editor.searchTool.prev "Найти предыдущее">
+<!ENTITY editor.searchTool.close "Закрыть инструмент поиска">
+<!ENTITY editor.searchTool.replaceAll "Заменить все">
+<!ENTITY editor.searchTool.archive "Поиск в Архиве">
+<!ENTITY editor.searchTool.highlight "Подсветить все">

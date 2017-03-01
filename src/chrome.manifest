@@ -1,0 +1,37 @@
+component {88ab0cb0-0a10-11df-8a39-0800200c9a66} components/qfnCMDLine.js
+contract @inbasic.net/quickfoxnotes/commandlinehandler/general-startup;1?type=qfn {88ab0cb0-0a10-11df-8a39-0800200c9a66}
+category command-line-handler m-qfn @inbasic.net/quickfoxnotes/commandlinehandler/general-startup;1?type=qfn
+
+component {85f1547c-92b6-438a-9d16-bc5b538459fa} components/qfnAutocomplete.js
+contract @mozilla.org/autocomplete/search;1?name=qfn-autocomplete {85f1547c-92b6-438a-9d16-bc5b538459fa}
+
+content qfnotes chrome/content/
+skin    qfnotes classic/1.0 chrome/skin/classic/
+
+overlay chrome://browser/content/browser.xul                             chrome://qfnotes/content/overlay.xul
+overlay chrome://messenger/content/mailWindowOverlay.xul                 chrome://qfnotes/content/t_overlay.xul
+overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://qfnotes/content/t_overlay.xul
+
+style   chrome://global/content/customizeToolbar.xul                     chrome://qfnotes/skin/overlay.css
+
+override chrome://qfnotes/skin/editor-extras.css chrome://qfnotes/skin/editor-extras-mac.css os=Darwin
+override chrome://qfnotes/skin/editor-extras.css chrome://qfnotes/skin/editor-extras-linux.css os=Linux
+override chrome://qfnotes/skin/overlay.css       chrome://qfnotes/skin/overlay-mac.css os=Darwin
+
+resource qfn      modules/
+
+locale qfnotes en-US chrome/locale/en-US/
+locale qfnotes ar    chrome/locale/ar/
+locale qfnotes de    chrome/locale/de/
+locale qfnotes fr    chrome/locale/fr/
+locale qfnotes hu-HU chrome/locale/hu-HU/
+locale qfnotes it    chrome/locale/it/
+locale qfnotes nl    chrome/locale/nl/
+locale qfnotes pl    chrome/locale/pl/
+locale qfnotes pt-BR chrome/locale/pt-BR/
+locale qfnotes ru    chrome/locale/ru/
+locale qfnotes sr    chrome/locale/sr/
+locale qfnotes sv-SE chrome/locale/sv-SE/
+locale qfnotes uk-UA chrome/locale/uk-UA/
+locale qfnotes zh-CN chrome/locale/zh-CN/
+locale qfnotes zh-TW chrome/locale/zh-TW/

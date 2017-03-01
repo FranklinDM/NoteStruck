@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Strumenti">
+<!ENTITY editor.tools.accessKey "S">
+<!ENTITY editor.tools.tooltip "Strumenti di QuickFox Notes">
+<!ENTITY editor.menuitem.find "Trova">
+<!ENTITY editor.toolbar1 "Note">
+<!ENTITY editor.toolbar1.accessKey "N">
+<!ENTITY editor.toolbar1.menuitem1 "Nuova nota">
+<!ENTITY editor.toolbar1.menuitem2 "Elimina nota attuale">
+<!ENTITY editor.toolbar2 "Trasferimenti">
+<!ENTITY editor.toolbar2.accessKey "T">
+<!ENTITY editor.toolbar2.tooltip "Gestione dei trasferimenti a/da file">
+<!ENTITY editor.toolbar2.menuitem1 "Importa da file di testo…">
+<!ENTITY editor.toolbar2.menuitem2 "Esporta nota attuale in file di testo…">
+<!ENTITY editor.toolbar2.menuitem3 "Esporta tutte le note in file di testo…">
+<!ENTITY editor.toolbar3 "Opzioni">
+<!ENTITY editor.toolbar3.accessKey "O">
+<!ENTITY editor.toolbar3.tooltip "Gestione delle opzioni">
+<!ENTITY editor.toolbar3.label1 "Effettua il controllo ortografico">
+<!ENTITY editor.toolbar3.label2 "Salva automaticamente ogni 2 minuti">
+<!ENTITY editor.toolbar3.label2.tooltip "Questa è una funzione opzionale. Le note verranno salvate in ogni caso prima della chiusura">
+<!ENTITY editor.toolbar3.label3 "Incolla il testo copiato con clic centrale del mouse">
+<!ENTITY editor.toolbar3.label4 "Copia automaticamente il testo selezionato">
+<!ENTITY editor.toolbar3.label5 "Chiedi conferma prima di eliminare una nota">
+<!ENTITY editor.toolbar3.label6 "Apri sempre in primo piano (solo ambiente Windows)">
+<!ENTITY editor.toolbar3.menu0 "Avanzate">
+<!ENTITY editor.toolbar3.menu0.item2 "Modifica i caratteri delle note">
+<!ENTITY editor.toolbar3.menu0.item2.description "Modifica i caratteri utilizzati per le note (es: Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "Comportamento dello scorrimento del mouse al bordo">
+<!ENTITY editor.toolbar3.menu2.label1 "Interrompi lo scorrimento">
+<!ENTITY editor.toolbar3.menu2.label2 "Continua lo scorrimento">
+<!ENTITY editor.toolbar3.GUIEditor "Interfaccia utente">
+<!ENTITY editor.toolbar3.menu1 "Dimensione dei caratteri:">
+<!ENTITY editor.toolbar3.menu3 "Larghezza del cartellino:">
+<!ENTITY editor.toolbar3.menu6 "Colore del testo:">
+<!ENTITY editor.toolbar3.menu4 "Colore di sfondo:">
+<!ENTITY editor.toolbar3.menu7 "Icone nella barra di stato">
+<!ENTITY editor.toolbar3.menu7.label1 "Apri in una finestra a pop-up">
+<!ENTITY editor.toolbar3.menu7.label2 "Apri in una nuova scheda">
+<!ENTITY editor.toolbar3.menu7.label3 "Apri come contenuto del browser">
+<!ENTITY editor.toolbar3.menu5 "Mostra QuickFox Notes all&apos;avvio di &brandShortName;">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "mai">
+<!ENTITY editor.toolbar3.10secs "dopo 10 secondi">
+<!ENTITY editor.toolbar3.20secs "dopo 20 secondi">
+<!ENTITY editor.toolbar3.30secs "dopo 30 secondi">
+<!ENTITY editor.toolbar3.40secs "dopo 40 secondi">
+<!ENTITY editor.toolbar3.50secs "dopo 50 secondi">
+<!ENTITY editor.toolbar3.60secs "dopo 60 secondi">
+<!ENTITY editor.toolbar3.menu5.menu "Apri">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "in una finestra a pop-up">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "in una nuova scheda">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "come contenuto del browser">
+<!ENTITY editor.toolbar3.menu9.label1 "Fai combaciare le parole (riavvio necessario)">
+<!ENTITY editor.toolbar3.menu9.label2 "Riavviare QuickFox Notes per rendere effettive le modifiche">
+<!ENTITY editor.toolbar3.menu10 "Formato dell&apos;orario">
+<!ENTITY editor.toolbar3.menu10.label1 "12 ore (AM/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 ore">
+<!ENTITY editor.toolbar3.menu11 "Nome del gruppo per le note">
+<!ENTITY editor.toolbar3.menu11.label2 "Nella barra delle note">
+<!ENTITY editor.toolbar3.menu11.label3 "Mostra il nome del gruppo">
+<!ENTITY editor.toolbar3.menu11.label4 "Nascondi il nome del gruppo">
+<!ENTITY editor.toolbar3.labe10 "Cambia la cartella contenente le note">
+<!ENTITY editor.toolbar3.labe10.description "QuickFox Notes conserva le note salvate nella cartella dei 'Segnalibri' oppure in una cartella del proprio 'hard disk'">
+<!ENTITY editor.toolbar3.labe7 "Scambia cartella conservando le note">
+<!ENTITY editor.toolbar3.labe7.description1 "Passa dalla cartella nei 'Segnalibri' alla cartella nel proprio 'hard disk' o viceversa">
+<!ENTITY editor.toolbar3.labe7.description2 "La cartella nei 'Segnalibri' è indicata quando si utilizza un&apos;estensione per la sincronizzazione dei segnalibri, come ad esempio Xmarks (raccomandata), Firefox Sync, etc">
+<!ENTITY editor.toolbar3.labe7.description3 "La cartella nel proprio 'disco rigido' è indicata quando si utilizza un&apos;applicazione per la sincronizzazione dei segnalibri, come ad esempio Dropbox (raccomandata), Simplicity, Sugarsync, etc">
+<!ENTITY editor.toolbar3.labe8 "Seleziona una cartella del proprio 'disco rigido' per conservarvi le note (senza spostarle)">
+<!ENTITY editor.toolbar3.labe8.description1 "Cambia la cartella contenente le note selezionandone una nel proprio 'disco rigido' senza eliminare/spostare le note esistenti">
+<!ENTITY editor.toolbar3.labe8.description2 "Questa opzione forzerà QuickFox Notes ad utilizzare la cartella nel proprio 'disco rigido' già precedentemente sincronizzata tramite relativa applicazione">
+<!ENTITY editor.toolbar3.labe9 "Ripristina la cartella predefinita nei 'Segnalibri' (senza spostarvi le note)">
+<!ENTITY editor.toolbar3.labe9.description1 "Cambia la cartella contenente le note ripristinando quella nei 'Segnalibri' senza eliminare/spostare le note esistenti">
+<!ENTITY editor.toolbar3.labe9.description2 "Questa opzione forzerà QuickFox Notes ad utilizzare la cartella predefinita nei 'Segnalibri' già precedentemente sincronizzata tramite relativa estensione">
+<!ENTITY editor.toolbar3.labe11 "Cambia la cartella predefinita nei 'Segnalibri'">
+<!ENTITY editor.toolbar3.labe11.description "Utilizzare '/' come separatore per entrare all&apos;interno della cartella principale (es: QFN/dir01/dir02)">
+<!ENTITY editor.toolbar4 "Modifiche">
+<!ENTITY editor.toolbar4.accessKey "M">
+<!ENTITY editor.toolbar4.tooltip "Gestione delle modifiche">
+<!ENTITY editor.toolbar4.menuitem1 "Copia">
+<!ENTITY editor.toolbar4.menuitem2 "Taglia">
+<!ENTITY editor.toolbar4.menuitem3 "Incolla">
+<!ENTITY editor.toolbar4.menuitem4 "Inserisci delimitatore Tab">
+<!ENTITY editor.toolbar4.menuitem5 "Elimina delimitatore Tab">
+<!ENTITY editor.toolbar4.menuitem6 "Duplica riga/selezione">
+<!ENTITY editor.toolbar4.menuitem7 "Sposta la riga su">
+<!ENTITY editor.toolbar4.menuitem8 "Sposta la riga giù">
+<!ENTITY editor.toolbar4.menuitem9 "Testo tutto in minuscolo">
+<!ENTITY editor.toolbar4.menuitem10 "Testo tutto in maiuscolo">
+<!ENTITY editor.toolbar4.menuitem11 "Seleziona la riga attuale">
+<!ENTITY editor.toolbar4.menuitem12 "Seleziona la riga precedente">
+<!ENTITY editor.toolbar4.menuitem13 "Seleziona la riga successiva">
+<!ENTITY editor.toolbar6 "Archivio">
+<!ENTITY editor.toolbar6.accessKey "A">
+<!ENTITY editor.toolbar6.tooltip1 "Gestione dell&apos;archivio">
+<!ENTITY editor.toolbar6.tooltip2 "Fare clic con tasto sinistro (oppure premere Alt+C) per aprire il menu rapido">
+<!ENTITY editor.toolbar6.tooltip3 "Fare clic con tasto destro (oppure premere Alt+J) per aprire il menu completo">
+<!ENTITY editor.toolbar6.menuitem1 "Aggiungi all&apos;archivio">
+<!ENTITY editor.showSandbox "Mostra tutte le note archiviate">
+<!ENTITY editor.toolbar6.menuitem2 "Riapri tutte le note">
+<!ENTITY editor.toolbar7 "Cestino">
+<!ENTITY editor.toolbar8 "Chiudi QuickFox Notes (Esc)">
+<!ENTITY editor.toolbar12 "Script di QuickFox Notes…">
+<!ENTITY editor.toolbar12.accessKey "C">
+<!ENTITY editor.toolbar12.tooltiptext "Visualizza gli script di QuickFox Notes installati">
+<!ENTITY editor.toolbar10 "Forum di QuickFox Notes">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Segnalazioni di bug, richieste di supporto ed invio di feedback oppure suggerimenti">
+<!ENTITY editor.toolbar14 "Accesso alle note in rete">
+<!ENTITY editor.toolbar14.accessKey "n">
+<!ENTITY editor.toolbar14.tooltip "Permette di accedere alle proprie note su iPhone, iPod touch, iPad oppure Android">
+<!ENTITY editor.toolbar13 "Backup…">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "Apre la cartella di backup (tutte le note vengono salvate una volta al giorno ed il loro backup viene conservato per 7 giorni)">
+<!ENTITY editor.toolbar15 "Visita il sito web">
+<!ENTITY editor.toolbar15.accessKey "w">
+<!ENTITY editor.distractionFree.label1 "Esci">
+<!ENTITY editor.distractionFree.label2 "Attiva/disattiva">
+<!ENTITY editor.distractionFree.label3 "Nuovo">
+<!ENTITY editor.distractionFree.label4 "Elimina">
+<!ENTITY editor.toolbar.tooltip "Fare doppio clic per creare una nuova nota; scorrere il mouse per passare da una nota ad un'altra">
+<!ENTITY editor.toolbar.tabs.tooltip "Fare clic con tasto centrale del mouse per spostare la nota nel cestino; doppio clic per archiviarla">
+<!ENTITY editor.panel.label "Nuovo nome per gruppo / nota">
+<!ENTITY editor.panel.iLabel "Nome della nota">
+<!ENTITY editor.panel.iGroup "Nome del gruppo">
+<!ENTITY editor.panel.label2 "Stile">
+<!ENTITY editor.panel.label3 "Grassetto">
+<!ENTITY editor.panel.label4 "Corsivo">
+<!ENTITY editor.panel.label5 "Avanzate">
+<!ENTITY editor.panel.label6 "Proteggi la nota">
+<!ENTITY editor.panel.label7 "Lista delle attività">
+<!ENTITY editor.panel.label8 "Aggiorna il conteggio nella barra degli strumenti">
+<!ENTITY editor.panel2.label1 "Cerca">
+<!ENTITY editor.buttons.newTab "Aggiungi una nuova nota (Ctrl+T o doppio clic sulla barra delle note)">
+<!ENTITY editor.buttons.list "Lista delle schede aperte (Ctrl+L)">
+<!ENTITY editor.context.undo "Annulla">
+<!ENTITY editor.context.undo.accesskey "u">
+<!ENTITY editor.context.redo "Ripeti">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "Taglia">
+<!ENTITY editor.context.cut.accesskey "T">
+<!ENTITY editor.context.copy "Copia">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "Incolla">
+<!ENTITY editor.context.copyHistory "Gestione degli appunti">
+<!ENTITY editor.context.copyHistory.accesskey "G">
+<!ENTITY editor.context.copyHistory.label1 "Elimina tutto">
+<!ENTITY editor.context.copyHistory.label1.accesskey "u">
+<!ENTITY editor.context.paste.accesskey "I">
+<!ENTITY editor.context.delete "Elimina">
+<!ENTITY editor.context.delete.accesskey "E">
+<!ENTITY editor.context.selectAll "Seleziona tutto">
+<!ENTITY editor.context.selectAll.accesskey "S">
+<!ENTITY editor.context.email "Invia tramite e-mail questa nota">
+<!ENTITY editor.context.email.accesskey "I">
+<!ENTITY editor.context.print "Stampa la nota">
+<!ENTITY editor.context.print.accesskey "t">
+<!ENTITY editor.context.addTime "Inserisci data/ora (F5)">
+<!ENTITY editor.context.addTime.accesskey "o">
+<!ENTITY editor.context.security "Sicurezza">
+<!ENTITY editor.context.security.accesskey "z">
+<!ENTITY editor.context.encrypt "cifra i dati…">
+<!ENTITY editor.context.encrypt.accesskey "c">
+<!ENTITY editor.context.decrypt "decifra i dati…">
+<!ENTITY editor.context.decrypt.accesskey "d">
+<!ENTITY editor.context.google "Utilizza i suggerimenti di Google">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Visualizza i suggerimenti forniti dai suggerimenti di Google">
+<!ENTITY editor.context.google.submenu1 "basati su 1 parola (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "basati su 2 parole (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "basati su 3 parole (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "basati su 4 parole (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "basati sul testo selezionato">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Inserisci simboli">
+<!ENTITY editor.context.symbols.accesskey "s">
+<!ENTITY editor.context.symbols.set1 "di matematica">
+<!ENTITY editor.context.symbols.set1.accesskey "m">
+<!ENTITY editor.context.symbols.set2 "di lingua greca">
+<!ENTITY editor.context.symbols.set2.accesskey "d">
+<!ENTITY editor.context.symbols.set3 "di potenze e frazioni">
+<!ENTITY editor.context.symbols.set3.accesskey "o">
+<!ENTITY editor.context.symbols.set4 "di caselle da spuntare">
+<!ENTITY editor.context.symbols.set4.accesskey "c">
+<!ENTITY editor.context.symbols.set5 "vari">
+<!ENTITY editor.context.symbols.set5.accesskey "v">
+<!ENTITY editor.context.AddtoDictionary "Aggiungi al dizionario">
+<!ENTITY editor.context.AddtoDictionary.accesskey "z">
+<!ENTITY editor.context.ignoreDictionary "Ignora la parola selezionata">
+<!ENTITY editor.network.label1 "Aggiorna file/cartelle selezionati">
+<!ENTITY editor.network.label2 "Copia i file selezionati">
+<!ENTITY editor.network.label3 "Elimina file/cartelle selezionati">
+<!ENTITY editor.network.label4 "Aggiungi il contenuto del server alle note di QFN">
+<!ENTITY editor.network.label5 "Aggiungi le note di QFN al server come nuovo file">
+<!ENTITY editor.network.label6 "Crea una nuova cartella sul server">
+<!ENTITY editor.network.label7 "Lista delle note">
+<!ENTITY editor.network.label8 "Chiudi">
+<!ENTITY editor.network.label9 "Sovrascrivi il file selezionato">
+<!ENTITY editor.network.label10 "Effettua il backup delle note di QFN sul server selezionato">
+<!ENTITY editor.network.label11 "Disconnetti dal server selezionato">
+<!ENTITY editor.network.label12 "Aggiungi il contenuto del server come nuova nota di QFN">
+<!ENTITY editor.searchTool.find "Cerca nelle note">
+<!ENTITY editor.searchTool.replace "Sostituisci">
+<!ENTITY editor.searchTool.next "Trova il risultato successivo">
+<!ENTITY editor.searchTool.prev "Trova il risultato precedente">
+<!ENTITY editor.searchTool.close "Chiudi lo strumento di ricerca">
+<!ENTITY editor.searchTool.replaceAll "Sostituisci tutti i risultati">
+<!ENTITY editor.searchTool.archive "Cerca nell&apos;archivio">
+<!ENTITY editor.searchTool.highlight "Evidenzia tutti i risultati">

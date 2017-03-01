@@ -1,0 +1,11 @@
+<!ENTITY email.title "Email - &qfneditor;">
+<!ENTITY email.send "寄出">
+<!ENTITY email.from "寄件人:">
+<!ENTITY editor.to "收件人:">
+<!ENTITY editor.subject "主旨:">
+<!ENTITY editor.verification "驗證碼:">
+<!ENTITY editor.carboncopy "抄送每封Email的副本給自己">
+<!ENTITY editor.note2 "您以該帳號首次寄信時，會收到一組驗證碼">
+<!ENTITY editor.note1 "請注意: 所有電子郵件寄送均係經由 Mozdev.org 非加密連線管道">
+<!ENTITY email.addnew "此 Email地址收進通訊錄. 有效格式為:">
+<!ENTITY email.removeold "此 Email地址剔出通訊錄">

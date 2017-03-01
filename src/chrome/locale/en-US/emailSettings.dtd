@@ -1,0 +1,11 @@
+<!ENTITY email.title "Email - &qfneditor;">
+<!ENTITY email.send "Send">
+<!ENTITY email.from "From:">
+<!ENTITY editor.to "To:">
+<!ENTITY editor.subject "Subject:">
+<!ENTITY editor.verification "Verification code:">
+<!ENTITY editor.carboncopy "Send me a copy">
+<!ENTITY editor.note2 "You will receive a verification code after trying to send first email">
+<!ENTITY editor.note1 "Notice: All emails will be sent through insecure channel by Mozdev.org">
+<!ENTITY email.addnew "Save this email address. Valid formats:">
+<!ENTITY email.removeold "Remove this email address">

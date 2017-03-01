@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Tools">
+<!ENTITY editor.tools.accessKey "T">
+<!ENTITY editor.tools.tooltip "Tools">
+<!ENTITY editor.menuitem.find "Find">
+<!ENTITY editor.toolbar1 "Notes">
+<!ENTITY editor.toolbar1.accessKey "T">
+<!ENTITY editor.toolbar1.menuitem1 "New note">
+<!ENTITY editor.toolbar1.menuitem2 "Remove current note">
+<!ENTITY editor.toolbar2 "Transfer">
+<!ENTITY editor.toolbar2.accessKey "R">
+<!ENTITY editor.toolbar2.tooltip "Transfer to/from file">
+<!ENTITY editor.toolbar2.menuitem1 "Import from text file ...">
+<!ENTITY editor.toolbar2.menuitem2 "Export current to text file ...">
+<!ENTITY editor.toolbar2.menuitem3 "Export all into one text file ...">
+<!ENTITY editor.toolbar3 "Options">
+<!ENTITY editor.toolbar3.accessKey "O">
+<!ENTITY editor.toolbar3.tooltip "Options">
+<!ENTITY editor.toolbar3.label1 "Check spelling">
+<!ENTITY editor.toolbar3.label2 "Auto-save every 2 min">
+<!ENTITY editor.toolbar3.label2.tooltip "This is an optional feature. Notes will be saved before close, at any rate">
+<!ENTITY editor.toolbar3.label3 "Paste on middle-click">
+<!ENTITY editor.toolbar3.label4 "Autocopy selected text">
+<!ENTITY editor.toolbar3.label5 "Confirm when removing tab">
+<!ENTITY editor.toolbar3.label6 "Always on top (Windows only)">
+<!ENTITY editor.toolbar3.menu0 "Advance settings">
+<!ENTITY editor.toolbar3.menu0.item2 "Change the notes font-family">
+<!ENTITY editor.toolbar3.menu0.item2.description "Change the notes font-family (e.g. Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "Mouse scroll behaviour at boundary">
+<!ENTITY editor.toolbar3.menu2.label1 "Stop scrolling">
+<!ENTITY editor.toolbar3.menu2.label2 "Cycle scrolling">
+<!ENTITY editor.toolbar3.GUIEditor "User interface">
+<!ENTITY editor.toolbar3.menu1 "Font size">
+<!ENTITY editor.toolbar3.menu3 "Minimum Tab width">
+<!ENTITY editor.toolbar3.menu6 "Text color">
+<!ENTITY editor.toolbar3.menu4 "Background color">
+<!ENTITY editor.toolbar3.menu7 "Statusbar icons">
+<!ENTITY editor.toolbar3.menu7.label1 "Open in window">
+<!ENTITY editor.toolbar3.menu7.label2 "Open in tab">
+<!ENTITY editor.toolbar3.menu7.label3 "Open in application-content">
+<!ENTITY editor.toolbar3.menu5 "Show &qfneditor; upon &brandShortName; start after:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "Disabled">
+<!ENTITY editor.toolbar3.10secs "10 secs">
+<!ENTITY editor.toolbar3.20secs "20 secs">
+<!ENTITY editor.toolbar3.30secs "30 secs">
+<!ENTITY editor.toolbar3.40secs "40 secs">
+<!ENTITY editor.toolbar3.50secs "50 secs">
+<!ENTITY editor.toolbar3.60secs "60 secs">
+<!ENTITY editor.toolbar3.menu5.menu "Open in:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "New window">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "New Tab">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "Application-content">
+<!ENTITY editor.toolbar3.menu9.label1 "Word Wrap (Restart required)">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; needs to be restarted for the change to take effect.">
+<!ENTITY editor.toolbar3.menu10 "Time Format">
+<!ENTITY editor.toolbar3.menu10.label1 "12 hours (AM/PM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24 hours">
+<!ENTITY editor.toolbar3.menu11 "Show/Hide groups">
+<!ENTITY editor.toolbar3.menu11.label2 "In Tab">
+<!ENTITY editor.toolbar3.menu11.label3 "Show note's group">
+<!ENTITY editor.toolbar3.menu11.label4 "Hide note's group">
+<!ENTITY editor.toolbar3.labe10 "Change Repository">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; is able to use a &quot;Bookmarks&quot; or &quot;Hard disk&quot; folder as its primary repository.">
+<!ENTITY editor.toolbar3.labe7 "Switch and keep existing notes">
+<!ENTITY editor.toolbar3.labe7.description1 "Migrate working Repository from a &quot;Bookmarks&quot; folder to a &quot;Hard disk&quot; folder or vice versa">
+<!ENTITY editor.toolbar3.labe7.description2 "&quot;Bookmarks&quot; is approperiate for those who use a bookmarks-sync extension; e.g.: Xmarks(Recommended), Firefox Sync, ...">
+<!ENTITY editor.toolbar3.labe7.description3 "&quot;Hard disk&quot; is approperiate for those who use a folder-sync software; e.g.: Dropbox(Recommended), Simplicity, Sugarsync, ...">
+<!ENTITY editor.toolbar3.labe8 "Select a &quot;Hard disk&quot; folder and switch to it (without migration)">
+<!ENTITY editor.toolbar3.labe8.description1 "Change working Repository to a &quot;Hard disk&quot; folder without erasing it or migrating current notes.">
+<!ENTITY editor.toolbar3.labe8.description2 "This option will force &qfneditor; to use a &quot;Hard disk&quot; folder which has been already synchronized by a folder-sync software.">
+<!ENTITY editor.toolbar3.labe9 "Switch to the default &quot;Bookmarks&quot; folder (without migration)">
+<!ENTITY editor.toolbar3.labe9.description1 "Change working Repository to &quot;Bookmarks&quot; without erasing it or  migrating current notes.">
+<!ENTITY editor.toolbar3.labe9.description2 "This option will force &qfneditor; to open default bookmark folder which has been already synchronized by a bookmarks-sync extension.">
+<!ENTITY editor.toolbar3.labe11 "Change the default &quot;Bookmarks&quot; folder">
+<!ENTITY editor.toolbar3.labe11.description "Use &quot;/&quot; as a seperator to go inside the root bookmarks folder (e.g. QFN/dir01/dir02)">
+<!ENTITY editor.toolbar4 "Edit">
+<!ENTITY editor.toolbar4.accessKey "E">
+<!ENTITY editor.toolbar4.tooltip "Edit text">
+<!ENTITY editor.toolbar4.menuitem1 "Copy">
+<!ENTITY editor.toolbar4.menuitem2 "Cut">
+<!ENTITY editor.toolbar4.menuitem3 "Paste">
+<!ENTITY editor.toolbar4.menuitem4 "Insert Tab delimiter">
+<!ENTITY editor.toolbar4.menuitem5 "Remove Tab delimiter">
+<!ENTITY editor.toolbar4.menuitem6 "Duplicate line/selection">
+<!ENTITY editor.toolbar4.menuitem7 "Move line up">
+<!ENTITY editor.toolbar4.menuitem8 "Move line down">
+<!ENTITY editor.toolbar4.menuitem9 "To uppercase">
+<!ENTITY editor.toolbar4.menuitem10 "To lowercase">
+<!ENTITY editor.toolbar4.menuitem11 "Select current line">
+<!ENTITY editor.toolbar4.menuitem12 "Select previous line">
+<!ENTITY editor.toolbar4.menuitem13 "Select next line">
+<!ENTITY editor.toolbar6 "Archive">
+<!ENTITY editor.toolbar6.accessKey "c">
+<!ENTITY editor.toolbar6.tooltip1 "Archive - Send a note to Archive to hide it from Tab list">
+<!ENTITY editor.toolbar6.tooltip2 "Click (left-side) or press Alt+C to fire Quick Menu.">
+<!ENTITY editor.toolbar6.tooltip3 "Click (right-side) or press Alt+J to fire Complete Menu">
+<!ENTITY editor.toolbar6.menuitem1 "Add to archive">
+<!ENTITY editor.showSandbox "Show all archived notes">
+<!ENTITY editor.toolbar6.menuitem2 "Send all archived notes back to Editor">
+<!ENTITY editor.toolbar7 "Trash">
+<!ENTITY editor.toolbar8 "Close &qfneditor; (Esc)">
+<!ENTITY editor.toolbar12 "Add-ons">
+<!ENTITY editor.toolbar12.accessKey "A">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor; extensions">
+<!ENTITY editor.toolbar10 "Support">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Bug report, support, feedback or suggestions">
+<!ENTITY editor.toolbar14 "Network">
+<!ENTITY editor.toolbar14.accessKey "N">
+<!ENTITY editor.toolbar14.tooltip "Access your note on your iPhone, iPod touch, iPad, or Android">
+<!ENTITY editor.toolbar13 "Backups">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "Backup all notes once per day for period of 7 days">
+<!ENTITY editor.toolbar15 "Homepage">
+<!ENTITY editor.toolbar15.accessKey "H">
+<!ENTITY editor.distractionFree.label1 "Exit">
+<!ENTITY editor.distractionFree.label2 "Switch">
+<!ENTITY editor.distractionFree.label3 "New">
+<!ENTITY editor.distractionFree.label4 "Remove">
+<!ENTITY editor.toolbar.tooltip "Double-click to create a new note; Mouse-scroll to switch between Notes">
+<!ENTITY editor.toolbar.tabs.tooltip "Middle-click to send to Trash; Double-click to Archive the note">
+<!ENTITY editor.panel.label "Rename Note:">
+<!ENTITY editor.panel.iLabel "Note's label">
+<!ENTITY editor.panel.iGroup "Note's group">
+<!ENTITY editor.panel.label2 "Style:">
+<!ENTITY editor.panel.label3 "Bold">
+<!ENTITY editor.panel.label4 "Italic">
+<!ENTITY editor.panel.label5 "Tab Options:">
+<!ENTITY editor.panel.label6 "Write protected">
+<!ENTITY editor.panel.label7 "To-Do List">
+<!ENTITY editor.panel.label8 "Update toolbar counter">
+<!ENTITY editor.panel2.label1 "Search">
+<!ENTITY editor.buttons.newTab "Add new Tab (Ctrl+T or double click on Tabbar)">
+<!ENTITY editor.buttons.list "List of open Tabs (Ctrl+L)">
+<!ENTITY editor.context.undo "Undo">
+<!ENTITY editor.context.undo.accesskey "U">
+<!ENTITY editor.context.redo "Redo">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "Cut">
+<!ENTITY editor.context.cut.accesskey "t">
+<!ENTITY editor.context.copy "Copy">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "Paste">
+<!ENTITY editor.context.copyHistory "Clipboard manager">
+<!ENTITY editor.context.copyHistory.accesskey "l">
+<!ENTITY editor.context.copyHistory.label1 "Clear all">
+<!ENTITY editor.context.copyHistory.label1.accesskey "C">
+<!ENTITY editor.context.paste.accesskey "P">
+<!ENTITY editor.context.delete "Delete">
+<!ENTITY editor.context.delete.accesskey "D">
+<!ENTITY editor.context.selectAll "Select All">
+<!ENTITY editor.context.selectAll.accesskey "A">
+<!ENTITY editor.context.email "Email this note">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "Create report (Print)">
+<!ENTITY editor.context.print.accesskey "n">
+<!ENTITY editor.context.addTime "Insert Time &amp; Date (F5)">
+<!ENTITY editor.context.addTime.accesskey "I">
+<!ENTITY editor.context.security "Protection">
+<!ENTITY editor.context.security.accesskey "P">
+<!ENTITY editor.context.encrypt "Encrypt">
+<!ENTITY editor.context.encrypt.accesskey "E">
+<!ENTITY editor.context.decrypt "Decrypt">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "Google suggestions">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Google word suggestions/Calculator">
+<!ENTITY editor.context.google.submenu1 "Based on 1 word (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "Based on 2 words (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "Based on 3 words (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "Based on 4 words (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "Based on selected text (Ctrl+G)">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Insert Symbols">
+<!ENTITY editor.context.symbols.accesskey "y">
+<!ENTITY editor.context.symbols.set1 "Mathematical symbols">
+<!ENTITY editor.context.symbols.set1.accesskey "M">
+<!ENTITY editor.context.symbols.set2 "Greek symbols">
+<!ENTITY editor.context.symbols.set2.accesskey "G">
+<!ENTITY editor.context.symbols.set3 "Power &amp; fraction symbols">
+<!ENTITY editor.context.symbols.set3.accesskey "P">
+<!ENTITY editor.context.symbols.set4 "Check boxes">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "Miscellaneous">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "Add to dictionary">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "Ignore this word">
+<!ENTITY editor.network.label1 "Refresh list">
+<!ENTITY editor.network.label2 "Copy selected file">
+<!ENTITY editor.network.label3 "Delete selected file/folder/collection">
+<!ENTITY editor.network.label4 "Insert server's content into cursor position">
+<!ENTITY editor.network.label5 "Copy active note to new server file">
+<!ENTITY editor.network.label6 "Add a new folder to server">
+<!ENTITY editor.network.label7 "List">
+<!ENTITY editor.network.label8 "Hide network panel">
+<!ENTITY editor.network.label9 "Overwrite selected server file with active note">
+<!ENTITY editor.network.label10 "Backup local notes to selected server">
+<!ENTITY editor.network.label11 "Disconnect from selected server">
+<!ENTITY editor.network.label12 "Insert server's content as a new note">
+<!ENTITY editor.searchTool.find "Search in note">
+<!ENTITY editor.searchTool.replace "Replace">
+<!ENTITY editor.searchTool.next "Find next match">
+<!ENTITY editor.searchTool.prev "Find previous match">
+<!ENTITY editor.searchTool.close "Close search tool">
+<!ENTITY editor.searchTool.replaceAll "Replace all matches">
+<!ENTITY editor.searchTool.archive "Search in Archive">
+<!ENTITY editor.searchTool.highlight "Highlight all matches">

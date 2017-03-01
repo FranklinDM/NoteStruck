@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Extra">
+<!ENTITY editor.tools.accessKey "x">
+<!ENTITY editor.tools.tooltip "Extra">
+<!ENTITY editor.menuitem.find "Zoeken">
+<!ENTITY editor.toolbar1 "Opmerkingen">
+<!ENTITY editor.toolbar1.accessKey "O">
+<!ENTITY editor.toolbar1.menuitem1 "Nieuwe opmerking">
+<!ENTITY editor.toolbar1.menuitem2 "Huidige opmerking verwijderen">
+<!ENTITY editor.toolbar2 "Overzetten">
+<!ENTITY editor.toolbar2.accessKey "z">
+<!ENTITY editor.toolbar2.tooltip "Overzetten naar/van bestand">
+<!ENTITY editor.toolbar2.menuitem1 "Importeren uit tekstbestand…">
+<!ENTITY editor.toolbar2.menuitem2 "Huidige naar tekstbestand exporteren…">
+<!ENTITY editor.toolbar2.menuitem3 "Alles naar één tekstbestand exporteren…">
+<!ENTITY editor.toolbar3 "Opties">
+<!ENTITY editor.toolbar3.accessKey "s">
+<!ENTITY editor.toolbar3.tooltip "Opties">
+<!ENTITY editor.toolbar3.label1 "Spellingscontrole">
+<!ENTITY editor.toolbar3.label2 "Elke 2 min. automatisch opslaan">
+<!ENTITY editor.toolbar3.label2.tooltip "Dit is een optionele functie. Opmerkingen worden in ieder geval opgeslagen bij afsluiten.">
+<!ENTITY editor.toolbar3.label3 "Plakken bij middelklik">
+<!ENTITY editor.toolbar3.label4 "Geselecteerde tekst automatisch kopiëren">
+<!ENTITY editor.toolbar3.label5 "Bevestiging vragen bij verwijderen tabblad">
+<!ENTITY editor.toolbar3.label6 "Altijd vooraan (alleen Windows)">
+<!ENTITY editor.toolbar3.menu0 "Geavanceerde instellingen">
+<!ENTITY editor.toolbar3.menu0.item2 "Lettertypefamilie opmerkingen wijzigen">
+<!ENTITY editor.toolbar3.menu0.item2.description "Lettertypefamilie opmerkingen wijzigen (b.v. Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "Muiswielgedrag bij begrenzing">
+<!ENTITY editor.toolbar3.menu2.label1 "Scrollen stoppen">
+<!ENTITY editor.toolbar3.menu2.label2 "Scrollen roteren">
+<!ENTITY editor.toolbar3.GUIEditor "Gebruikersinterface">
+<!ENTITY editor.toolbar3.menu1 "Lettertypegrootte">
+<!ENTITY editor.toolbar3.menu3 "Minimale tabbladbreedte">
+<!ENTITY editor.toolbar3.menu6 "Tekstkleur">
+<!ENTITY editor.toolbar3.menu4 "Achtergrondkleur">
+<!ENTITY editor.toolbar3.menu7 "Statusbalkpictogrammen">
+<!ENTITY editor.toolbar3.menu7.label1 "Openen in venster">
+<!ENTITY editor.toolbar3.menu7.label2 "Openen in tabblad">
+<!ENTITY editor.toolbar3.menu7.label3 "Openen in toepassing">
+<!ENTITY editor.toolbar3.menu5 "Bij starten van &brandShortName; &qfneditor; weergeven na:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "Uitgeschakeld">
+<!ENTITY editor.toolbar3.10secs "10 sec.">
+<!ENTITY editor.toolbar3.20secs "20 sec.">
+<!ENTITY editor.toolbar3.30secs "30 sec.">
+<!ENTITY editor.toolbar3.40secs "40 sec.">
+<!ENTITY editor.toolbar3.50secs "50 sec.">
+<!ENTITY editor.toolbar3.60secs "60 sec.">
+<!ENTITY editor.toolbar3.menu5.menu "Openen in:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "Nieuw venster">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "Nieuw tabblad">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "Toepassing">
+<!ENTITY editor.toolbar3.menu9.label1 "Zinsafbreking (vereist herstart QFN)">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; dient herstart te worden om de wijziging door te voeren.">
+<!ENTITY editor.toolbar3.menu10 "Tijdsopmaak">
+<!ENTITY editor.toolbar3.menu10.label1 "12-uurs (VM/NM)">
+<!ENTITY editor.toolbar3.menu10.label2 "24-uurs">
+<!ENTITY editor.toolbar3.menu11 "Groepen weergeven/verbergen">
+<!ENTITY editor.toolbar3.menu11.label2 "In tabblad">
+<!ENTITY editor.toolbar3.menu11.label3 "Groep van opmerking weergeven">
+<!ENTITY editor.toolbar3.menu11.label4 "Groep van opmerking verbergen">
+<!ENTITY editor.toolbar3.labe10 "Repository voor QFN wijzigen">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; kan een map ‘Bladwijzers’ of een map ‘Vaste schijf’ gebruiken als primaire repository.">
+<!ENTITY editor.toolbar3.labe7 "Wisselen en bestaande opmerkingen behouden">
+<!ENTITY editor.toolbar3.labe7.description1 "Werkrepository migreren van een map ‘Bladwijzers’ naar een map ‘Vaste schijf’ of vice versa">
+<!ENTITY editor.toolbar3.labe7.description2 "‘Bladwijzers’ is passend voor wie een blijdwijzersynchronsatie-extensie gebruikt, zoals XMarks (aanbevolen), Firefox Sync, …">
+<!ENTITY editor.toolbar3.labe7.description3 "‘Vaste schijf’ is passend voor wie mapsynchronisatiesoftware gebruikt, zoals Dropbox (aanbevolen), Simplicity, Sugarsync, …">
+<!ENTITY editor.toolbar3.labe8 "Selecteer een map ‘Vaste schijf’ en schakel er naar over (zonder migratie)">
+<!ENTITY editor.toolbar3.labe8.description1 "Wijzig de werkrepository naar een map ‘Vaste schijf’ zonder de repository te wissen of huidige opmerkingen te migreren.">
+<!ENTITY editor.toolbar3.labe8.description2 "Deze optie dwingt &qfneditor; om een map ‘Vaste schijf’ te gebruiken die al is gesynchroniseerd met mapsynchronisatiesoftware.">
+<!ENTITY editor.toolbar3.labe9 "Naar standaardmap ‘Bladwijzers’ schakelen (zonder migratie)">
+<!ENTITY editor.toolbar3.labe9.description1 "Wijzig de werkrepository naar een map ‘Bladwijzers’ zonder de repository te wissen of huidige opmerkingen te migreren.">
+<!ENTITY editor.toolbar3.labe9.description2 "Deze optie dwingt &qfneditor; om de standaard bladwijzersmap te openen die al is gesynchroniseerd met een extensie voor bladwijzersynchronisatie.">
+<!ENTITY editor.toolbar3.labe11 "Standaardmap ‘Bladwijzers’ wijzigen">
+<!ENTITY editor.toolbar3.labe11.description "Gebruik ‘/’ als scheidingsteken om in de basismap te gaan (bijv. QFN/map01/map02)">
+<!ENTITY editor.toolbar4 "Bewerken">
+<!ENTITY editor.toolbar4.accessKey "w">
+<!ENTITY editor.toolbar4.tooltip "Tekst bewerken">
+<!ENTITY editor.toolbar4.menuitem1 "Kopiëren">
+<!ENTITY editor.toolbar4.menuitem2 "Knippen">
+<!ENTITY editor.toolbar4.menuitem3 "Plakken">
+<!ENTITY editor.toolbar4.menuitem4 "Tabulatie invoegen">
+<!ENTITY editor.toolbar4.menuitem5 "Tabulatie verwijderen">
+<!ENTITY editor.toolbar4.menuitem6 "Regel/selectie dupliceren">
+<!ENTITY editor.toolbar4.menuitem7 "Regel omhoog verplaatsen">
+<!ENTITY editor.toolbar4.menuitem8 "Regel omlaag verplaatsen">
+<!ENTITY editor.toolbar4.menuitem9 "Hoofdletters">
+<!ENTITY editor.toolbar4.menuitem10 "Kleine letters">
+<!ENTITY editor.toolbar4.menuitem11 "Huidige regel selecteren">
+<!ENTITY editor.toolbar4.menuitem12 "Vorige regel selecteren">
+<!ENTITY editor.toolbar4.menuitem13 "Volgende regel selecteren">
+<!ENTITY editor.toolbar6 "Archief">
+<!ENTITY editor.toolbar6.accessKey "c">
+<!ENTITY editor.toolbar6.tooltip1 "Archief">
+<!ENTITY editor.toolbar6.tooltip2 "Klik (links) of druk Alt+C om het snelle menu te starten">
+<!ENTITY editor.toolbar6.tooltip3 "Klik (rechts) of druk Alt+J om het volledige menu te starten">
+<!ENTITY editor.toolbar6.menuitem1 "Aan archief toevoegen">
+<!ENTITY editor.showSandbox "Alle gearchiveerde opmerkingen weergeven">
+<!ENTITY editor.toolbar6.menuitem2 "Alles terugsturen naar bewerkingsprogramma">
+<!ENTITY editor.toolbar7 "Prullenbak">
+<!ENTITY editor.toolbar8 "&qfneditor; afsluiten (Esc)">
+<!ENTITY editor.toolbar12 "Add-ons">
+<!ENTITY editor.toolbar12.accessKey "A">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor;-extensies">
+<!ENTITY editor.toolbar10 "Ondersteuning">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Foutrapporten, ondersteuning, feedback of suggesties">
+<!ENTITY editor.toolbar14 "Netwerk">
+<!ENTITY editor.toolbar14.accessKey "N">
+<!ENTITY editor.toolbar14.tooltip "Benader uw opmerking op uw iPhone, iPod Touch, iPad of Android">
+<!ENTITY editor.toolbar13 "Back-ups">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "Gedurende 7 dagen dagelijks een back-up maken van alle opmerkingen">
+<!ENTITY editor.toolbar15 "Startpagina">
+<!ENTITY editor.toolbar15.accessKey "p">
+<!ENTITY editor.distractionFree.label1 "Afsluiten">
+<!ENTITY editor.distractionFree.label2 "Wisselen">
+<!ENTITY editor.distractionFree.label3 "Nieuw">
+<!ENTITY editor.distractionFree.label4 "Verwijderen">
+<!ENTITY editor.toolbar.tooltip "Dubbelklikken om een nieuwe opmerking te maken; muiswiel om tussen opmerkingen te wisselen">
+<!ENTITY editor.toolbar.tabs.tooltip "Middelklik om te verwijderen; dubbelklik om de opmerking te archiveren">
+<!ENTITY editor.panel.label "Opmerking hernoemen:">
+<!ENTITY editor.panel.iLabel "Label van opmerking">
+<!ENTITY editor.panel.iGroup "Groep van opmerking">
+<!ENTITY editor.panel.label2 "Stijl:">
+<!ENTITY editor.panel.label3 "Vet">
+<!ENTITY editor.panel.label4 "Schuin">
+<!ENTITY editor.panel.label5 "Tabbladopties:">
+<!ENTITY editor.panel.label6 "Schrijfbeveiligd">
+<!ENTITY editor.panel.label7 "To-Do-lijst">
+<!ENTITY editor.panel.label8 "Werkbalkteller bijwerken">
+<!ENTITY editor.panel2.label1 "Zoeken">
+<!ENTITY editor.buttons.newTab "Nieuw tabblad toevoegen (Ctrl+T of dubbelklikken op de tabbalk)">
+<!ENTITY editor.buttons.list "Lijst openstaande tabbladen (Ctrl+L)">
+<!ENTITY editor.context.undo "Ongedaan maken">
+<!ENTITY editor.context.undo.accesskey "g">
+<!ENTITY editor.context.redo "Opnieuw uitvoeren">
+<!ENTITY editor.context.redo.accesskey "v">
+<!ENTITY editor.context.cut "Knippen">
+<!ENTITY editor.context.cut.accesskey "K">
+<!ENTITY editor.context.copy "Kopiëren">
+<!ENTITY editor.context.copy.accesskey "o">
+<!ENTITY editor.context.paste "Plakken">
+<!ENTITY editor.context.copyHistory "Klembordbeheer">
+<!ENTITY editor.context.copyHistory.accesskey "l">
+<!ENTITY editor.context.copyHistory.label1 "Alles wissen">
+<!ENTITY editor.context.copyHistory.label1.accesskey "A">
+<!ENTITY editor.context.paste.accesskey "P">
+<!ENTITY editor.context.delete "Verwijderen">
+<!ENTITY editor.context.delete.accesskey "w">
+<!ENTITY editor.context.selectAll "Alles selecteren">
+<!ENTITY editor.context.selectAll.accesskey "c">
+<!ENTITY editor.context.email "Deze opmerking per e-mail verzenden">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "Rapport maken (afdrukken)">
+<!ENTITY editor.context.print.accesskey "n">
+<!ENTITY editor.context.addTime "Tijd en datum invoegen (F5)">
+<!ENTITY editor.context.addTime.accesskey "i">
+<!ENTITY editor.context.security "Beveiliging">
+<!ENTITY editor.context.security.accesskey "B">
+<!ENTITY editor.context.encrypt "Versleutelen">
+<!ENTITY editor.context.encrypt.accesskey "u">
+<!ENTITY editor.context.decrypt "Ontsleutelen">
+<!ENTITY editor.context.decrypt.accesskey "s">
+<!ENTITY editor.context.google "Google-suggesties">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Google-woordsuggesties/Calculator">
+<!ENTITY editor.context.google.submenu1 "Gebaseerd op 1 woord (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "Gebaseerd op 2 woorden (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "Gebaseerd op 3 woorden (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "Gebaseerd op 4 woorden (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "Gebaseerd op geselecteerde tekst (Ctrl+G)">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Symbolen invoegen">
+<!ENTITY editor.context.symbols.accesskey "y">
+<!ENTITY editor.context.symbols.set1 "Wiskundige symbolen">
+<!ENTITY editor.context.symbols.set1.accesskey "W">
+<!ENTITY editor.context.symbols.set2 "Griekse symbolen">
+<!ENTITY editor.context.symbols.set2.accesskey "G">
+<!ENTITY editor.context.symbols.set3 "Machts- en deelsymbolen">
+<!ENTITY editor.context.symbols.set3.accesskey "M">
+<!ENTITY editor.context.symbols.set4 "Aanvinkvelden">
+<!ENTITY editor.context.symbols.set4.accesskey "v">
+<!ENTITY editor.context.symbols.set5 "Diversen">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "Aan woordenboek toevoegen">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "Dit woord negeren">
+<!ENTITY editor.network.label1 "Lijst vernieuwen">
+<!ENTITY editor.network.label2 "Geselecteerd bestand kopiëren">
+<!ENTITY editor.network.label3 "Geselecteerd(e) map/bestand/collectie verwijderen">
+<!ENTITY editor.network.label4 "Inhoud server invoeren op cursorpositie">
+<!ENTITY editor.network.label5 "Actieve opmerking invoeren in een server als een nieuw bestand">
+<!ENTITY editor.network.label6 "Nieuwe map aan server toevoegen">
+<!ENTITY editor.network.label7 "Lijst">
+<!ENTITY editor.network.label8 "Netwerkpaneel sluiten">
+<!ENTITY editor.network.label9 "Geselecteerd serverbestand overschrijven door actieve opmerking">
+<!ENTITY editor.network.label10 "Back-up maken van lokale opmerkingen naar geselecteerde server">
+<!ENTITY editor.network.label11 "Verbinding met geselecteerde server verbreken">
+<!ENTITY editor.network.label12 "Serverinhoud invoegen als nieuwe opmerking">
+<!ENTITY editor.searchTool.find "In opmerking zoeken">
+<!ENTITY editor.searchTool.replace "Vervangen">
+<!ENTITY editor.searchTool.next "Volgende overeenkomst zoeken">
+<!ENTITY editor.searchTool.prev "Vorige overeenkomst zoeken">
+<!ENTITY editor.searchTool.close "Zoekvenster sluiten">
+<!ENTITY editor.searchTool.replaceAll "Alle overeenkomsten repareren">
+<!ENTITY editor.searchTool.archive "In archief zoeken">
+<!ENTITY editor.searchTool.highlight "Alle overeenkomsten accentueren">

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="chrome://qfnotes/skin/overlay.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandDTD SYSTEM "chrome://qfnotes/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % editorDTD SYSTEM "chrome://qfnotes/locale/overlay.dtd">
+%editorDTD;
+]>
+
+<overlay id="QuickFoxNotes-toolbar-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script src="overlay.js"/>
+<stringbundleset>
+	<stringbundle id="qfnotes-overlay-bundle" src="chrome://qfnotes/locale/overlay.properties"/>
+</stringbundleset>
+
+<commandset>
+	<command id="qfnotes_cmd_openLClick" oncommand="qfn_editor.clickHandle();"/>
+	<command id="qfnotes_cmd_openwindow" oncommand="qfn_editor.qfn_openInSingleMode.openInWindow();"/>
+	<command id="qfnotes_cmd_opentab" oncommand="qfn_editor.qfn_openInSingleMode.openInTab();"/>
+	<command id="qfnotes_cmd_openappcontent" oncommand="qfn_editor.qfn_openInSingleMode.openInSidebar(window);"/>
+	<command id="qfnotes_cmd_openhome" oncommand="qfn_editor.openURL('http://add0n.com/quickfox.html');"/>
+	<command id="qfnotes_cmd_send_type3" oncommand="qfn_editor.sendToQFN(false, '', parseInt(event.originalTarget.value));"/>
+	<command id="qfnotes_cmd_send_type4" oncommand="qfn_editor.sendToQFN(true, '', parseInt(event.originalTarget.value));"/>
+</commandset>
+
+<toolbarpalette id="BrowserToolbarPalette">
+	<toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
+					id="QuickFoxNotes-toolbar-button"
+					type="menu-button"
+					label="&toolbar.label1;"
+					tooltiptext="&toolbar.label1;&#xa;&#xa;&toolbar.tooltip;"
+					onclick="if (event.button == 1) qfn_editor.clickHandle(event);"
+					command="qfnotes_cmd_openLClick">
+		<menupopup id="qfn-backpopup">
+			<menuitem label="&toolbar.label2;"
+					  command="qfnotes_cmd_openwindow"/>
+			<menuitem label="&toolbar.label3;"
+					  command="qfnotes_cmd_opentab"/>
+			<menuitem label="&toolbar.label4;"
+					  command="qfnotes_cmd_openappcontent"/>
+			<menuseparator/>
+			<menuitem label="&toolbar.label5;"
+					  command="qfnotes_cmd_openhome"/>
+		</menupopup>
+	</toolbarbutton>
+</toolbarpalette>
+
+<popup id="contentAreaContextMenu">
+	<menu id="qfn-context3"
+		label="&context.label1;"
+		class="menu-iconic quickfox-contextmenu"
+		insertafter="context-copy"
+        hidden="true">
+		<menupopup id="qfn-context3-popup" command="qfnotes_cmd_send_type3"/>
+	</menu>
+	<menu id="qfn-context4"
+		label="&context.label2;"
+		class="menu-iconic quickfox-contextmenu"
+		insertafter="qfn-context3, context-copy"
+        hidden="true">
+		<menupopup id="qfn-context4-popup" command="qfnotes_cmd_send_type4"/>
+	</menu>
+</popup>
+
+<statusbar id="status-bar">
+	<keyset id="qfn.keyset">
+		<key id="qfn.keyset.Key1" modifiers="" key=""/>
+	</keyset>
+	<statusbarpanel id="quickfox-notes-statusbarpanel1"
+					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip1;"
+					class="statusbarpanel-menu-iconic"
+					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInWindow(); else qfn_editor.qfn_openInSingleMode.openInTab();">
+		<image id="quickfox-notes-status-iconWindow"/>
+	</statusbarpanel>
+	<statusbarpanel id="quickfox-notes-statusbarpanel2"
+					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip2;"
+					class="statusbarpanel-menu-iconic"
+					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInTab(); else qfn_editor.qfn_openInSingleMode.openInWindow();">
+		<image id="quickfox-notes-status-iconTab"/>
+	</statusbarpanel>
+	<statusbarpanel id="quickfox-notes-statusbarpanel3"
+					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip3;"
+					class="statusbarpanel-menu-iconic"
+					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInSidebar(window); else qfn_editor.qfn_openInSingleMode.openInTab();">
+		<image id="quickfox-notes-status-iconSidebar"/>
+	</statusbarpanel>
+</statusbar>
+
+<vbox id="appcontent">
+	<splitter id="quickfox-notes-contentsplitter" collapsed="true"/>
+	<vbox id="quickfox-notes-contentbox" collapsed="true" persist="height" height="300px" style="min-height: 100px;">
+		<!-- There would be browser element here (if needed);
+			 This element is ONLY used to load QFN editor (chrome://qfnotes/content/overlay.xul) into the application-content
+			 area; since QFN needs to access the chrome above it, it is impossible to define type for it -->
+	</vbox>
+</vbox>
+</overlay>

@@ -1,0 +1,11 @@
+<!ENTITY email.title "Impostazioni e-mail di QuickFox Notes">
+<!ENTITY email.send "Invia">
+<!ENTITY email.from "Da:">
+<!ENTITY editor.to "A:">
+<!ENTITY editor.subject "Oggetto:">
+<!ENTITY editor.verification "Immagine di verifica:">
+<!ENTITY editor.carboncopy "Inviami una copia di ogni e-mail">
+<!ENTITY editor.note2 "Un'immagine di verifica verrà inviata dopo aver provato ad inviare la prima e-mail">
+<!ENTITY editor.note1 "Nota: tutte le e-mail verranno inviate senza cifratura tramite Mozdev.org">
+<!ENTITY email.addnew "Salva questo indirizzo e-mail. Formati validi:">
+<!ENTITY email.removeold "Elimina questo indirizzo e-mail">

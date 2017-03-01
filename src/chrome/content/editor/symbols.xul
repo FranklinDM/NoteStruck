@@ -1,0 +1,63 @@
+﻿<!DOCTYPE overlay SYSTEM "chrome://qfnotes/locale/editor.dtd">
+<overlay id="editor-menu-symbols" xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<menu id="menu-symbols">
+	<menupopup>
+		<menu label="&editor.context.symbols.set4;" accesskey="&editor.context.symbols.set4.accesskey;">
+			<menupopup oncommand="QuickFoxNotes.insertTextAtCursorPoint(event.originalTarget.label)">
+				<menuitem label="☐"/><menuitem label="☒"/><menuitem label="☑"/><menuitem label="✓"/>
+			</menupopup>
+		</menu>
+		<menu label="&editor.context.symbols.set1;" accesskey="&editor.context.symbols.set1.accesskey;">
+			<menupopup oncommand="QuickFoxNotes.insertTextAtCursorPoint(event.originalTarget.label)">
+				<menuitem label="→"/><menuitem label="←"/><menuitem label="↑"/><menuitem label="↓"/>
+				<menuitem label="⁞"/>
+				<menuitem label="±"/><menuitem label="≠"/><menuitem label="≡"/><menuitem label="≈"/>
+				<menuitem label="≤"/><menuitem label="≥"/>
+				<menuitem label="÷"/><menuitem label="×"/>
+				<menuitem label="∞"/><menuitem label="∫"/><menuitem label="√"/>
+				<menuitem label="т"/><menuitem label="†"/>
+			</menupopup>
+		</menu>
+		<menu label="&editor.context.symbols.set2;" accesskey="&editor.context.symbols.set2.accesskey;">
+			<menupopup oncommand="QuickFoxNotes.insertTextAtCursorPoint(event.originalTarget.label)">
+				<menuitem label="∂"/><menuitem label="α"/><menuitem label="β"/>
+				<menuitem label="µ"/><menuitem label="ℏ"/><menuitem label="δ"/>
+				<menuitem label="ε"/><menuitem label="ϵ"/><menuitem label="ξ"/>
+				<menuitem label="ζ"/><menuitem label="η"/><menuitem label="λ"/>
+				<menuitem label="ν"/><menuitem label="π"/><menuitem label="ω"/>
+				<menuitem label="ρ"/><menuitem label="σ"/><menuitem label="τ"/>
+				<menuitem label="χ"/><menuitem label="ϒ"/><menuitem label="γ"/>
+				<menuitem label="ψ"/><menuitem label="Ѱ"/><menuitem label="∑"/>
+				<menuitem label="Γ"/><menuitem label="Δ"/><menuitem label="∇"/>
+				<menuitem label="Λ"/><menuitem label="Π"/><menuitem label="Ω"/>
+				<menuitem label="Φ"/><menuitem label="θ"/><menuitem label="ϕ"/>
+				<menuitem label="§"/>
+			</menupopup>
+		</menu>
+		<menu label="&editor.context.symbols.set3;" accesskey="&editor.context.symbols.set3.accesskey;">
+			<menupopup  oncommand="QuickFoxNotes.insertTextAtCursorPoint(event.originalTarget.label)">
+				<menuitem label="¹"/><menuitem label="²"/><menuitem label="³"/>
+				<menuitem label="⅛"/><menuitem label="⅙"/><menuitem label="⅕"/>
+				<menuitem label="¼"/><menuitem label="⅓"/><menuitem label="⅜"/>
+				<menuitem label="⅖"/><menuitem label="½"/><menuitem label="⅗"/>
+				<menuitem label="⅝"/><menuitem label="⅔"/><menuitem label="¾"/>
+				<menuitem label="⅘"/><menuitem label="⅚"/><menuitem label="⅞"/>
+				<menuitem label="⅍"/>
+			</menupopup>
+		</menu>
+		<menu label="&editor.context.symbols.set5;" accesskey="&editor.context.symbols.set5.accesskey;">
+			<menupopup  oncommand="QuickFoxNotes.insertTextAtCursorPoint(event.originalTarget.label)">
+				<menuitem label="♫"/><menuitem label="♪"/><menuitem label="♠"/>
+				<menuitem label="♣"/><menuitem label="♥"/><menuitem label="♡"/>
+				<menuitem label="♦"/><menuitem label="◊"/><menuitem label="©"/>
+				<menuitem label="®"/><menuitem label="○"/><menuitem label="°"/>
+				<menuitem label="◦"/><menuitem label="●"/><menuitem label="•"/>
+			</menupopup>
+		</menu>
+	</menupopup>
+</menu> 
+		 
+</overlay>

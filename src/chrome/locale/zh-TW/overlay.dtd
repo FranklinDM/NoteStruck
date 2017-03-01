@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "開在新視窗">
+<!ENTITY toolbar.label3 "開在新分頁">
+<!ENTITY toolbar.label4 "開在瀏覽區">
+<!ENTITY toolbar.label5 "網站首頁">
+<!ENTITY toolbar.tooltip "左鍵開視窗／中鍵開分頁">
+<!ENTITY context.label1 "傳送到 &qfneditor;">
+<!ENTITY context.label2 "傳送到 &qfneditor; (附註)">
+<!ENTITY status.tooltip1 "左鍵開視窗／中、右鍵開分頁">
+<!ENTITY status.tooltip2 "左鍵開分頁／中、右鍵開視窗">
+<!ENTITY status.tooltip3 "左鍵開頁內／中、右鍵開分頁">

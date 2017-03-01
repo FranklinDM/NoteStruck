@@ -1,0 +1,409 @@
+﻿<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://qfnotes/skin/editor.css" type="text/css"?>
+<?xml-stylesheet href="chrome://qfnotes/skin/editor-extras.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandFFDTD SYSTEM "chrome://branding/locale/brand.dtd" >
+%brandFFDTD;
+<!ENTITY % brandQFDTD SYSTEM "chrome://qfnotes/locale/brand.dtd" >
+%brandQFDTD;
+<!ENTITY % editorDTD SYSTEM "chrome://qfnotes/locale/editor.dtd">
+%editorDTD;
+]>
+
+<!--onbeforeunload fires in Tab mode only and onclose fires in window mode only -->
+<window
+  id="editor"
+  windowtype="editor:qfn"
+  width="650px" height="300px"
+  persist="width height screenX screenY sizemode"
+  onkeypress="return QuickFoxNotes.keyPress(event);"
+  onclose="QuickFoxNotes.onBeforeUnload();"
+  onbeforeunload="QuickFoxNotes.onBeforeUnload();"
+  onunload="QuickFoxNotes.savePanels(); QuickFoxNotes.io.release();"
+  onload="QuickFoxNotes.initialize();"
+  ondragenter="return QuickFoxNotes.fileDrag.checkDrag(event)"
+  ondragover="return QuickFoxNotes.fileDrag.checkDrag(event)"
+  ondrop="QuickFoxNotes.fileDrag.doDrop(event)"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  xmlns:html="http://www.w3.org/1999/xhtml">
+  <html:link rel="icon" style="display:none" href="chrome://qfnotes/skin/favicon.png"/>
+
+  <script src="config.js"/>
+  <script src="chrome://global/content/nsDragAndDrop.js"/>
+  <script src="chrome://global/content/nsTransferable.js"/>
+  <script src="mini-require.js"/>
+  <script src="editor.js"/>
+  <script src="editor/initialize.js"/>
+  <script src="editor/io.js"/>
+  <script src="editor/keyboard.js"/>
+  <script src="editor/misc.js"/>
+  <script src="editor/toolbar.js"/>
+  <script src="scriptLoader.js"/>
+
+  <stringbundleset>
+    <stringbundle id="editor-bundle" src="chrome://qfnotes/locale/editor.properties"/>
+  </stringbundleset>
+
+  <commandset>
+    <command id="cmd_insertTab" oncommand="QuickFoxNotes.keyPress({ctrlKey: false, shiftKey:false, altKey: false, keyCode: 9, which: null});"/>
+    <command id="cmd_insertSTab" oncommand="QuickFoxNotes.keyPress({ctrlKey: false, shiftKey:true, altKey: false, keyCode: 9, which: null});"/>
+    <command id="cmd_dLine" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:false, altKey: false, keyCode: null, which: 68});"/>
+    <command id="cmd_upLine" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:true, altKey: false, keyCode: 38, which: null});"/>
+    <command id="cmd_downLine" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:true, altKey: false, keyCode: 40, which: null});"/>
+    <command id="cmd_upper" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:true, altKey: false, keyCode: null, which: 85});"/>
+    <command id="cmd_lower" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:false, altKey: false, keyCode: null, which: 85});"/>
+    <command id="cmd_select" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:false, altKey: false, keyCode: null, which: 77});"/>
+    <command id="cmd_select_up" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:false, altKey: false, keyCode: 38, which: null});"/>
+    <command id="cmd_select_down" oncommand="QuickFoxNotes.keyPress({ctrlKey: true, shiftKey:false, altKey: false, keyCode: 40, which: null});"/>
+    <command id="cmd_archive1" oncommand="QuickFoxNotes.keyPress({ctrlKey: false, shiftKey:false, altKey: true, keyCode: null, which: 67});"/>
+    <command id="cmd_archive2" oncommand="QuickFoxNotes.keyPress({ctrlKey: false, shiftKey:false, altKey: true, keyCode: null, which: 74});"/>
+    <command id="cmd_removeAFArchive" oncommand="QuickFoxNotes.arc.removeAll();"/>
+    <command id="cmd_sendtosandbox" oncommand="QuickFoxNotes.addToSandbox();"/>
+    <command id="cmd_find" oncommand="requirejs('app/searchTool').collapsed = false"/>
+    <command id="cmd_archive2_filter" oncommand="QuickFoxNotes.arc.menu.popup();"/>
+    <command id="cmd_clear_history" oncommand="requirejs('GUI/clipboard').clear();"/>
+  </commandset>
+
+  <keyset>
+    <key id="tab-key" keycode="VK_TAB" disabled="true" command="cmd_insertTab"/>
+    <key id="tab-shift-key" modifiers="shift " keycode="VK_TAB" disabled="true" command="cmd_insertSTab"/>
+    <key id="duplicate-key" modifiers="accel" key="D" disabled="true" command="cmd_dLine"/>
+    <key id="up-key" modifiers="accel shift" keycode="VK_UP" disabled="true" command="cmd_upLine"/>
+    <key id="down-key" modifiers="accel shift" keycode="VK_DOWN" disabled="true" command="cmd_downLine"/>
+    <key id="upper-key" modifiers="accel shift" key="U" disabled="true" command="cmd_upper"/>
+    <key id="lower-key" modifiers="accel" key="U" disabled="true" command="cmd_lower"/>
+    <key id="select-key" modifiers="accel" key="M" disabled="true" command="cmd_select"/>
+    <key id="select-up-key" modifiers="accel" keycode="VK_UP" disabled="true" command="cmd_select_up"/>
+    <key id="select-down-key" modifiers="accel" keycode="VK_DOWN" disabled="true" command="cmd_select_down"/>
+    <key id="archive1-key" modifiers="alt" key="C" disabled="true" command="cmd_archive1"/>
+    <key id="archive2-key" modifiers="alt" key="J" disabled="true" command="cmd_archive2"/>
+    <key id="sendtosandbox-key" modifiers="accel shift" key="A" command="cmd_sendtosandbox"/>
+    <key id="find-key" modifiers="accel" key="F" command="cmd_find"/>
+  </keyset>
+
+  <panel id="editor-context"
+    onpopuphiding="requirejs('GUI/rename-panel').renameTab(event);"
+    onpopupshown="requirejs('GUI/rename-panel').showPopupContext(event)">
+    <label value="&editor.panel.label;" class="renameNote"/>
+    <hbox flex="1" onkeypress="return requirejs('GUI/rename-panel').keypress(event)">
+      <textbox
+        id="editor-context-textbox-group"
+        class="rename-groupText"
+        type="autocomplete"
+        autocompletesearch="qfn-autocomplete"
+        emptytext="&editor.panel.iGroup;"
+        showcommentcolumn="true"/>
+      <textbox id="editor-context-textbox-label" flex="1"
+        class="rename-labelText"
+        emptytext="&editor.panel.iLabel;"/>
+    </hbox>
+    <label value="&editor.panel.label2;" class="renameNote"/>
+    <vbox align="center">
+      <colorpicker id="editor-context-colorpicker"/>
+    </vbox>
+    <hbox>
+      <checkbox id="editor-context-bold" label="&editor.panel.label3;"/>
+      <checkbox id="editor-context-italic" label="&editor.panel.label4;"/>
+    </hbox>
+    <label value="&editor.panel.label5;" class="renameNote"/>
+    <checkbox id="editor-context-lock" label="&editor.panel.label6;"/>
+    <label value="&editor.panel.label7;" class="renameNote"/>
+    <checkbox id="editor-context-counter" label="&editor.panel.label8;"/>
+  </panel>
+  <panel
+    id="editor-archive-panel"
+    ignorekeys="true"
+    emptytext="&editor.panel2.label1;"
+    onpopupshown="QuickFoxNotes.arc.menu.popup()"
+    onkeypress="return QuickFoxNotes.arc.menu.handleKeys(event);"
+    onitemsclick="QuickFoxNotes.arc.menu.command(event);"
+    command="cmd_archive2_filter"/>
+
+  <panel id="editor-extensions-panel" class="addon-panel" orient="horizontal"/>
+  <menupopup id="editor_menupopup"
+         oncommand="var cmd = event.originalTarget.getAttribute('cmd');
+              if(cmd) { QuickFoxNotes.contextmenu.goDoCommand(cmd); event.stopPropagation(); }"
+         onpopupshowing="QuickFoxNotes.onpopupshowing(this, event);"
+         onpopupshown="QuickFoxNotes.loadUserGUI('symbols');">
+    <menuitem id="editor_menupopup_ignoreDic"
+      label="&editor.context.ignoreDictionary;"
+      cmd="cmd_qfn_ignoreDic"/>
+    <menuitem id="editor_menupopup_dictionary"
+      label="&editor.context.AddtoDictionary;"
+      accesskey="&editor.context.AddtoDictionary.accesskey;"
+      class="menuitem-iconic qfn-menuitem-add"
+      cmd="cmd_qfn_addToDic"/>
+    <menuseparator id="editor_menupopup_dictionary_sep"/>
+    <menuitem label="&editor.context.undo;" accesskey="&editor.context.undo.accesskey;" cmd="cmd_undo" class="menuitem-iconic qfn-menuitem-undo"/>
+    <menuitem label="&editor.context.redo;" accesskey="&editor.context.redo.accesskey;" cmd="cmd_redo" class="menuitem-iconic qfn-menuitem-redo"/>
+    <menuseparator/>
+    <menuitem label="&editor.context.cut;" accesskey="&editor.context.cut.accesskey;" cmd="cmd_cut" class="menuitem-iconic qfn-menuitem-cut"/>
+    <menuitem label="&editor.context.copy;" accesskey="&editor.context.copy.accesskey;" cmd="cmd_copy" class="menuitem-iconic qfn-menuitem-copy"/>
+    <menuitem label="&editor.context.paste;" accesskey="&editor.context.paste.accesskey;" cmd="cmd_paste" class="menuitem-iconic qfn-menuitem-paste"/>
+    <menuitem label="&editor.context.delete;" accesskey="&editor.context.delete.accesskey;" cmd="cmd_delete" class="menuitem-iconic qfn-menuitem-delete"/>
+    <menu label="&editor.context.copyHistory;" accesskey="&editor.context.copyHistory.accesskey;" cmd="cmd_qfn_copyHistory" class="menu-iconic qfn-menu-copyHistory">
+      <menupopup id="editor_menupopup_copyHistory">
+        <menuseparator id="editor_clipboard_clearall_separator"/>
+        <menuitem label="&editor.context.copyHistory.label1;" accesskey="&editor.context.copyHistory.label1.accesskey;" command="cmd_clear_history"/>
+      </menupopup>
+    </menu>
+    <menuseparator/>
+    <menuitem label="&editor.context.addTime;" accesskey="&editor.context.addTime.accesskey;" cmd="cmd_qfn_addTime" class="menuitem-iconic qfn-menuitem-date"/>
+    <menu id="menu-symbols"
+      label="&editor.context.symbols;"
+      accesskey="&editor.context.symbols.accesskey;"
+      class="menu-iconic qfn-menu-symbols"
+      cmd="cmd_qfn_insertSymbol"/>
+    <menuseparator/>
+    <menu label="&editor.context.google;"
+      accesskey="&editor.context.google.accesskey;"
+      tooltiptext="&editor.context.google.tooltip;"
+      class="menu-iconic qfn-menu-google">
+      <menupopup>
+        <menuitem label="&editor.context.google.submenu1;" accesskey="&editor.context.google.submenu1.accesskey;" cmd="cmd_qfn_google1"/>
+        <menuitem label="&editor.context.google.submenu2;" accesskey="&editor.context.google.submenu2.accesskey;" cmd="cmd_qfn_google2"/>
+        <menuitem label="&editor.context.google.submenu3;" accesskey="&editor.context.google.submenu3.accesskey;" cmd="cmd_qfn_google3"/>
+        <menuitem label="&editor.context.google.submenu4;" accesskey="&editor.context.google.submenu4.accesskey;" cmd="cmd_qfn_google4"/>
+        <menuseparator/>
+        <menuitem label="&editor.context.google.submenu5;" accesskey="&editor.context.google.submenu5.accesskey;" cmd="cmd_qfn_google5"/>
+      </menupopup>
+    </menu>
+    <menuseparator/>
+    <menuitem label="&editor.context.print;" accesskey="&editor.context.print.accesskey;" cmd="cmd_qfn_print" class="menuitem-iconic qfn-menuitem-print"/>
+    <!-- <menuitem label="&editor.context.email;" accesskey="&editor.context.email.accesskey;" cmd="cmd_qfn_email" class="menuitem-iconic qfn-menuitem-email"/> -->
+    <menuseparator/>
+    <menu label="&editor.context.security;" accesskey="&editor.context.security.accesskey;" class="menu-iconic qfn-menu-secure">
+      <menupopup>
+        <menuitem label="&editor.context.encrypt;" accesskey="&editor.context.encrypt.accesskey;" cmd="cmd_qfn_encrypt"/>
+        <menuitem label="&editor.context.decrypt;" accesskey="&editor.context.decrypt.accesskey;" cmd="cmd_qfn_decrypt"/>
+      </menupopup>
+    </menu>
+    <menuseparator/>
+    <menuitem label="&editor.context.selectAll;"
+      accesskey="&editor.context.selectAll.accesskey;"
+      class="menuitem-iconic qfn-menuitem-selectAll"
+      cmd="cmd_selectAll" />
+  </menupopup>
+  <hbox id="editor-hbox-extensions" flex="1">
+  <notificationbox flex="1" id="notificationbox">
+  <tabbox id="editor-tabbox" flex="1">
+    <hbox id="tabs-drop-indicator-bar" collapsed="true">
+      <hbox id="tabs-drop-indicator" mousethrough="always"/>
+    </hbox>
+    <hbox id="top-toolbar" class="top-toolbar">
+      <hbox class="newTab-hbox" align="center" pack="center">
+        <image class="newTab" onclick="QuickFoxNotes.addSingleTab();" tooltiptext="&editor.buttons.newTab;"/>
+      </hbox>
+      <arrowscrollbox id="editor-tabbox-tabcontainer" orient="horizontal" flex="1">
+        <tabs id="editor-tabbox-tabs" flex="1" align="end"
+          tooltiptext="&editor.toolbar.tabs.tooltip;"
+          ondblclick="if (event.button == 0) {QuickFoxNotes.addSingleTab(); event.stopPropagation();}">
+          <panelTab label="Dummy!" collapsed="true" disabled="true"/>
+        </tabs>
+        <spacer id="views-tbar-spacer"
+            tooltiptext="&editor.toolbar.tooltip;"
+            ondragexit="nsDragAndDrop.dragExit(event, QuickFoxNotes.dragNdrop.dragObserver)"
+            ondragover="nsDragAndDrop.dragOver(event, QuickFoxNotes.dragNdrop.dropObserver)"
+            ondragdrop="nsDragAndDrop.drop(event, QuickFoxNotes.dragNdrop.dropObserver)"
+            ondblclick="if (event.button == 0) {QuickFoxNotes.addSingleTab(); event.stopPropagation();}"/>
+      </arrowscrollbox>
+      <toolbarbutton id="editor.toolbar9" class="list" tooltiptext="&editor.buttons.list;" type="menu" collapsed="true">
+        <menupopup id="editor.toolbar9.menupopup" onpopupshowing="QuickFoxNotes.updateList();">
+        </menupopup>
+      </toolbarbutton>
+
+      <toolbarbutton
+        id="editor-tabbox-toolbar-toolbarbutton5"
+        tooltiptext="&editor.toolbar6.tooltip1;&#xa;&#xa;&editor.toolbar6.tooltip2;&#xa;&editor.toolbar6.tooltip3;"
+        type="menu-button"
+        class="sandbox"
+        align="center"
+        pack="center"
+        oncommand="if (event.originalTarget.parentNode == this) QuickFoxNotes.doKey('archive1-key');">
+        <menupopup id="editor-tabbox-toolbar-toolbarbutton5-menupopup">
+          <menuitem label="&editor.toolbar6.menuitem1;" key="sendtosandbox-key" command="cmd_sendtosandbox"/>
+          <menuitem id="editor-show-sandbox" label="&editor.showSandbox;" disabled="true" command="cmd_archive1"/>
+          <menuseparator/>
+          <menuitem label="&editor.toolbar6.menuitem2;" command="cmd_removeAFArchive"/>
+        </menupopup>
+      </toolbarbutton>
+
+      <toolbarbutton id="editor-tabbox-toolbar-toolbarbutton6" collapsed="true" />
+      <toolbarbutton id="editor-tabbox-toolbar-extensions" collapsed="true" class="addon"
+        oncommand="QuickFoxNotes.openExtensions()"/>
+
+      <toolbarbutton id="editor-tabbox-toolbar-tools" label="&editor.tools;" accesskey="&editor.tools.accessKey;" tooltiptext="&editor.tools.tooltip;" class="tools" type="menu" oncommand="open = true;">
+        <menupopup id="editor-tabbox-toolbar-tools-menu">
+          <menu label="&editor.toolbar2;" accesskey="&editor.toolbar2.accessKey;" tooltiptext="&editor.toolbar2.tooltip;" class="menu-iconic transfer">
+            <menupopup>
+              <menuitem label="&editor.toolbar2.menuitem1;" oncommand="requirejs('misc/local').importText();" cmd="cmd_qfn_import"/>
+              <menuseparator/>
+              <menuitem label="&editor.toolbar2.menuitem2;" oncommand="requirejs('misc/local').exportText(false);"/>
+              <menuitem label="&editor.toolbar2.menuitem3;" oncommand="requirejs('misc/local').exportText(true);"/>
+            </menupopup>
+          </menu>
+          <menu label="&editor.toolbar4;" accesskey="&editor.toolbar4.accessKey;" tooltiptext="&editor.toolbar4.tooltip;" class="menu-iconic edit">
+            <menupopup>
+              <menuitem label="&editor.toolbar4.menuitem4;" key="tab-key" oncommand="QuickFoxNotes.doKey('tab-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuitem label="&editor.toolbar4.menuitem5;" key="tab-shift-key" oncommand="QuickFoxNotes.doKey('tab-shift-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuseparator/>
+              <menuitem label="&editor.toolbar4.menuitem6;" key="duplicate-key" oncommand="QuickFoxNotes.doKey('duplicate-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuseparator/>
+              <menuitem label="&editor.toolbar4.menuitem7;" key="up-key" oncommand="QuickFoxNotes.doKey('up-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuitem label="&editor.toolbar4.menuitem8;" key="down-key" oncommand="QuickFoxNotes.doKey('down-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuseparator/>
+              <menuitem label="&editor.toolbar4.menuitem9;" key="upper-key" oncommand="QuickFoxNotes.doKey('upper-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuitem label="&editor.toolbar4.menuitem10;" key="lower-key" oncommand="QuickFoxNotes.doKey('lower-key');" cmd="cmd_qfn_edit_protector"/>
+              <menuseparator/>
+              <menuitem label="&editor.toolbar4.menuitem11;" key="select-key" oncommand="QuickFoxNotes.doKey('select-key');"/>
+              <menuitem label="&editor.toolbar4.menuitem12;" key="select-up-key" oncommand="QuickFoxNotes.doKey('select-up-key');"/>
+              <menuitem label="&editor.toolbar4.menuitem13;" key="select-down-key" oncommand="QuickFoxNotes.doKey('select-down-key');"/>
+            </menupopup>
+          </menu>
+          <menuseparator/>
+          <menuitem label="&editor.menuitem.find;" key="find-key" oncommand="QuickFoxNotes.doKey('find-key');"/>
+          <menuseparator/>
+          <menuitem id="network-menuitem" label="&editor.toolbar14;" accesskey="&editor.toolbar14.accessKey;" tooltiptext="&editor.toolbar14.tooltip;"
+            type="checkbox" oncommand="QuickFoxNotes.networkCommand()"/>
+          <menuseparator id="editor-toolsmenu-extensions"/>
+          <menuitem label="&editor.toolbar12;" accesskey="&editor.toolbar12.accessKey;" tooltiptext="&editor.toolbar12.tooltiptext;" class="menuitem-iconic addon" oncommand="QuickFoxNotes.addons.open();"/>
+          <menuitem label="&editor.toolbar10;" accesskey="&editor.toolbar10.accessKey;" tooltiptext="&editor.toolbar10.tooltiptext;" class="menuitem-iconic support" oncommand="QuickFoxNotes.openLink(config.forum)"/>
+          <menuseparator/>
+          <menuitem label="&editor.toolbar13;" accesskey="&editor.toolbar13.accessKey;" tooltiptext="&editor.toolbar13.tooltiptext;" class="menuitem-iconic backups" oncommand="QuickFoxNotes.backups.reveal();"/>
+          <menu label="&editor.toolbar3;" accesskey="&editor.toolbar3.accessKey;" tooltiptext="&editor.toolbar3.tooltip;" class="menu-iconic options" onpopupshown="QuickFoxNotes.loadUserGUI('gui-selector');">
+            <menupopup>
+              <menuitem id="editor-tabbox-toolbar-menuitem1" label="&editor.toolbar3.label1;" type="checkbox"
+                oncommand="requirejs('style/textbox').spellCheck(getAttribute('checked'))"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem9" label="&editor.toolbar3.menu9.label1;" tooltiptext="&editor.toolbar3.menu9.label2;" type="checkbox"
+                oncommand="requirejs('style/textbox').wordWrap(getAttribute('checked'));"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem2" label="&editor.toolbar3.label2;" tooltiptext="&editor.toolbar3.label2.tooltip;" type="checkbox"
+                oncommand="QuickFoxNotes.timer(getAttribute('checked') ? true : false);"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem3" label="&editor.toolbar3.label3;" type="checkbox"
+                oncommand="qfnServices.prefs.setBoolPref('pasteOnMiddleClick', getAttribute('checked') ? true : false);"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem4" label="&editor.toolbar3.label4;" type="checkbox"
+                oncommand="qfnServices.prefs.setBoolPref('copySelected', getAttribute('checked') ? true : false);"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem5" label="&editor.toolbar3.label5;" type="checkbox"
+                oncommand="qfnServices.prefs.setBoolPref('showConfirmClose', getAttribute('checked') ? true : false);"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem6" label="&editor.toolbar3.label6;" type="checkbox"
+                oncommand="QuickFoxNotes.alwaysOnTop(window, getAttribute('checked') ? true : false);"/>
+              <menu label="&editor.toolbar3.GUIEditor;">
+                <menupopup id="editor-tabbox-toolbar-GUI-menupopup"/>
+              </menu>
+              <menu id="editor-tabbox-toolbar-menu2" label="&editor.toolbar3.menu2;">
+                <menupopup>
+                  <radiogroup id="editor-tabbox-toolbar-menu2-radiogroup">
+                    <menuitem type="radio" label="&editor.toolbar3.menu2.label1;" oncommand="qfnServices.prefs.setBoolPref('ScrollStopOnEnd', true);"/>
+                    <menuitem type="radio" label="&editor.toolbar3.menu2.label2;" oncommand="qfnServices.prefs.setBoolPref('ScrollStopOnEnd', false);"/>
+                  </radiogroup>
+                </menupopup>
+              </menu>
+              <menu id="editor-tabbox-toolbar-menu7" label="&editor.toolbar3.menu7;">
+                <menupopup>
+                  <menuitem id="editor-tabbox-toolbar-menu7-item1" label="&editor.toolbar3.menu7.label1;" type="checkbox"
+                    oncommand="QuickFoxNotes.statusbarIcon('window', getAttribute('checked') ? true : false);" />
+                  <menuitem id="editor-tabbox-toolbar-menu7-item2" label="&editor.toolbar3.menu7.label2;" type="checkbox"
+                    oncommand="QuickFoxNotes.statusbarIcon('tab', getAttribute('checked') ? true : false);" />
+                  <menuitem id="editor-tabbox-toolbar-menu7-item3" label="&editor.toolbar3.menu7.label3;" type="checkbox"
+                    oncommand="QuickFoxNotes.statusbarIcon('appcontent', getAttribute('checked') ? true : false);" />
+                </menupopup>
+              </menu>
+              <menu id="editor-tabbox-toolbar-menu10" label="&editor.toolbar3.menu10;">
+                <menupopup>
+                  <radiogroup id="editor-tabbox-toolbar-menu10-radiogroup">
+                    <menuitem type="radio" label="&editor.toolbar3.menu10.label1;" oncommand="qfnServices.prefs.setBoolPref('timeFormat', true);"/>
+                    <menuitem type="radio" label="&editor.toolbar3.menu10.label2;" oncommand="qfnServices.prefs.setBoolPref('timeFormat', false);"/>
+                  </radiogroup>
+                </menupopup>
+              </menu>
+              <menu id="editor-tabbox-toolbar-menu11" label="&editor.toolbar3.menu11;">
+                <menupopup>
+                  <menu label="&editor.toolbar3.menu11.label2;">
+                    <menupopup>
+                      <radiogroup id="editor-tabbox-toolbar-menu11-radiogroup2">
+                        <menuitem type="radio" label="&editor.toolbar3.menu11.label3;" oncommand="qfnServices.prefs.setBoolPref('showGroupInTab', true); QuickFoxNotes.group.refresh();"/>
+                        <menuitem type="radio" label="&editor.toolbar3.menu11.label4;" oncommand="qfnServices.prefs.setBoolPref('showGroupInTab', false); QuickFoxNotes.group.refresh();"/>
+                      </radiogroup>
+                    </menupopup>
+                  </menu>
+                </menupopup>
+              </menu>
+              <menuseparator/>
+              <menu id="editor-tabbox-toolbar-menu5" label="&editor.toolbar3.menu5;">
+                <menupopup>
+                  <radiogroup id="editor-tabbox-toolbar-menu5-radiogroup" oncommand="requirejs('reminder/set').time(event.originalTarget.getAttribute('value'))">
+                    <menuitem type="radio" label="&editor.toolbar3.menu5.menuitem1;" value="0"/>
+                    <menuseparator/>
+                    <menuitem type="radio" label="&editor.toolbar3.10secs;" value="10"/>
+                    <menuitem type="radio" label="&editor.toolbar3.20secs;" value="20"/>
+                    <menuitem type="radio" label="&editor.toolbar3.30secs;" value="30"/>
+                    <menuitem type="radio" label="&editor.toolbar3.40secs;" value="40"/>
+                    <menuitem type="radio" label="&editor.toolbar3.50secs;" value="50"/>
+                    <menuitem type="radio" label="&editor.toolbar3.60secs;" value="60"/>
+                    <menuseparator/>
+                  </radiogroup>
+                  <menu label="&editor.toolbar3.menu5.menu;">
+                    <menupopup>
+                      <radiogroup id="editor-tabbox-toolbar-menu5-menu-radiogroup" oncommand="requirejs('reminder/set').type(event.originalTarget.getAttribute('value'))">
+                        <menuitem type="radio" label="&editor.toolbar3.menu5.menu.label1;" value="0"/>
+                        <menuitem type="radio" label="&editor.toolbar3.menu5.menu.label2;" value="1"/>
+                        <menuitem type="radio" label="&editor.toolbar3.menu5.menu.label3;" value="2"/>
+                      </radiogroup>
+                    </menupopup>
+                  </menu>
+                </menupopup>
+              </menu>
+              <menuseparator/>
+              <menu label="&editor.toolbar3.labe10;" tooltiptext="&editor.toolbar3.labe10.description;">
+                <menupopup>
+                  <menuitem label="&editor.toolbar3.labe7;" tooltiptext="&editor.toolbar3.labe7.description1;&#xa;&#xa;&editor.toolbar3.labe7.description2;&#xa;&editor.toolbar3.labe7.description3;"
+                    oncommand="QuickFoxNotes.io.ioSwitch();"/>
+                  <menuseparator/>
+                  <menuitem label="&editor.toolbar3.labe8;" tooltiptext="&editor.toolbar3.labe8.description1;&#xa;&#xa;&editor.toolbar3.labe8.description2;"
+                    oncommand="QuickFoxNotes.io.softSwitch.toLocal();"/>
+                  <menuitem label="&editor.toolbar3.labe9;" tooltiptext="&editor.toolbar3.labe9.description1;&#xa;&#xa;&editor.toolbar3.labe9.description2;"
+                    oncommand="QuickFoxNotes.io.softSwitch.toBookmark();" cmd="cmd_qfn_switch_bookmarks"/>
+                  <menuseparator/>
+                  <menuitem label="&editor.toolbar3.labe11;" tooltiptext="&editor.toolbar3.labe11.description;" oncommand="QuickFoxNotes.io.changeBookmarksFolder();"/>
+                </menupopup>
+              </menu>
+            </menupopup>
+          </menu>
+          <menuseparator/>
+          <menuitem label="&editor.toolbar15;" accesskey="&editor.toolbar15.accessKey;" oncommand="QuickFoxNotes.openLink('http://add0n.com/quickfox.html')"/>
+        </menupopup>
+      </toolbarbutton>
+      <toolbarbutton tooltiptext="&editor.toolbar7;" type="menu" disabled="true"
+        oncommand="open = true;" class="trash" >
+        <menupopup id="editor.toolbar7.menupopup" position="after_end" oncommand="requirejs('GUI/trash').remove(event);">
+        </menupopup>
+      </toolbarbutton>
+      <toolbarseparator id="editor.toolbar8.toolbarseparator" collapsed="true"/>
+      <toolbarbutton id="editor.toolbar8.toolbarbutton" tooltiptext="&editor.toolbar8;" class="close" collapsed="true" oncommand="QuickFoxNotes.closeSidebarWindow();"/>
+    </hbox>
+    <hbox id="editor-tabbox-tabpanelshbox" flex="1">
+      <vbox flex="4" id="tabpanels-vbox">
+        <tabpanels flex="1" id="editor-tabbox-tabpanels">
+          <tabpanel/>
+        </tabpanels>
+        <hbox id="editor-groupView" class="group-list"/>
+        <hbox id="editor-search-toolbox" align="center" class="bottom-toolbar" collapsed="true"/>
+      </vbox>
+      <splitter id="network-content-splitter" class="net-splitter" collapsed="true">
+        <image class="net-splitter-img"/>
+      </splitter>
+      <vbox id="network-groupbox" class="network" collapsed="true"/>
+    </hbox>
+  </tabbox>
+  </notificationbox>
+  </hbox>
+  <hbox id="statusbar-display-hbox" collapsed="true" class="status-msg">
+    <label id="statusbar-display"/>
+  </hbox>
+  <hbox id="editor-tabbox-toolbar-smart" class="smart-box" collapsed="true" ondragover="event.preventDefault();" ondragdrop="QuickFoxNotes.smartDrag.onDrop(event)">
+    <toolbarbutton class="smart-delete" cmd="cmd_delete"/>
+    <toolbarbutton class="smart-cut" cmd="cmd_cut"/>
+    <toolbarbutton class="smart-copy" cmd="cmd_copy"/>
+  </hbox>
+</window>

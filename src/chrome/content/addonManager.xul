@@ -1,0 +1,39 @@
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://qfnotes/skin/addonmanager.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandDTD SYSTEM "chrome://qfnotes/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % editorDTD SYSTEM "chrome://qfnotes/locale/addonmanager.dtd">
+%editorDTD;
+]>
+
+<window id="addonman"
+		title="&addonman.title;"
+		width="650px"
+		height="300px"
+		persist="width height screenX screenY sizemode"
+		onload="qfn_addon_manager.initialize()"
+		xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<stringbundleset>
+	<stringbundle id="addonman-bundle" src="chrome://qfnotes/locale/addonManager.properties"/>
+</stringbundleset>
+
+<script src="config.js"/>
+<script src="editor.js"/>
+<script src="editor/misc.js"/>
+<script src="scriptLoader.js"/>
+<script src="addonManager.js"/>
+
+<vbox flex="1" class="addonbox">
+	<vbox id="addonman-addons"/>
+</vbox>
+<hbox flex="100" align="end">
+	<label value="&addonman.label.open;" class="text-link" onclick="qfn_addon_manager.reveal();"/>
+	<label value="&addonman.label.find;" class="text-link" onclick="qfn_addon_manager.openLink(config.extensions)"/>
+	<spacer flex="1"/>
+	<button id="addonman-close" label="&addonman.label.cancel;" collapsed="true" oncommand="window.close();"/>
+</hbox>
+<label value="&addonman.label.warning;" class="warning"/>
+</window>

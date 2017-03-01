@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<bindings xmlns="http://www.mozilla.org/xbl"
+          xmlns:xbl="http://www.mozilla.org/xbl"
+          xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <binding id="panelTab" display="xul:hbox"
+             extends="chrome://global/content/bindings/tabbox.xml#tab">
+        <content>
+          <xul:hbox flex="1" align="center" pack="center" class="panelTab-image">
+            <xul:image class="panelTab-icon"/>
+            <xul:hbox flex="1" align="center" pack="center">
+              <xul:label xbl:inherits="value=groupLabel" class="panelTab-text-group" />
+              <xul:label class="panelTab-text-label"
+                 xbl:inherits="value=label,accesskey,crop,toolbarmode,buttonstyle,disabled"/>
+            </xul:hbox>
+            <xul:image class="panelTab-close" onclick="if (event.button == 0) QuickFoxNotes.closeSingleTab();" xbl:inherits="tooltiptext=closeTooltip"/>
+          </xul:hbox>
+        </content>
+    </binding>
+</bindings> 

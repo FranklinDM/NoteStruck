@@ -1,0 +1,21 @@
+window {
+    background: white;
+}
+
+addonItem {
+    -moz-binding: url('chrome://qfnotes/skin/addonItem.xml#addonItem');
+}
+addonItem[enbl="false"]{
+    color: InactiveCaptionText; 
+}
+
+.addonbox {
+    overflow: -moz-scrollbars-vertical;
+    border: solid ThreeDDarkShadow 1px;
+    margin: 5px;
+    background-color: white;
+}
+.warning {
+    margin-top: 5px; 
+    font-weight: bold;
+}

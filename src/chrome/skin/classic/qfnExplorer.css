@@ -1,0 +1,23 @@
+.qfnExplorer-file{
+    list-style-image: url('chrome://qfnotes/skin/explorer.png');
+    -moz-image-region: rect(0, 16px, 16px, 0);
+}
+.qfnExplorer-folder{
+    list-style-image: url('chrome://qfnotes/skin/explorer.png');
+    -moz-image-region: rect(0, 32px, 16px, 16px);
+}
+.qfnExplorer-item{
+    padding-left: 10px;
+    cursor: pointer;
+}
+.qfnExplorer-item label {
+    color: MenuText !important;
+}
+.qfnExplorer-item:hover,
+.qfnExplorer-item:focus {
+    text-decoration: underline;
+    background-color: rgb(203, 210, 215);
+}
+.qfnColumn{
+    width: 170px;
+}

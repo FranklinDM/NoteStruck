@@ -1,0 +1,24 @@
+sandbox>.toolbarbutton-icon {
+    margin: 0;
+}
+tabpanels {
+    -moz-border-top-colors: grey ThreeDHighlight;
+    -moz-border-left-colors: grey ThreeDHighlight;
+    -moz-border-right-colors: grey ThreeDHighlight;
+    -moz-border-bottom-colors: grey ThreeDHighlight;
+    margin-bottom: 5px;
+}
+textbox#editor-tabbox-toolbar-searchbox {
+    border: 1px solid grey;
+    margin-right: 15px;
+}
+
+#editor-search-toolbox>toolbarbutton,
+#network-toolbar>toolbarbutton,
+#top-toolbar >toolbarbutton {
+    padding: 0;
+    margin: 0px 2px 0px 2px;
+}
+#network-toolbar {
+    padding: 5px 0 5px 0;
+}

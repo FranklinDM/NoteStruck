@@ -1,0 +1,211 @@
+<!ENTITY editor.tools "Eszközök">
+<!ENTITY editor.tools.accessKey "E">
+<!ENTITY editor.tools.tooltip "Eszközök">
+<!ENTITY editor.menuitem.find "Keresés">
+<!ENTITY editor.toolbar1 "Jegyzetek">
+<!ENTITY editor.toolbar1.accessKey "J">
+<!ENTITY editor.toolbar1.menuitem1 "Új jegyzet">
+<!ENTITY editor.toolbar1.menuitem2 "Aktuális jegyzet törlése">
+<!ENTITY editor.toolbar2 "Továbbítás">
+<!ENTITY editor.toolbar2.accessKey "R">
+<!ENTITY editor.toolbar2.tooltip "Továbbítás fájlba/-ból">
+<!ENTITY editor.toolbar2.menuitem1 "Importálás szövegfájlból …">
+<!ENTITY editor.toolbar2.menuitem2 "Export current to text file ...">
+<!ENTITY editor.toolbar2.menuitem3 "Export all into one text file ...">
+<!ENTITY editor.toolbar3 "Beállítások">
+<!ENTITY editor.toolbar3.accessKey "O">
+<!ENTITY editor.toolbar3.tooltip "Beállítások">
+<!ENTITY editor.toolbar3.label1 "Helyesírás">
+<!ENTITY editor.toolbar3.label2 "Automentés 2 percenként">
+<!ENTITY editor.toolbar3.label2.tooltip "Ez egy választható lehetőség. Bezáráskor minden jegyzet mentésre kerül.">
+<!ENTITY editor.toolbar3.label3 "Beillesztés középső gombra">
+<!ENTITY editor.toolbar3.label4 "Kijelölt szöveg automatikus másolása">
+<!ENTITY editor.toolbar3.label5 "Fül törlésének jóváhagyása">
+<!ENTITY editor.toolbar3.label6 "Mindig felül (csak ablakos módban)">
+<!ENTITY editor.toolbar3.menu0 "Haladó beállítások">
+<!ENTITY editor.toolbar3.menu0.item2 "Jegyzetek betűtípusa">
+<!ENTITY editor.toolbar3.menu0.item2.description "Jegyzetek betűtípusának megváltoztatása (pl. Arial, Courier)">
+<!ENTITY editor.toolbar3.menu2 "Egérgörgő viselkedése a széleknél">
+<!ENTITY editor.toolbar3.menu2.label1 "Görgetés leállítása">
+<!ENTITY editor.toolbar3.menu2.label2 "Körkörös görgetés">
+<!ENTITY editor.toolbar3.GUIEditor "Felhasználói felület">
+<!ENTITY editor.toolbar3.menu1 "Betűméret">
+<!ENTITY editor.toolbar3.menu3 "Minimális fül szélesség">
+<!ENTITY editor.toolbar3.menu6 "Szövegszín">
+<!ENTITY editor.toolbar3.menu4 "Háttérszín">
+<!ENTITY editor.toolbar3.menu7 "Állapotsor ikonok">
+<!ENTITY editor.toolbar3.menu7.label1 "Megnyitás ablakban">
+<!ENTITY editor.toolbar3.menu7.label2 "Megnyitás lapon">
+<!ENTITY editor.toolbar3.menu7.label3 "Megnyitás az alkalmazás részeként">
+<!ENTITY editor.toolbar3.menu5 "A &qfneditor; megjelenítése a &brandShortName; indítása után:">
+<!ENTITY editor.toolbar3.menu5.menuitem1 "soha">
+<!ENTITY editor.toolbar3.10secs "10 mp">
+<!ENTITY editor.toolbar3.20secs "20 mp">
+<!ENTITY editor.toolbar3.30secs "30 mp">
+<!ENTITY editor.toolbar3.40secs "40 mp">
+<!ENTITY editor.toolbar3.50secs "50 mp">
+<!ENTITY editor.toolbar3.60secs "60 mp">
+<!ENTITY editor.toolbar3.menu5.menu "Megnyitás helye:">
+<!ENTITY editor.toolbar3.menu5.menu.label1 "Új ablak">
+<!ENTITY editor.toolbar3.menu5.menu.label2 "Új lap">
+<!ENTITY editor.toolbar3.menu5.menu.label3 "Alkalmazáson belül">
+<!ENTITY editor.toolbar3.menu9.label1 "Sortörés (QFN újraindítás szükséges)">
+<!ENTITY editor.toolbar3.menu9.label2 "&qfneditor; újraindítása szükséges a változtatások életbe léptetéséhez.">
+<!ENTITY editor.toolbar3.menu10 "Időformátum">
+<!ENTITY editor.toolbar3.menu10.label1 "12 óra">
+<!ENTITY editor.toolbar3.menu10.label2 "24 óra">
+<!ENTITY editor.toolbar3.menu11 "Csoportok megjelenítése/rejtése">
+<!ENTITY editor.toolbar3.menu11.label2 "Füleken">
+<!ENTITY editor.toolbar3.menu11.label3 "Csoport mutatása">
+<!ENTITY editor.toolbar3.menu11.label4 "Csoport elrejtése">
+<!ENTITY editor.toolbar3.labe10 "QFN tároló megváltoztatása">
+<!ENTITY editor.toolbar3.labe10.description "&qfneditor; elsődleges tárolóként a &quot;Bookmarks&quot; vagy &quot;Hard disk&quot; mappát használhatja.">
+<!ENTITY editor.toolbar3.labe7 "Váltás és a meglévő jegyzetek megtartása">
+<!ENTITY editor.toolbar3.labe7.description1 "Munkatároló váltása a könyvjelzőkről mappára (vagy fordítva) a jegyzetek megtartásával">
+<!ENTITY editor.toolbar3.labe7.description2 "A \'Könyvjelzők\' beállítás könyvjelző-szinkronizációt használó felhasználok részére a legalkalmasabb, pl. Xmarks (ajánlott), Firefox Sync, …">
+<!ENTITY editor.toolbar3.labe7.description3 "A \'Merevlemez\' beállítás azoknak a felhasználóknak a legalkalamasabb, akik fájlszinkronizációs eszközt használnak pl. Dropbox (ajánlott), Simplicity, Sugarsync, …">
+<!ENTITY editor.toolbar3.labe8 "\'Merevlemez\' kiválasztása és átváltás az adatok áthelyezése nélkül">
+<!ENTITY editor.toolbar3.labe8.description1 "Munkatároló átváltása \'Merevlemez\' mappára a jelenlegi jegyzetek törlése vagy áthelyezése nélkül.">
+<!ENTITY editor.toolbar3.labe8.description2 "Ezzel a beállítással a &qfneditor; a &quot;Hard disk&quot; mappát fogja használni, amelyet már egy mappaszinkronizáló szoftver már szinkronizál.">
+<!ENTITY editor.toolbar3.labe9 "\'Könyvjelzők\' mappa kiválasztása és átváltás az adatok áthelyezése nélkül">
+<!ENTITY editor.toolbar3.labe9.description1 "Munkatároló átváltása \'Könyvjelzők\'-re a jelenlegi jegyzetek törlése vagy áthelyezése nélkül.">
+<!ENTITY editor.toolbar3.labe9.description2 "Ezzel a beállítással a &qfneditor; az alaértelmezett könyvjelzőket fogja használni, amelyek egy könyvjelző szinkronizáló szoftverrel már szinkronizálva vannak.">
+<!ENTITY editor.toolbar3.labe11 "Alapértelmezett \'Könyvjelzők\' mappa megváltoztatása">
+<!ENTITY editor.toolbar3.labe11.description "A \'/\' elválasztót használja a könyvjelzők mappán belül (pl. QFN/mappa1/mappa2)">
+<!ENTITY editor.toolbar4 "Szerkesztés">
+<!ENTITY editor.toolbar4.accessKey "E">
+<!ENTITY editor.toolbar4.tooltip "Szöveg szerkesztése">
+<!ENTITY editor.toolbar4.menuitem1 "Másolás">
+<!ENTITY editor.toolbar4.menuitem2 "Kivágás">
+<!ENTITY editor.toolbar4.menuitem3 "Beillesztés">
+<!ENTITY editor.toolbar4.menuitem4 "Fül elválasztó beszúrása">
+<!ENTITY editor.toolbar4.menuitem5 "Fül elválasztó eltávolítása">
+<!ENTITY editor.toolbar4.menuitem6 "Sor/kijelölés kettőzése">
+<!ENTITY editor.toolbar4.menuitem7 "Sor mozgatása felfelé">
+<!ENTITY editor.toolbar4.menuitem8 "Sor mozgatása lefelé">
+<!ENTITY editor.toolbar4.menuitem9 "NAGYBETŰS">
+<!ENTITY editor.toolbar4.menuitem10 "kisbetűs">
+<!ENTITY editor.toolbar4.menuitem11 "Aktuális sor kijelölése">
+<!ENTITY editor.toolbar4.menuitem12 "Előző sor kijelölése">
+<!ENTITY editor.toolbar4.menuitem13 "Következő sor kijelölése">
+<!ENTITY editor.toolbar6 "Archiválás">
+<!ENTITY editor.toolbar6.accessKey "c">
+<!ENTITY editor.toolbar6.tooltip1 "Archiválás - Jegyzet áthelyezése az archívumba, és elrejtése a fülsávról">
+<!ENTITY editor.toolbar6.tooltip2 "Kattintás (bal oldalon) vagy Alt+C a gyorsmenühöz.">
+<!ENTITY editor.toolbar6.tooltip3 "Kattintás (jobb oldalon) vagy Alt+J a teljes menühöz">
+<!ENTITY editor.toolbar6.menuitem1 "Archiválás">
+<!ENTITY editor.showSandbox "Az összes archivált jegyzet megjelenítése">
+<!ENTITY editor.toolbar6.menuitem2 "Összeset vissza a szerkesztőbe">
+<!ENTITY editor.toolbar7 "Kuka">
+<!ENTITY editor.toolbar8 "A &qfneditor; bezárása (Esc)">
+<!ENTITY editor.toolbar12 "Kiterjesztések">
+<!ENTITY editor.toolbar12.accessKey "K">
+<!ENTITY editor.toolbar12.tooltiptext "&qfneditor; kiterjesztések">
+<!ENTITY editor.toolbar10 "Támogatás">
+<!ENTITY editor.toolbar10.accessKey "u">
+<!ENTITY editor.toolbar10.tooltiptext "Hibajelentés, támogatás, visszajelzés vagy javaslat">
+<!ENTITY editor.toolbar14 "Hálózat">
+<!ENTITY editor.toolbar14.accessKey "N">
+<!ENTITY editor.toolbar14.tooltip "Jegyzetek kezelése iPhone, iPodtouch, iPad vagy Android készülékeken">
+<!ENTITY editor.toolbar13 "Mentések">
+<!ENTITY editor.toolbar13.accessKey "B">
+<!ENTITY editor.toolbar13.tooltiptext "Jegyzetek mentése naponta, 7 napos periódussal">
+<!ENTITY editor.toolbar15 "Kezdőoldal">
+<!ENTITY editor.toolbar15.accessKey "H">
+<!ENTITY editor.distractionFree.label1 "Kilépés">
+<!ENTITY editor.distractionFree.label2 "Átváltás">
+<!ENTITY editor.distractionFree.label3 "Új">
+<!ENTITY editor.distractionFree.label4 "Törlés">
+<!ENTITY editor.toolbar.tooltip "Dupla-katt új jegyzet; egérgörgő váltás a jegyzetek között">
+<!ENTITY editor.toolbar.tabs.tooltip "Középső-katt kuka;dupla-katt archiválás">
+<!ENTITY editor.panel.label "Jegyzet átnevezése:">
+<!ENTITY editor.panel.iLabel "Jegyzet címke">
+<!ENTITY editor.panel.iGroup "Jegyzet csoport">
+<!ENTITY editor.panel.label2 "Stílus:">
+<!ENTITY editor.panel.label3 "Félkövér">
+<!ENTITY editor.panel.label4 "Dőlt">
+<!ENTITY editor.panel.label5 "Fül opciók:">
+<!ENTITY editor.panel.label6 "Írásvédett">
+<!ENTITY editor.panel.label7 "Tennivalók listája">
+<!ENTITY editor.panel.label8 "Eszköztárszámláló frissítése">
+<!ENTITY editor.panel2.label1 "Keresés">
+<!ENTITY editor.buttons.newTab "Új fül (Ctrl+T vagy dupla-katt a fülsávon)">
+<!ENTITY editor.buttons.list "Nyitott fülek listája (Ctrl+L)">
+<!ENTITY editor.context.undo "Visszavonás">
+<!ENTITY editor.context.undo.accesskey "U">
+<!ENTITY editor.context.redo "Újra">
+<!ENTITY editor.context.redo.accesskey "R">
+<!ENTITY editor.context.cut "Kivágás">
+<!ENTITY editor.context.cut.accesskey "t">
+<!ENTITY editor.context.copy "Másolás">
+<!ENTITY editor.context.copy.accesskey "C">
+<!ENTITY editor.context.paste "Beillesztés">
+<!ENTITY editor.context.copyHistory "Vágólap kezelő">
+<!ENTITY editor.context.copyHistory.accesskey "l">
+<!ENTITY editor.context.copyHistory.label1 "Összes törlése">
+<!ENTITY editor.context.copyHistory.label1.accesskey "C">
+<!ENTITY editor.context.paste.accesskey "P">
+<!ENTITY editor.context.delete "Törlés">
+<!ENTITY editor.context.delete.accesskey "D">
+<!ENTITY editor.context.selectAll "Összeset kijelöl">
+<!ENTITY editor.context.selectAll.accesskey "A">
+<!ENTITY editor.context.email "Jegyzet küldése emailen">
+<!ENTITY editor.context.email.accesskey "E">
+<!ENTITY editor.context.print "Jelentés készítése (Print)">
+<!ENTITY editor.context.print.accesskey "n">
+<!ENTITY editor.context.addTime "Idő és dátum beillesztése (F5)">
+<!ENTITY editor.context.addTime.accesskey "I">
+<!ENTITY editor.context.security "Biztonság">
+<!ENTITY editor.context.security.accesskey "S">
+<!ENTITY editor.context.encrypt "Titkosítás">
+<!ENTITY editor.context.encrypt.accesskey "E">
+<!ENTITY editor.context.decrypt "Visszafejtés">
+<!ENTITY editor.context.decrypt.accesskey "D">
+<!ENTITY editor.context.google "Google javaslatok">
+<!ENTITY editor.context.google.accesskey "G">
+<!ENTITY editor.context.google.tooltip "Google szó javaslatok/Számológép">
+<!ENTITY editor.context.google.submenu1 "1 szó alapján (F1)">
+<!ENTITY editor.context.google.submenu1.accesskey "1">
+<!ENTITY editor.context.google.submenu2 "2 szó alapján (F2)">
+<!ENTITY editor.context.google.submenu2.accesskey "2">
+<!ENTITY editor.context.google.submenu3 "3 szó alapján (F3)">
+<!ENTITY editor.context.google.submenu3.accesskey "3">
+<!ENTITY editor.context.google.submenu4 "4 szó alapján (F4)">
+<!ENTITY editor.context.google.submenu4.accesskey "4">
+<!ENTITY editor.context.google.submenu5 "Kijelölt szöveg alapján (Ctrl+G)">
+<!ENTITY editor.context.google.submenu5.accesskey "s">
+<!ENTITY editor.context.symbols "Szimbólum beszúrása">
+<!ENTITY editor.context.symbols.accesskey "y">
+<!ENTITY editor.context.symbols.set1 "Matematikai szimbólumok">
+<!ENTITY editor.context.symbols.set1.accesskey "M">
+<!ENTITY editor.context.symbols.set2 "Görög szimbólumok">
+<!ENTITY editor.context.symbols.set2.accesskey "G">
+<!ENTITY editor.context.symbols.set3 "Hatvány és tört szimbólumok">
+<!ENTITY editor.context.symbols.set3.accesskey "P">
+<!ENTITY editor.context.symbols.set4 "Jelölő dobozok">
+<!ENTITY editor.context.symbols.set4.accesskey "C">
+<!ENTITY editor.context.symbols.set5 "Vegyes">
+<!ENTITY editor.context.symbols.set5.accesskey "S">
+<!ENTITY editor.context.AddtoDictionary "Hozzáadás a szótárhoz">
+<!ENTITY editor.context.AddtoDictionary.accesskey "o">
+<!ENTITY editor.context.ignoreDictionary "E szó figyelmen kívül hagyása">
+<!ENTITY editor.network.label1 "Kiválasztott mappák/fájlok frissítése">
+<!ENTITY editor.network.label2 "Kijelölt fájl másolása">
+<!ENTITY editor.network.label3 "Kijelölt mappa/fájl törlése">
+<!ENTITY editor.network.label4 "A szerver tartalom beillesztése a szerkesztőbe">
+<!ENTITY editor.network.label5 "A QFN tartalom szerverre másolása új fájlként">
+<!ENTITY editor.network.label6 "Új mappa létrehozása a szerveren">
+<!ENTITY editor.network.label7 "Listázás">
+<!ENTITY editor.network.label8 "Hálózat bezárása">
+<!ENTITY editor.network.label9 "Kiválasztott fájl felülírása">
+<!ENTITY editor.network.label10 "Biztonsági másolat a helyi jegyzetekről a kiválasztott szerverre">
+<!ENTITY editor.network.label11 "Kiválasztott szerver leválasztása">
+<!ENTITY editor.network.label12 "Szerver tartalmának beillesztése új jegyzetként">
+<!ENTITY editor.searchTool.find "Keresés a jegyzetben">
+<!ENTITY editor.searchTool.replace "Csere">
+<!ENTITY editor.searchTool.next "Következő találat">
+<!ENTITY editor.searchTool.prev "Előző találat">
+<!ENTITY editor.searchTool.close "Kereső bezárása">
+<!ENTITY editor.searchTool.replaceAll "Minden találat cseréje">
+<!ENTITY editor.searchTool.archive "Keresés az archívumban">
+<!ENTITY editor.searchTool.highlight "Találatok kiemelése">

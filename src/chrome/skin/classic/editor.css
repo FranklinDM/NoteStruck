@@ -1,0 +1,334 @@
+/**Toolbars*/
+.top-toolbar,
+.bottom-toolbar {
+  background: url("tabs-bg.png") repeat-x;
+}
+
+toolbarbutton {
+  cursor: pointer;
+}
+
+#editor-search-toolbox .toolbarbutton-text,
+#network-toolbar .toolbarbutton-text,
+#top-toolbar .toolbarbutton-text {
+  display: none;
+}
+/**Tabs*/
+tabs {
+  -moz-appearance: none;
+  background-color: transparent !important;
+}
+panelTab {
+  -moz-binding: url('chrome://qfnotes/skin/panelTab.xml#panelTab');
+}
+.newTab {
+  list-style-image: url("newTab.png");
+  -moz-image-region: rect(0px, 16px, 16px, 0);
+  cursor: pointer;
+}
+.newTab-hbox {
+  margin: 0 4px 0 6px;
+  width: 22px;
+}
+.newTab-hbox,
+.panelTab-image {
+  -moz-appearance: none;
+  background: -moz-linear-gradient(transparent, hsla(0,0%,45%,.1) 1px, hsla(0,0%,32%,.2) 80%, hsla(0,0%,0%,.2)),
+              -moz-linear-gradient(-moz-dialog, -moz-dialog);
+  background-origin: border-box;
+  background-position: 1px 2px;
+  background-size: -moz-calc(100% - 2px) -moz-calc(100% - 2px);
+  background-repeat: no-repeat;
+  padding: 0;
+  -moz-border-image: url('tab.png') 6 3 4 / 6px 3px 4px repeat stretch;
+  border-radius: 7px 7px 0 0;
+  height: 28px;
+}
+.panelTab-image:hover {
+  background-image: -moz-linear-gradient(bottom, rgba(10%,10%,10%,.4) 1px, transparent 1px),
+                    -moz-linear-gradient(hsla(0,0%,100%,.3) 1px, hsla(0,0%,75%,.2) 80%, hsla(0,0%,60%,.2)),
+                    -moz-linear-gradient(-moz-dialog, -moz-dialog);
+}
+panelTab[selected='true']>hbox.panelTab-image{
+  background-image: -moz-linear-gradient(rgba(255,255,255,.7), rgba(255,255,255,.5) 50%),
+                    -moz-linear-gradient(-moz-dialog, -moz-dialog);
+}
+.newTab:hover {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.panelTab-icon {
+  margin-left: 5px;
+  list-style-image: url('tab-search.png');
+  -moz-image-region: rect(0px, 16px, 16px, 0);
+}
+panelTab[search="true"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(16px, 16px, 32px, 0);
+}
+panelTab[search="false"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(32px, 16px, 48px, 0);
+}
+panelTab[readonly="true"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+panelTab[readonly="true"][search="true"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+panelTab[readonly="true"][search="false"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+panelTab[todo="true"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(0px, 48px, 16px, 32px);
+}
+panelTab[todo="true"][search="true"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(16px, 48px, 32px, 32px);
+}
+panelTab[todo="true"][search="false"]>hbox>image.panelTab-icon {
+  -moz-image-region: rect(32px, 48px, 48px, 32px);
+}
+.qfn-menuitem-networkClose,
+.panelTab-close {
+  list-style-image: url('tClose.png');
+  -moz-image-region: rect(0px, 16px, 16px, 0);
+  margin-right: 3px;
+  cursor: pointer;
+}
+.panelTab-close:hover {
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.panelTab-text-label {
+  margin: 0 3px 0 2px;
+}
+.panelTab-text-group {
+  margin: 0 2px 0 3px;
+  color: darkslategray !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-size: 90%;
+}
+/***********************************************************/
+  /* Tools*/
+.tools {
+  list-style-image: url('tools.png');
+}
+  /* Transfer */
+.transfer {
+  list-style-image: url('transfer.png');
+}
+  /* Edit */
+.edit {
+  list-style-image: url('edit.png');
+}
+  /* Options */
+.options {
+  list-style-image: url('options.png');
+}
+  /* Archive */
+.sandbox {
+  list-style-image: url('archive.png');
+}
+  /* Trash */
+.trash {
+  list-style-image: url('trash.png');
+  -moz-image-region: rect(0px, 36px, 16px, 16px);
+}
+.trash[disabled="true"] {
+  -moz-image-region: rect(0px, 16px, 16px, 0);
+}
+  /* Addons */
+.addon {
+  list-style-image: url("addon.png");
+}
+  /* Support */
+.support {
+  list-style-image: url("support.png");
+}
+  /* Backups */
+.backups {
+  list-style-image: url("backups.png");
+}
+  /* Close button for application content */
+.close {
+  list-style-image: url("app-cont-close.png");
+  -moz-image-region: rect(0px, 32px, 16px, 16px);
+}
+.close:hover {
+  -moz-image-region: rect(0px, 16px, 16px, 0);
+}
+/**Addon panel*/
+.addon-panel {
+  -moz-appearance: none;
+  -moz-border-top-colors: grey ThreeDHighlight;
+  -moz-border-left-colors: grey ThreeDHighlight;
+  -moz-border-right-colors: grey ThreeDHighlight;
+  -moz-border-bottom-colors: grey ThreeDHighlight;
+  padding: 1px;
+  background-color: Menu;
+}
+.rename-groupText {
+  width: 100px;
+}
+.rename-labelText {
+  width: 150px;
+}
+/**Archive panel & Rename panel*/
+#editor-archive-panel{
+  -moz-binding: url('chrome://qfnotes/content/editor/qfnExplorer.xml#qfnExplorer');
+}
+#editor-context,
+#editor-archive-panel {
+  -moz-appearance: none;
+  color: MenuText;
+  background-color:  Menu;
+  font: menu;
+  -moz-border-top-colors: grey ThreeDHighlight;
+  -moz-border-left-colors: grey ThreeDHighlight;
+  -moz-border-right-colors: grey ThreeDHighlight;
+  -moz-border-bottom-colors: grey ThreeDHighlight;
+}
+.renameNote {
+  font-weight: bold;
+}
+/**Tab bar*/
+#tabs-drop-indicator {
+  position: relative;
+  margin-bottom: -52px;
+  width: 30px;
+  height: 0;
+  background: url(indicator.png) 50% 50% no-repeat;
+}
+#views-tbar-spacer {
+  -moz-box-flex: 20000;
+  height: 26px;  /*This is actual height of Tabs element*/
+}
+/**List all tabs*/
+.list {
+  list-style-image: url("list.png");
+}
+/**Editor*/
+tabpanels {
+  -moz-appearance: none;
+  border: solid 1px;
+  margin: 0;
+  padding: 0;
+}
+tabpanel {
+  -moz-appearance: none;
+  border-style: none !important;
+  padding: 0;
+  margin: 0;
+  background-color: transparent !important;
+}
+.notepad {
+  -moz-appearance: none;
+  border-style: none !important;
+  background-color: transparent !important;
+}
+/**Notepad contextmenu*/
+.qfn-menuitem-add {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(0px, 16px, 16px, 0);
+}
+.qfn-menuitem-undo {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(16px, 16px, 32px, 0);
+}
+.qfn-menuitem-undo[disabled="true"]{
+  -moz-image-region: rect(16px, 32px, 32px, 16px);
+}
+.qfn-menuitem-redo {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(32px, 16px, 48px, 0);
+}
+.qfn-menuitem-redo[disabled="true"]{
+  -moz-image-region: rect(32px, 32px, 48px, 16px);
+}
+.smart-cut,
+.qfn-menuitem-cut {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(48px, 16px, 64px, 0);
+}
+.qfn-menuitem-cut[disabled="true"]{
+  -moz-image-region: rect(48px, 32px, 64px, 16px);
+}
+.smart-copy,
+.qfn-menuitem-copy {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(64px, 16px, 80px, 0);
+}
+.qfn-menuitem-copy[disabled="true"]{
+  -moz-image-region: rect(64px, 32px, 80px, 16px);
+}
+.qfn-menuitem-paste {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(80px, 16px, 96px, 0);
+}
+.qfn-menuitem-paste[disabled="true"]{
+  -moz-image-region: rect(80px, 32px, 96px, 16px);
+}
+.smart-delete,
+.qfn-menuitem-delete {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(96px, 16px, 112px, 0);
+}
+.qfn-menuitem-delete[disabled="true"] {
+  -moz-image-region: rect(96px, 32px, 112px, 16px);
+}
+.qfn-menu-copyHistory {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(112px, 16px, 128px, 0);
+}
+.qfn-menu-copyHistory[disabled=true]{
+  -moz-image-region: rect(112px, 32px, 128px, 16px);
+}
+.qfn-menuitem-date {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(128px, 16px, 144px, 0);
+}
+.qfn-menu-symbols {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(144px, 16px, 160px, 0);
+}
+.qfn-menu-google {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(160px, 16px, 176px, 0);
+}
+.qfn-menuitem-print {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(176px, 16px, 192px, 0);
+}
+.qfn-menuitem-email {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(192px, 16px, 208px, 0);
+}
+.qfn-menu-secure {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(208px, 16px, 224px, 0);
+}
+.qfn-menuitem-selectAll {
+  list-style-image: url('context.png');
+  -moz-image-region: rect(224px, 16px, 240px, 0);
+}
+/**Statusbar message*/
+.status-msg {
+  position: fixed;
+  left: 15px;
+  bottom: 15px;
+  border: 1px solid grey;
+  background-color: InfoBackground;
+  color: InfoText;
+  margin: 5px;
+}
+/**Group list*/
+.group-list {
+  overflow: hidden;
+}
+/**Network*/
+.net-splitter,
+.network {
+  -moz-appearance: none;
+  border: solid 1px;
+  -moz-border-top-colors: grey ThreeDHighlight;
+  -moz-border-left-colors: transparent;
+  -moz-border-right-colors:transparent;
+  -moz-border-bottom-colors: transparent;
+}

@@ -1,0 +1,100 @@
+<?xml version="1.0"?>
+
+<bindings xmlns="http://www.mozilla.org/xbl"
+    xmlns:xbl="http://www.mozilla.org/xbl"
+    xmlns:xul="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<binding id="qfnExplorer"
+	extends="chrome://global/content/bindings/popup.xml#panel">
+    <content>
+		<xul:textbox type="search" clickSelectsAll="true" xbl:inherits="emptytext=emptytext, command=command"/>
+		<xul:hbox xbl:inherits="onclick=onitemsclick">
+			<!-- Explorer box-->
+			<xul:grid>
+				<xul:columns>
+					<xul:column class="qfnColumn"/>
+					<xul:column class="qfnColumn"/>
+				</xul:columns>
+				<xul:rows>
+
+				</xul:rows>
+			</xul:grid>
+			<!-- Search box-->
+		</xul:hbox>
+    </content>
+	<resources>
+		<stylesheet src="chrome://qfnotes/skin/qfnExplorer.css"/>
+	</resources>
+	<implementation>
+		<constructor>
+				<![CDATA[
+				const textbox = document.getAnonymousNodes(this)[0];
+				this.textbox = textbox;
+				]]>
+		</constructor>
+		<property name="lData">
+			<getter>
+				<![CDATA[
+				return null;
+				]]>
+			</getter>
+			<setter>
+				<![CDATA[
+				const textbox = document.getAnonymousNodes(this)[0];
+				const hbox = document.getAnonymousNodes(this)[1];
+				const grid = hbox.childNodes[1];
+				const rows = grid.childNodes[1];
+				//Clear old data
+				while(rows.hasChildNodes())
+					rows.removeChild(rows.firstChild);
+				//
+				var _row = document.createElement("row");
+				var _hbox = document.createElement("hbox");
+				_hbox.setAttribute("class", "qfnExplorer-item");
+				_hbox.setAttribute("align", "center");
+				var _image = document.createElement("image");
+				var _label = document.createElement("label");
+				_label.setAttribute("flex", "1");
+				_label.setAttribute("crop", "end");
+				_label.setAttribute("class", "text-link");
+				
+				function addRow(parent, value, isFolder, obj) {
+					if (parent.localName != "row")
+						var row = _row.cloneNode(false);
+					else
+						var row = parent
+						
+					var hbox = _hbox.cloneNode(false);
+					hbox.setAttribute("tooltiptext", value);
+					var image = _image.cloneNode(false);
+					image.setAttribute("class", isFolder ? "qfnExplorer-folder" : "qfnExplorer-file");
+					var label = _label.cloneNode(false);
+					label.setAttribute("value", value);
+					
+					hbox.appendChild(image);
+					hbox.appendChild(label);
+					hbox.obj = obj;
+
+					row.appendChild(hbox);
+					
+					if (parent.localName != "row") {
+						parent.appendChild(row);
+						return row;
+					}
+				}
+                var column2 = val;
+                var column1 = column2.splice(0, Math.ceil(val.length/2));
+                
+				for(var i = 0; i < column1.length; i += 1) {
+					var row = addRow(rows, column1[i][0],column1[i][1],column1[i][2]);
+					if (i < column2.length)
+						addRow(row, column2[i][0],column2[i][1],column2[i][2]);
+				}
+				textbox.focus();
+				]]>
+			</setter>
+		</property>
+	</implementation>
+</binding>
+
+</bindings>

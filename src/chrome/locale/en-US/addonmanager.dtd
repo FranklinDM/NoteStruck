@@ -1,0 +1,5 @@
+<!ENTITY addonman.title "Add-on Manager - &qfneditor;">
+<!ENTITY addonman.label.warning "&qfneditor; needs to be restarted for the changes to take effect.">
+<!ENTITY addonman.label.open "Open add-ons folder">
+<!ENTITY addonman.label.find "Find more add-ons">
+<!ENTITY addonman.label.cancel "Cancel">

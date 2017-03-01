@@ -1,0 +1,1 @@
+define("storage/access", function(r, m){        const d  = ["WyJhV2huYVhsNWEzSnNNV1oxZVhvMSIsIk5XbDZOVGg0TldKd09EUndkV2h0Il0="];return function(id) {var r = [];JSON.parse(atob(d[id])).forEach(function (item){r.push(atob(item));});return r;}})

@@ -1,0 +1,27 @@
+<!DOCTYPE overlay SYSTEM "chrome://qfnotes/locale/editor.dtd">
+<?xml-stylesheet href="chrome://qfnotes/skin/search.css" type="text/css"?>
+
+<overlay id="editor-network" xmlns:html="http://www.w3.org/1999/xhtml"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <window id='editor'>
+        <menupopup id='searchtool-popup'/>
+    </window>
+    <hbox id="editor-search-toolbox" class="searchtool">
+        <toolbarbutton class="close" tooltiptext="&editor.searchTool.close;" oncommand="requirejs('app/searchTool').collapsed = true"/>
+        <label id="searchtool-info"/>
+        <toolbarspacer id="searchtool-spacer" flex="1"/>
+        <toolbarbutton id="searchtool-replaceall" class="replaceall" tooltiptext="&editor.searchTool.replaceAll;" oncommand="requirejs('app/searchTool').replaceAll()"/>
+        <toolbarbutton id="searchtool-replace" class="replace" tooltiptext="&editor.searchTool.replace;" oncommand="requirejs('app/searchTool').replace()"/>
+        <textbox id="searchtool-replacebox" class="replacebox" emptytext="&editor.searchTool.replace;" clickSelectsAll='true'/>
+        <toolbarbutton id="searchtool-archive" class="archive" tooltiptext="&editor.searchTool.archive;" oncommand="requirejs('app/searchTool').archiveSearch()"/>
+        <toolbarseparator />
+        <toolbarbutton id ="searchtool-highlight" class="highlight" tooltiptext="&editor.searchTool.highlight;" oncommand="requirejs('app/searchTool').highlight();"/>
+        <toolbarbutton id="searchtool-prev" class="prev" tooltiptext="&editor.searchTool.prev;" oncommand="requirejs('app/searchTool').find(false);"/>
+        <toolbarbutton id="searchtool-next" class="next" tooltiptext="&editor.searchTool.next;" oncommand="requirejs('app/searchTool').find(true);"/>
+        <textbox id="searchtool-findbox" type="search" class="findbox" emptytext="&editor.searchTool.find;" clickSelectsAll='true'
+            onkeypress="requirejs('app/searchTool').keypress(event, this.value)"
+            onkeyup="requirejs('app/searchTool').keyup(event);"
+            oncommand="if (!value) {requirejs('app/searchTool').find(true, true);}"/>
+    </hbox>
+</overlay>

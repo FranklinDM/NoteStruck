@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "QuickFox Notes">
+<!ENTITY toolbar.label2 "Apri QuickFox Notes in una finestra a pop-up">
+<!ENTITY toolbar.label3 "Apri QuickFox Notes in una nuova scheda">
+<!ENTITY toolbar.label4 "Apri QuickFox Notes come contenuto del browser">
+<!ENTITY toolbar.label5 "Homepage">
+<!ENTITY toolbar.tooltip "Fare clic con tasto sinistro del mouse per aprire QFN in una finestra a pop-up / con tasto centrale per aprire QFN in una scheda. Fare clic con tasto destro per visualizzare il menu contestuale">
+<!ENTITY context.label1 "Invia come testo semplice a QuickFox Notes…">
+<!ENTITY context.label2 "Invia con dati HTML a QuickFox Notes…">
+<!ENTITY status.tooltip1 "Fare clic con tasto sinistro del mouse per aprire QFN in una finestra a pop-up, con tasto destro/centrale per aprire QFN in una scheda">
+<!ENTITY status.tooltip2 "Fare clic con tasto sinistro del mouse per aprire QFN in una scheda, con tasto destro/centrale per aprire QFN in una finestra a pop-up">
+<!ENTITY status.tooltip3 "Fare clic con tasto sinistro del mouse per aprire QFN come contenuto del browser, con tasto destro/centrale per aprire QFN in una scheda">

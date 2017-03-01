@@ -1,0 +1,11 @@
+<!ENTITY toolbar.label1 "&qfneditor;">
+<!ENTITY toolbar.label2 "Otwórz w nowym oknie">
+<!ENTITY toolbar.label3 "Otwórz w nowej karcie">
+<!ENTITY toolbar.label4 "Otwórz w oknie aplikacji">
+<!ENTITY toolbar.label5 "Strona domowa">
+<!ENTITY toolbar.tooltip "Kliknięcie lewym przyciskiem myszy powoduje otwarcie w osobnym oknie, środkowym – w karcie">
+<!ENTITY context.label1 "Wyślij do &qfneditor;">
+<!ENTITY context.label2 "Wyślij do &qfneditor; (szczegóły)">
+<!ENTITY status.tooltip1 "Kliknięcie lewym przyciskiem myszy powoduje otwarcie w osobnym oknie, innymi przyciskami – w karcie.">
+<!ENTITY status.tooltip2 "Kliknięcie lewym przyciskiem myszy powoduje otwarcie w karcie, innymi przyciskami – w oknie.">
+<!ENTITY status.tooltip3 "Kliknięcie lewym przyciskiem myszy powoduje otwarcie w oknie aplikacji, innymi przyciskami – w karcie.">

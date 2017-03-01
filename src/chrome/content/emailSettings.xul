@@ -1,0 +1,84 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://qfnotes/skin/email.css" type="text/css"?>
+
+<!DOCTYPE window [
+<!ENTITY % brandDTD SYSTEM "chrome://qfnotes/locale/brand.dtd" >
+%brandDTD;
+<!ENTITY % editorDTD SYSTEM "chrome://qfnotes/locale/emailSettings.dtd">
+%editorDTD;
+]>
+
+<prefwindow
+  id="qfn-email"
+  title="&email.title;"
+  onload="qfn_email.initial(); qfn_email.checkAvailability();"
+  buttons="extra1, accept, cancel"
+  buttonlabelextra1="&email.send;"
+  ondialogextra1="qfn_email.send();"
+  persist="width height screenX screenY sizemode"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+<script src="emailSettings.js"/>
+
+<prefpane id="qfn-emial"  orient="horizontal" flex="1">
+    <preferences>
+      <preference id="pref-from" name="extensions.InBasic.QuickFoxNotes.emailFrom" type="string"/>
+      <preference id="pref-to" name="extensions.InBasic.QuickFoxNotes.emailTo" type="string"/>
+      <preference id="pref-verification" name="extensions.InBasic.QuickFoxNotes.emailVerification" type="string"/>
+      <preference id="pref-emailCarbonCopy" name="extensions.InBasic.QuickFoxNotes.emailCarbonCopy" type="bool"/>
+    </preferences>
+    <stringbundleset>
+      <stringbundle id="email-bundle" src="chrome://qfnotes/locale/emailSettings.properties"/>
+    </stringbundleset>
+
+  <tooltip id="email-tooltip1" orient="vertical" style="background-color: #33DD00;">
+    <label value="&email.addnew;"/>
+    <label value="      id@company.com"/>
+    <label value="      name &lt;id@company.com&gt;"/>
+  </tooltip>
+
+    <grid>
+        <columns>
+          <column/>
+          <column flex="2"/>
+        </columns>
+        <rows>
+            <row>
+              <label value="&email.from;"/>
+              <textbox flex="1" preference="pref-from" id="email-from" clickSelectsAll="true"/>
+            </row>
+            <row>
+              <label value="&editor.to;"/>
+        <hbox flex="1">
+          <textbox
+            id="email-to"
+            flex="1"
+            clickSelectsAll="true"
+            preference="pref-to"
+            type="autocomplete"
+            autocompletesearch="qfn-autocomplete"
+            showcommentcolumn="true"
+            oninput="qfn_email.checkAvailability();"
+            ondragover="qfn_email.checkAvailability();"/>
+          <hbox width="18" align="center" pack="center">
+            <image id="email-add" class="qfn-email-add" tooltip="email-tooltip1" onclick="qfn_email.add();"/>
+            <image id="email-remove" class="qfn-email-remove" tooltiptext="&email.removeold;" onclick="qfn_email.remove();"/>
+          </hbox>
+        </hbox>
+            </row>
+            <row>
+              <label value="&editor.verification;"/>
+              <textbox flex="1" preference="pref-verification" emptytext="&editor.note2;" id="email-verify"/>
+            </row>
+            <row>
+              <label value="&editor.subject;"/>
+              <textbox flex="1" id="email-subject"/>
+            </row>
+        </rows>
+    </grid>
+    <textbox id="email-content" multiline="true" flex="1"/>
+    <checkbox label="&editor.carboncopy;" preference="pref-emailCarbonCopy" id="email-carbonCopy"/>
+    <label value="&editor.note1;" style="font-weight: bold"/>
+</prefpane>
+</prefwindow>

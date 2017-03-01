@@ -1,0 +1,11 @@
+<!ENTITY email.title "Email - &qfneditor;">
+<!ENTITY email.send "Отправить">
+<!ENTITY email.from "От:">
+<!ENTITY editor.to "Кому:">
+<!ENTITY editor.subject "Тема:">
+<!ENTITY editor.verification "Код верификации:">
+<!ENTITY editor.carboncopy "Послать мне копию">
+<!ENTITY editor.note2 "Вы получите код верификации после попытки отправить первое сообщение">
+<!ENTITY editor.note1 "Замение: Все сообщения будут отправлены по незащищенному каналу Mozdev.org">
+<!ENTITY email.addnew "Сохранить этот адрес. Допустимые форматы:">
+<!ENTITY email.removeold "Удалить этот адрес">
