@@ -158,21 +158,11 @@ var qfn_editor = {
             qfn_editor.qfnServices.prefs.setCharPref("currentVersion", version);
         }
 
-        //FF < 4.*
-        var versionComparator = Components.classes["@mozilla.org/xpcom/version-comparator;1"]
-                        .getService(Components.interfaces.nsIVersionComparator)
-                        .compare(version, "4.0");
-        if (versionComparator < 0) {
-            var addon = qfn_editor.qfnServices.extMan.getItemForID("amin.eft_bmnotes@gmail.com");
-            welcome(addon.version);
-        }
         //FF > 4.*
-        else {
             Components.utils.import("resource://gre/modules/AddonManager.jsm");
             AddonManager.getAddonByID("amin.eft_bmnotes@gmail.com", function(addon) {
                 welcome(addon.version);
             });
-        }
     },
     clickHandle: function (e) {
         var mode = qfn_editor.qfnServices.prefs.getIntPref('toolbarClick');
