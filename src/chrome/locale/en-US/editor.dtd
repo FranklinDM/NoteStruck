@@ -62,7 +62,7 @@
 <!ENTITY editor.toolbar3.labe10.description "&qfneditor; is able to use a &quot;Bookmarks&quot; or &quot;Hard disk&quot; folder as its primary repository.">
 <!ENTITY editor.toolbar3.labe7 "Switch and keep existing notes">
 <!ENTITY editor.toolbar3.labe7.description1 "Migrate working Repository from a &quot;Bookmarks&quot; folder to a &quot;Hard disk&quot; folder or vice versa">
-<!ENTITY editor.toolbar3.labe7.description2 "&quot;Bookmarks&quot; is approperiate for those who use a bookmarks-sync extension; e.g.: Xmarks(Recommended), Firefox Sync, ...">
+<!ENTITY editor.toolbar3.labe7.description2 "&quot;Bookmarks&quot; is approperiate for those who use a bookmarks-sync extension; e.g.: Xmarks(Recommended), ...">
 <!ENTITY editor.toolbar3.labe7.description3 "&quot;Hard disk&quot; is approperiate for those who use a folder-sync software; e.g.: Dropbox(Recommended), Simplicity, Sugarsync, ...">
 <!ENTITY editor.toolbar3.labe8 "Select a &quot;Hard disk&quot; folder and switch to it (without migration)">
 <!ENTITY editor.toolbar3.labe8.description1 "Change working Repository to a &quot;Hard disk&quot; folder without erasing it or migrating current notes.">
