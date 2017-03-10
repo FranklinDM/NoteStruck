@@ -22,11 +22,12 @@
 	<command id="qfnotes_cmd_openwindow" oncommand="qfn_editor.qfn_openInSingleMode.openInWindow();"/>
 	<command id="qfnotes_cmd_opentab" oncommand="qfn_editor.qfn_openInSingleMode.openInTab();"/>
 	<command id="qfnotes_cmd_openappcontent" oncommand="qfn_editor.qfn_openInSingleMode.openInSidebar(window);"/>
-	<command id="qfnotes_cmd_openhome" oncommand="qfn_editor.openURL('http://add0n.com/quickfox.html');"/>
+	<command id="qfnotes_cmd_openhome" oncommand="qfn_editor.openURL('http://franklindm.github.io/');"/>
 	<command id="qfnotes_cmd_send_type3" oncommand="qfn_editor.sendToQFN(false, '', parseInt(event.originalTarget.value));"/>
 	<command id="qfnotes_cmd_send_type4" oncommand="qfn_editor.sendToQFN(true, '', parseInt(event.originalTarget.value));"/>
 </commandset>
 
+<!-- ==== Toolbar Button menu ==== -->
 <toolbarpalette id="BrowserToolbarPalette">
 	<toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
 					id="QuickFoxNotes-toolbar-button"
@@ -49,6 +50,7 @@
 	</toolbarbutton>
 </toolbarpalette>
 
+<!-- ==== Context Menu ==== -->
 <popup id="contentAreaContextMenu">
 	<menu id="qfn-context3"
 		label="&context.label1;"
@@ -66,6 +68,7 @@
 	</menu>
 </popup>
 
+<!-- ==== Status Bar ==== -->
 <statusbar id="status-bar">
 	<keyset id="qfn.keyset">
 		<key id="qfn.keyset.Key1" modifiers="" key=""/>

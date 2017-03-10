@@ -27,17 +27,3 @@ override chrome://qfnotes/skin/overlay.css       chrome://qfnotes/skin/overlay-m
 resource qfn      modules/
 
 locale qfnotes en-US chrome/locale/en-US/
-locale qfnotes ar    chrome/locale/ar/
-locale qfnotes de    chrome/locale/de/
-locale qfnotes fr    chrome/locale/fr/
-locale qfnotes hu-HU chrome/locale/hu-HU/
-locale qfnotes it    chrome/locale/it/
-locale qfnotes nl    chrome/locale/nl/
-locale qfnotes pl    chrome/locale/pl/
-locale qfnotes pt-BR chrome/locale/pt-BR/
-locale qfnotes ru    chrome/locale/ru/
-locale qfnotes sr    chrome/locale/sr/
-locale qfnotes sv-SE chrome/locale/sv-SE/
-locale qfnotes uk-UA chrome/locale/uk-UA/
-locale qfnotes zh-CN chrome/locale/zh-CN/
-locale qfnotes zh-TW chrome/locale/zh-TW/

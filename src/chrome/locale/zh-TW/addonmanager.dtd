@@ -1,5 +1,0 @@
-<!ENTITY addonman.title "附加元件管理員 - &qfneditor;">
-<!ENTITY addonman.label.warning "&qfneditor; 必須重新啟動才能使變更生效。">
-<!ENTITY addonman.label.open "開啟「附加元件資料夾」">
-<!ENTITY addonman.label.find "尋找更多的附加元件">
-<!ENTITY addonman.label.cancel "取消">

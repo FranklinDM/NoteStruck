@@ -30,17 +30,17 @@
   xmlns:html="http://www.w3.org/1999/xhtml">
   <html:link rel="icon" style="display:none" href="chrome://qfnotes/skin/favicon.png"/>
 
-  <script src="config.js"/>
+  <script src="chrome://qfnotes/content/config.js"/>
   <script src="chrome://global/content/nsDragAndDrop.js"/>
   <script src="chrome://global/content/nsTransferable.js"/>
-  <script src="mini-require.js"/>
-  <script src="editor.js"/>
-  <script src="editor/initialize.js"/>
-  <script src="editor/io.js"/>
-  <script src="editor/keyboard.js"/>
-  <script src="editor/misc.js"/>
-  <script src="editor/toolbar.js"/>
-  <script src="scriptLoader.js"/>
+  <script src="chrome://qfnotes/content/mini-require.js"/>
+  <script src="chrome://qfnotes/content/editor.js"/>
+  <script src="chrome://qfnotes/content/editor/initialize.js"/>
+  <script src="chrome://qfnotes/content/editor/io.js"/>
+  <script src="chrome://qfnotes/content/editor/keyboard.js"/>
+  <script src="chrome://qfnotes/content/editor/misc.js"/>
+  <script src="chrome://qfnotes/content/editor/toolbar.js"/>
+  <script src="chrome://qfnotes/content/scriptLoader.js"/>
 
   <stringbundleset>
     <stringbundle id="editor-bundle" src="chrome://qfnotes/locale/editor.properties"/>

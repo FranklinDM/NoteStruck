@@ -1,5 +1,0 @@
-<!ENTITY addonman.title "Менеджер дополнений - &qfneditor;">
-<!ENTITY addonman.label.warning "&qfneditor; требуется перезапуск для применения изменений.">
-<!ENTITY addonman.label.open "Открыть папку дополнений">
-<!ENTITY addonman.label.find "Найти дополнения">
-<!ENTITY addonman.label.cancel "Отмена">

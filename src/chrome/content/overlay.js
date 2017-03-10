@@ -152,15 +152,15 @@ var qfn_editor = {
             if(qfn_editor.qfnServices.prefs.getCharPref("currentVersion") == version)
                 return;
             //Showing welcome screen
-            setTimeout(function() {
+/*            setTimeout(function() {
               openURL("http://add0n.com/quickfox.html?version=" + version);
-            }, 5000);
+            }, 5000);*/
             qfn_editor.qfnServices.prefs.setCharPref("currentVersion", version);
         }
 
         //FF > 4.*
             Components.utils.import("resource://gre/modules/AddonManager.jsm");
-            AddonManager.getAddonByID("amin.eft_bmnotes@gmail.com", function(addon) {
+            AddonManager.getAddonByID("notestruck@franklindm", function(addon) {
                 welcome(addon.version);
             });
     },
@@ -183,7 +183,10 @@ var qfn_editor = {
                 break;
             case 2:
                 qfn_editor.qfn_openInSingleMode.openInSidebar(window);
-        }
+				break;
+			case 3:
+				qfn_editor.qfn_openInSingleMode.openInPanel();
+       }
     },
     contextMenu: function (e) {
         if(!(gContextMenu))

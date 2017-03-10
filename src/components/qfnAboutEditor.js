@@ -21,11 +21,11 @@ AboutNSEditor.prototype = {
 		var channel;
 		if (Services.vc.compare(Services.appinfo.version, 47) > 0) {
 			// greater than or equal to firefox48 so aSecurity_or_aLoadInfo is aLoadInfo
-			let uri = Services.io.newURI("chrome://qfnotes/content/a_editor.xul", null, null);
+			let uri = Services.io.newURI("chrome://qfnotes/content/editor.xul", null, null);
 			channel = Services.io.newChannelFromURIWithLoadInfo(uri, aSecurity_or_aLoadInfo);
 		} else {
 			// less then firefox48 aSecurity_or_aLoadInfo is aSecurity
-			channel = Services.io.newChannel("chrome://qfnotes/content/a_editor.xul", null, null);
+			channel = Services.io.newChannel("chrome://qfnotes/content/editor.xul", null, null);
 		}
 		channel.originalURI = aURI;
 		return channel;
