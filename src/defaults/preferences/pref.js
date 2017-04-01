@@ -8,7 +8,7 @@ pref("extensions.InBasic.QuickFoxNotes.openedIn", 0);    //1: window; 2: Tab; 4:
     //Repository
 pref("extensions.InBasic.QuickFoxNotes.repositoryType", 0);    //0: Use Bookmarks; 1: Use Local file
 pref("extensions.InBasic.QuickFoxNotes.RootName", "bookmarksMenuFolder");    //
-pref("extensions.InBasic.QuickFoxNotes.FolderName", "QuickFox Notes");        //This is the folder name which QFN will use as its primary repository [Bookmarks]
+pref("extensions.InBasic.QuickFoxNotes.FolderName", "NoteStruck");        //This is the folder name which QFN will use as its primary repository [Bookmarks]
 pref("extensions.InBasic.QuickFoxNotes.lFolderName", "");                    //This is the folder name which QFN will use as its primary repository [local file/Seperate mode]
 pref("extensions.InBasic.QuickFoxNotes.sqlitePath", "");                    //This is the file name which QFN will use as its primary repository [local file/Combine mode]
 pref("extensions.InBasic.QuickFoxNotes.relativePath", false);                //Use relative path (Useful for portable edition)

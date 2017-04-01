@@ -3,9 +3,9 @@ component {88ab0cb0-0a10-11df-8a39-0800200c9a66} components/qfnCMDLine.js
 contract @inbasic.net/quickfoxnotes/commandlinehandler/general-startup;1?type=qfn {88ab0cb0-0a10-11df-8a39-0800200c9a66}
 category command-line-handler m-qfn @inbasic.net/quickfoxnotes/commandlinehandler/general-startup;1?type=qfn
 
-# about:editor function
+# about:notes function
 component {ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5} components/qfnAboutEditor.js
-contract @mozilla.org/network/protocol/about;1?what=editor {ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5}
+contract @mozilla.org/network/protocol/about;1?what=notes {ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5}
 
 # autocomplete function
 component {85f1547c-92b6-438a-9d16-bc5b538459fa} components/qfnAutocomplete.js

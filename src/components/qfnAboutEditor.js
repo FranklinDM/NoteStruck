@@ -8,8 +8,8 @@ Components.utils.import("resource://gre/modules/Services.jsm");
 
 function AboutNSEditor() { }
 AboutNSEditor.prototype = {
-	classDescription: "about:editor",
-	contractID: "@mozilla.org/network/protocol/about;1?what=editor",
+	classDescription: "about:notes",
+	contractID: "@mozilla.org/network/protocol/about;1?what=notes",
 	classID: Components.ID("{ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5}"),
 	QueryInterface: XPCOMUtils.generateQI([Ci.nsIAboutModule]),
 
