@@ -7,25 +7,13 @@
 
 		<em:name>NoteStruck</em:name>
 		<em:version>1.0.0</em:version>		
-		<em:description>A place to write notes for Pale Moon/FossaMail. A fork of QuickFox Notes.</em:description>
+		<em:description>A quick and easy note-taking solution. A fork of QuickFox Notes.</em:description>
 		<em:homepageURL>https://franklindm.github.io/</em:homepageURL>
 		<em:optionsURL>chrome://qfnotes/content/editor.xul?options=true</em:optionsURL>
 
 		<em:creator>FranklinDM</em:creator>
 		<em:developer>InBasic (creator/developer of QuickFox Notes)</em:developer>
-		<em:contributor>Endor (translator for de)</em:contributor>
-		<em:contributor>freMea (translator for fr)</em:contributor>
-		<em:contributor>sipiatti (translator for hu-HU)</em:contributor>
-		<em:contributor>Luana (translator for it)</em:contributor>
-		<em:contributor>markh (translator for nl)</em:contributor>
-		<em:contributor>Rzeznik,teo (translators for pl)</em:contributor>
-		<em:contributor>edgard.magalhaes (translator for pt-BR)</em:contributor>
-		<em:contributor>Nero Wolfe (translator for ru)</em:contributor>
-		<em:contributor>Rancher (translator for sr)</em:contributor>
-		<em:contributor>Lakrits (translator for sv-SE)</em:contributor>
-		<em:contributor>Yaroslav Krytsun (translator for uk-UA)</em:contributor>
-		<em:contributor>di zhou (translator for zh-CN)</em:contributor>
-		<em:contributor>Tsprajna (Beta tester and translator for zh-TW)</em:contributor>
+		<em:contributor>Tsprajna (Beta tester)</em:contributor>
 		
 		<em:targetApplication>
 			<Description>
