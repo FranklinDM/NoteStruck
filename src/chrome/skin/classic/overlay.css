@@ -4,7 +4,7 @@
 #QuickFoxNotes-tabmail-button,
 #QuickFoxNotes-toolbar-button{
   list-style-image: url("toolbar.png");
-  -moz-image-region: rect(0px, 20px, 17px, 4px);
+  -moz-image-region: rect(0px, 20px, 16px, 4px);
 }
 toolbar[iconsize="large"] #QuickFoxNotes-toolbar-button {
   -moz-image-region: rect(17px, 24px, 40px, 0px);
@@ -12,12 +12,12 @@ toolbar[iconsize="large"] #QuickFoxNotes-toolbar-button {
 
 #QuickFoxNotes-toolbar-button[cui-areatype="toolbar"]{
   -moz-image-region: rect(1px, 20px, 17px, 4px) !important;
-}
+}	
 #QuickFoxNotes-toolbar-button[cui-areatype="menu-panel"],
 toolbarpaletteitem[place="palette"] > #QuickFoxNotes-toolbar-button {
   -moz-image-region: rect(40px, 32px, 72px, 0px);
 }
-
+	
 #QuickFoxNotes-toolbar-button>stack {
   display: none;
   -moz-box-sizing: border-box;
