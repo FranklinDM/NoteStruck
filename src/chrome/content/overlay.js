@@ -271,17 +271,12 @@ var qfn_editor = {
         }
         else {
             var focusedWindow = document.commandDispatcher.focusedWindow;    //Taken from QuickNote
-            var tmmp = '';
             try {
-              text = Components.lookupMethod(focusedWindow, "getSelection").apply(focusedWindow, []);
+              text = "\n" + Components.lookupMethod(focusedWindow, "getSelection").apply(focusedWindow, []) + postText;
             }
             catch (e) {
-              text = focusedWindow.getSelection();
+              text = "\n" + focusedWindow.getSelection() + postText;
             }
-            if (!tmmp) {
-                tmmp = gContextMenu.selectionInfo.text
-            }
-            text = "\n" + tmmp + postText
         }
 
         var str = qfn_editor.qfnServices.str;
