@@ -6,7 +6,7 @@
 		<em:unpack>true</em:unpack>
 
 		<em:name>NoteStruck</em:name>
-		<em:version>1.0.0</em:version>		
+		<em:version>1.0.1</em:version>		
 		<em:description>A quick and easy note-taking solution. A fork of QuickFox Notes.</em:description>
 		<em:homepageURL>https://franklindm.github.io/</em:homepageURL>
 		<em:optionsURL>chrome://qfnotes/content/editor.xul?options=true</em:optionsURL>
