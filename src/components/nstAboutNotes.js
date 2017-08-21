@@ -6,11 +6,11 @@ const Ci = Components.interfaces;
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/Services.jsm");
 
-function AboutNSEditor() { }
-AboutNSEditor.prototype = {
-	classDescription: "about:notes",
+function AboutNotes() { }
+AboutNotes.prototype = {
+	classDescription: "NoteStruck About Handler",
 	contractID: "@mozilla.org/network/protocol/about;1?what=notes",
-	classID: Components.ID("{ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5}"),
+	classID: Components.ID("76ef6bc8-bcc9-4814-8016-5fbe0d84e382"),
 	QueryInterface: XPCOMUtils.generateQI([Ci.nsIAboutModule]),
 
 	getURIFlags: function(aURI) {
@@ -32,4 +32,4 @@ AboutNSEditor.prototype = {
 	}
 };
 
-const NSGetFactory = XPCOMUtils.generateNSGetFactory([AboutNSEditor]);
+const NSGetFactory = XPCOMUtils.generateNSGetFactory([AboutNotes]);

@@ -60,9 +60,9 @@ qfnAutoCompleteResult.prototype = {
 function qfnAutoCompleteSearch() {}
 
 qfnAutoCompleteSearch.prototype = {
-    classID: Components.ID("85f1547c-92b6-438a-9d16-bc5b538459fa"),
-    classDescription: "QuickFox Notes autoComplete JS Component",
-    contractID: "@mozilla.org/autocomplete/search;1?name=qfn-autocomplete",
+    classID: Components.ID("da811e2a-d639-4ce5-93f6-7b6743637969"),
+    classDescription: "NoteStruck Auto-complete Component",
+    contractID: "@mozilla.org/autocomplete/search;1?name=nst-autocomplete",
 
     startSearch: function(searchString, searchParam, result, listener) {
         if (searchParam.length > 0) {
@@ -90,4 +90,3 @@ if (XPCOMUtils.generateNSGetFactory)
     var NSGetFactory = XPCOMUtils.generateNSGetFactory([qfnAutoCompleteSearch]);
 else
     var NSGetModule = XPCOMUtils.generateNSGetModule([qfnAutoCompleteSearch]);
-

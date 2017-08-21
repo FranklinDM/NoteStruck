@@ -1,15 +1,15 @@
 # command line handler for standalone function
-component {88ab0cb0-0a10-11df-8a39-0800200c9a66} components/qfnCMDLine.js
-contract @inbasic.net/quickfoxnotes/commandlinehandler/general-startup;1?type=qfn {88ab0cb0-0a10-11df-8a39-0800200c9a66}
-category command-line-handler m-qfn @inbasic.net/quickfoxnotes/commandlinehandler/general-startup;1?type=qfn
+component {0e2c6db8-dc58-4840-ab58-dd799daeaa95} components/nstCmdLine.js
+contract @mozilla.org/commandlinehandler/general-startup;1?type=nst {0e2c6db8-dc58-4840-ab58-dd799daeaa95}
+category command-line-handler m-nst @mozilla.org/commandlinehandler/general-startup;1?type=nst
 
 # about:notes function
-component {ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5} components/qfnAboutEditor.js
-contract @mozilla.org/network/protocol/about;1?what=notes {ad0fc7dc-0ddb-4518-bd2e-2c213f170ff5}
+component {76ef6bc8-bcc9-4814-8016-5fbe0d84e382} components/nstAboutNotes.js
+contract @mozilla.org/network/protocol/about;1?what=notes {76ef6bc8-bcc9-4814-8016-5fbe0d84e382}
 
 # autocomplete function
-component {85f1547c-92b6-438a-9d16-bc5b538459fa} components/qfnAutocomplete.js
-contract @mozilla.org/autocomplete/search;1?name=qfn-autocomplete {85f1547c-92b6-438a-9d16-bc5b538459fa}
+component {da811e2a-d639-4ce5-93f6-7b6743637969} components/nstAutocomplete.js
+contract @mozilla.org/autocomplete/search;1?name=nst-autocomplete {da811e2a-d639-4ce5-93f6-7b6743637969}
 
 content qfnotes chrome/content/
 skin    qfnotes classic/1.0 chrome/skin/classic/
