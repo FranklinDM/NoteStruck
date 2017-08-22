@@ -285,6 +285,8 @@
                 oncommand="qfnServices.prefs.setBoolPref('showConfirmClose', getAttribute('checked') ? true : false);"/>
               <menuitem id="editor-tabbox-toolbar-menuitem6" label="&editor.toolbar3.label6;" type="checkbox"
                 oncommand="QuickFoxNotes.alwaysOnTop(window, getAttribute('checked') ? true : false);"/>
+              <menuitem id="editor-tabbox-toolbar-menuitem7" label="&editor.toolbar3.label7;" type="checkbox"
+                oncommand="qfnServices.prefs.setBoolPref('doNoteShowInContext', getAttribute('checked') ? true : false);"/>
               <menu label="&editor.toolbar3.GUIEditor;">
                 <menupopup id="editor-tabbox-toolbar-GUI-menupopup"/>
               </menu>
