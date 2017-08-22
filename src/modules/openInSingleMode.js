@@ -47,14 +47,14 @@ var qfn_openInSingleMode = {
         var win;
         /**qfnServices.ww.openWindow method open a dialog in Linux so try not to use it*/
         if (recentWindow) {
-            //win = recentWindow.openDialog(this._url, 'QuickFox Notes', 'chrome,resizable=yes,minimizable=yes,all', (argument ? argument : null));
+            //win = recentWindow.openDialog(this._url, 'NoteStruck', 'chrome,resizable=yes,minimizable=yes,all', (argument ? argument : null));
             if (argument) {
                 var str = qfnServices.str;
                 str.data = argument;
                 qfnServices.prefs.setComplexValue("argument", Components.interfaces.nsISupportsString, str); 
             }
             
-            win = recentWindow.open(this._url, 'QuickFox Notes', 'chrome,resizable=yes,minimizable=yes,all')
+            win = recentWindow.open(this._url, 'NoteStruck', 'chrome,resizable=yes,minimizable=yes,all')
             win.focus();
         }
         else {
@@ -64,7 +64,7 @@ var qfn_openInSingleMode = {
             variant.setFromVariant((argument ? argument : ""));
             array.appendElement(variant, false);
         
-            win = qfnServices.ww.openWindow(null, this._url, "QuickFox Notes", "chrome,resizable=yes,minimizable=yes,all", array);
+            win = qfnServices.ww.openWindow(null, this._url, "NoteStruck", "chrome,resizable=yes,minimizable=yes,all", array);
             win.focus();
         }
         return win;
@@ -85,7 +85,7 @@ var qfn_openInSingleMode = {
             if (recentWindow)
                 recentWindow.delayedOpenTab(this._url, null, null, null, null);
             else
-                qfnServices.ww.openWindow(null, this._url, "QuickFox Notes", "chrome", null);
+                qfnServices.ww.openWindow(null, this._url, "NoteStruck", "chrome", null);
         }
         else if (qfnServices.appInfo.ID == THUNDERBIRD_ID) {
             recentWindow.document.getElementById("tabmail").openTab("contentTab", {
