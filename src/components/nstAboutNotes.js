@@ -5,6 +5,7 @@ const Ci = Components.interfaces;
 
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/Services.jsm");
+Components.utils.import("resource://qfn/qfnServices.js");
 
 function AboutNotes() { }
 AboutNotes.prototype = {
@@ -19,12 +20,19 @@ AboutNotes.prototype = {
 
 	newChannel: function(aURI, aSecurity_or_aLoadInfo) {
 		var channel;
-		if (Services.vc.compare(Services.appinfo.version, 47) > 0) {
-			// greater than or equal to firefox48 so aSecurity_or_aLoadInfo is aLoadInfo
+		
+		//QFN is opened in Tab mode
+        qfnServices.prefs.setIntPref("openedIn", 2);
+        //Close old instance
+        qfnServices.prefs.setCharPref("qfnPrefCMD", "");
+        qfnServices.prefs.setCharPref("qfnPrefCMD", "closeMe");
+		
+		if (Services.vc.compare(Services.appinfo.version, 27) > 0) {
+			// greater than or equal to PM 27 so aSecurity_or_aLoadInfo is aLoadInfo
 			let uri = Services.io.newURI("chrome://qfnotes/content/editor.xul", null, null);
 			channel = Services.io.newChannelFromURIWithLoadInfo(uri, aSecurity_or_aLoadInfo);
 		} else {
-			// less then firefox48 aSecurity_or_aLoadInfo is aSecurity
+			// less then PM 27 aSecurity_or_aLoadInfo is aSecurity
 			channel = Services.io.newChannel("chrome://qfnotes/content/editor.xul", null, null);
 		}
 		channel.originalURI = aURI;
