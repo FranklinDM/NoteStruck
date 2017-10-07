@@ -24,7 +24,7 @@ define("misc/local", function(requirejs, module){
         var foStream = Components.classes["@mozilla.org/network/file-output-stream;1"].
              createInstance(Components.interfaces.nsIFileOutputStream);
 
-        foStream.init(file, 0x02 | 0x08 | 0x20, 0666, 0);
+        foStream.init(file, 0x02 | 0x08 | 0x20, 0o666, 0);
         var converter = qfnServices.converter;
         converter.init(foStream, "UTF-8", 0, 0);
 

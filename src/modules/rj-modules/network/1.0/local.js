@@ -70,7 +70,7 @@ define("network/local", function(requirejs, module) {
                 file.initWithPath(path);
                 file.append(name);
                 if( !file.exists() || !file.isDirectory() )  // if it doesn't exist, create
-                    file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0777);
+                    file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0o777);
                 fun.apply(local, [file.path].concat(parameters));
             }
             catch(e){

@@ -66,7 +66,7 @@ QuickFoxNotes.api = {
             var file = qfnServices.dirsvc.get("ProfD", Components.interfaces.nsIFile);
             file.append("qfn-scripts");
             if( !file.exists() || !file.isDirectory() ) {   // if it doesn't exist, create
-               file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0777);
+               file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0o777);
             }
             //Set scriptPath
             var str = qfnServices.str;
@@ -261,7 +261,7 @@ QuickFoxNotes.api = {
         try {
             file.initWithPath(path);
             if (title) file.append(title);
-            if (unique) file.createUnique(Components.interfaces.nsIFile.NORMAL_FILE_TYPE, 0666);
+            if (unique) file.createUnique(Components.interfaces.nsIFile.NORMAL_FILE_TYPE, 0o666);
         }
         catch(e) {
             return false;
@@ -269,7 +269,7 @@ QuickFoxNotes.api = {
         //Save file
         var foStream = Components.classes["@mozilla.org/network/file-output-stream;1"].
                        createInstance(Components.interfaces.nsIFileOutputStream);
-        try {foStream.init(file, 0x02 | 0x08 | 0x20, 0666, 0);}
+        try {foStream.init(file, 0x02 | 0x08 | 0x20, 0o666, 0);}
         catch(e) {return false;}
         var converter = qfnServices.converter;
         converter.init(foStream, "UTF-8", 0, 0);

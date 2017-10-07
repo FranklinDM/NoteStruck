@@ -999,7 +999,7 @@ var QuickFoxNotes = {
             var file = qfnServices.dirsvc.get("ProfD", Components.interfaces.nsIFile);
             file.append("qfn-backups");
             if( !file.exists() || !file.isDirectory() ) {   // if it doesn't exist, create
-               file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0777);
+               file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0o777);
             }
             //Delete old folders
             var numberOfBackups = qfnServices.prefs.getIntPref("numberOfBackups");
@@ -1016,7 +1016,7 @@ var QuickFoxNotes = {
             //Create a new folder and do backup
             file.append(folderName);
             if( !file.exists() || !file.isDirectory() ) {   // if it doesn't exist, create
-               file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0777);
+               file.create(Components.interfaces.nsIFile.DIRECTORY_TYPE, 0o777);
             }
             //Save all
             var tab = QuickFoxNotes.api.list.tab();
