@@ -12,7 +12,7 @@
 		<em:optionsURL>chrome://qfnotes/content/editor.xul?options=true</em:optionsURL>
 
 		<em:creator>FranklinDM</em:creator>
-		<em:developer>InBasic (creator/developer of QuickFox Notes)</em:developer>
+		<em:contributor>InBasic (creator/developer of QuickFox Notes)</em:contributor>
 		<em:contributor>Tsprajna (Beta tester)</em:contributor>
 		
 		<em:targetApplication>
