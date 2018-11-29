@@ -1,14 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?xml-stylesheet href="chrome://qfnotes/skin/overlay.css" type="text/css"?>
+
 <!DOCTYPE window [
 <!ENTITY % brandDTD SYSTEM "chrome://qfnotes/locale/brand.dtd" >
 %brandDTD;
 <!ENTITY % editorDTD SYSTEM "chrome://qfnotes/locale/overlay.dtd">
 %editorDTD;
 ]>
-<overlay id="QuickFoxNotes-thunderbird" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-		 
+
+<overlay id="QuickFoxNotes-mailnews" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
 <script src="config.js"/>
 <script src="overlay.js"/>
 <stringbundleset>
@@ -16,19 +18,23 @@
 </stringbundleset>
 
 <commandset>
-	<command id="qfnotes_cmd_openwindow" oncommand="qfn_openInSingleMode.openInWindow();"/>
-	<command id="qfnotes_cmd_opentab" oncommand="qfn_openInSingleMode.openInTab();"/>
-	<command id="qfnotes_cmd_openappcontent" oncommand="qfn_openInSingleMode.openInSidebar(window);"/>
+	<command id="qfnotes_cmd_openLClick" oncommand="qfn_editor.clickHandle();"/>
+	<command id="qfnotes_cmd_openwindow" oncommand="qfn_editor.qfn_openInSingleMode.openInWindow();"/>
+	<command id="qfnotes_cmd_opentab" oncommand="qfn_editor.qfn_openInSingleMode.openInTab();"/>
+	<command id="qfnotes_cmd_openappcontent" oncommand="qfn_editor.qfn_openInSingleMode.openInSidebar(window);"/>
 	<command id="qfnotes_cmd_send_type1" oncommand="qfn_editor.sendToQFN(false);"/>
 	<command id="qfnotes_cmd_send_type3" oncommand="qfn_editor.sendToQFN(false, '', parseInt(event.originalTarget.value));"/>
 </commandset>
 
-<hbox id="tabmail-buttons">
-	<toolbarbutton id="QuickFoxNotes-tabmail-button"
+<toolbarpalette id="MailToolbarPalette">
+	<toolbarbutton  class="toolbarbutton-1 chromeclass-toolbar-additional"
+                    id="QuickFoxNotes-tabmail-button"
+                    label="&toolbar.label1;"
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&toolbar.tooltip;"
 					context="qfn-backpopup"
-					onclick="qfn_editor.clickHandle(event);"/>  
-</hbox>
+					onclick="if (event.button == 1) qfn_editor.clickHandle(event);"
+                    command="qfnotes_cmd_openLClick"/>
+</toolbarpalette>
 <popupset>
 	<menupopup id="qfn-backpopup" position="after_start">
 		<menuitem label="&toolbar.label2;"
@@ -50,24 +56,24 @@
 
 <statusbar id="status-bar">
 	<keyset id="qfn.keyset">
-		<key id="qfn.keyset.Key1" modifiers="" key=""/> 
+		<key id="qfn.keyset.Key1" modifiers="" key=""/>
 	</keyset>
-	<statusbarpanel id="quickfox-notes-statusbarpanel1" 
+	<statusbarpanel id="quickfox-notes-statusbarpanel1"
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip1;"
-					class="statusbarpanel-menu-iconic" 
-					onclick="qfn_openInSingleMode.openInWindow();"> 
+					class="statusbarpanel-menu-iconic"
+					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInWindow(); else qfn_editor.qfn_openInSingleMode.openInTab();">
 		<image id="quickfox-notes-status-iconWindow"/>
 	</statusbarpanel>
-	<statusbarpanel id="quickfox-notes-statusbarpanel2" 
+	<statusbarpanel id="quickfox-notes-statusbarpanel2"
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip2;"
-					class="statusbarpanel-menu-iconic" 
-					onclick="if (event.button == 0) qfn_openInSingleMode.openInTab(); else qfn_openInSingleMode.openInWindow();">
+					class="statusbarpanel-menu-iconic"
+					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInTab(); else qfn_editor.qfn_openInSingleMode.openInWindow();">
 		<image id="quickfox-notes-status-iconTab"/>
 	</statusbarpanel>
-	<statusbarpanel id="quickfox-notes-statusbarpanel3" 
+	<statusbarpanel id="quickfox-notes-statusbarpanel3"
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip3;"
-					class="statusbarpanel-menu-iconic" 
-					onclick="if (event.button == 0) qfn_openInSingleMode.openInSidebar(window); else qfn_openInSingleMode.openInTab();">
+					class="statusbarpanel-menu-iconic"
+					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInSidebar(window); else qfn_editor.qfn_openInSingleMode.openInTab();">
 		<image id="quickfox-notes-status-iconSidebar"/>
 	</statusbarpanel>
 </statusbar>
@@ -78,7 +84,6 @@
 		<!-- There would be browser element here (if needed); 
 			 This element is ONLY used to load QFN editor (chrome://qfnotes/content/overlay.xul) into the application-content
 			 area; since QFN needs to access the chrome above it, it is impossible to define type for it -->
-
 	</vbox>
 </vbox>
 </overlay>

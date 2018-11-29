@@ -6,6 +6,7 @@
   list-style-image: url("toolbar.png");
   -moz-image-region: rect(0px, 20px, 16px, 4px);
 }
+toolbar[iconsize="large"] #QuickFoxNotes-tabmail-button,
 toolbar[iconsize="large"] #QuickFoxNotes-toolbar-button {
   -moz-image-region: rect(17px, 24px, 40px, 0px);
 }
