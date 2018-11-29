@@ -6,8 +6,8 @@
 		<em:unpack>true</em:unpack>
 
 		<em:name>NoteStruck</em:name>
-		<em:version>1.0.2</em:version>		
-		<em:description>A quick and easy note-taking solution. A fork of QuickFox Notes.</em:description>
+		<em:version>1.0.2</em:version>
+		<em:description>A quick and easy note-taking solution.</em:description>
 		<em:homepageURL>https://franklindm.github.io/</em:homepageURL>
 		<em:optionsURL>chrome://qfnotes/content/editor.xul?options=true</em:optionsURL>
 
@@ -18,15 +18,15 @@
 		<em:targetApplication>
 			<Description>
 				<em:id>{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}</em:id> <!-- Pale Moon -->
-				<em:minVersion>25.0</em:minVersion>
-				<em:maxVersion>27.*</em:maxVersion>
+				<em:minVersion>28.0.0a1</em:minVersion>
+				<em:maxVersion>28.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 		<em:targetApplication>
 			<Description>
-				<em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!-- Thunderbird -->
-				<em:minVersion>3.0a1</em:minVersion>
-				<em:maxVersion>48.0</em:maxVersion>
+				<em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!-- Interlink -->
+				<em:minVersion>50.0.0</em:minVersion>
+				<em:maxVersion>52.9.*</em:maxVersion>
 			</Description>
 		</em:targetApplication>
 	</Description>
