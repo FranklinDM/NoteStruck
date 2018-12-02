@@ -9,8 +9,7 @@
 %editorDTD;
 ]>
 
-<overlay id="QuickFoxNotes-toolbar-overlay"
-         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+<overlay id="QuickFoxNotes-browser" xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
 
 <script src="overlay.js"/>
 <stringbundleset>
@@ -22,7 +21,6 @@
 	<command id="qfnotes_cmd_openwindow" oncommand="qfn_editor.qfn_openInSingleMode.openInWindow();"/>
 	<command id="qfnotes_cmd_opentab" oncommand="qfn_editor.qfn_openInSingleMode.openInTab();"/>
 	<command id="qfnotes_cmd_openappcontent" oncommand="qfn_editor.qfn_openInSingleMode.openInSidebar(window);"/>
-	<command id="qfnotes_cmd_openhome" oncommand="qfn_editor.openURL('http://franklindm.github.io/');"/>
 	<command id="qfnotes_cmd_send_type3" oncommand="qfn_editor.sendToQFN(false, '', parseInt(event.originalTarget.value));"/>
 	<command id="qfnotes_cmd_send_type4" oncommand="qfn_editor.sendToQFN(true, '', parseInt(event.originalTarget.value));"/>
 </commandset>
@@ -30,22 +28,22 @@
 <!-- ==== Toolbar Button menu ==== -->
 <toolbarpalette id="BrowserToolbarPalette">
 	<toolbarbutton class="toolbarbutton-1 chromeclass-toolbar-additional"
-					id="QuickFoxNotes-toolbar-button"
-					type="menu-button"
-					label="&toolbar.label1;"
-					tooltiptext="&toolbar.label1;&#xa;&#xa;&toolbar.tooltip;"
-					onclick="if (event.button == 1) qfn_editor.clickHandle(event);"
-					command="qfnotes_cmd_openLClick">
+                   id="QuickFoxNotes-toolbar-button"
+                   type="menu-button"
+                   label="&toolbar.label1;"
+                   tooltiptext="&toolbar.label1;&#xa;&#xa;&toolbar.tooltip;"
+                   onclick="if (event.button == 1) qfn_editor.clickHandle(event);"
+                   command="qfnotes_cmd_openLClick">
 		<menupopup id="qfn-backpopup">
-			<menuitem label="&toolbar.label2;"
+			<menuitem class="menuitem-iconic qfn-statusicon qfn-iconWindow"
+					  label="&toolbar.label2;"
 					  command="qfnotes_cmd_openwindow"/>
-			<menuitem label="&toolbar.label3;"
+			<menuitem class="menuitem-iconic qfn-statusicon qfn-iconTab"
+					  label="&toolbar.label3;"
 					  command="qfnotes_cmd_opentab"/>
-			<menuitem label="&toolbar.label4;"
+			<menuitem class="menuitem-iconic qfn-statusicon qfn-iconContent"
+					  label="&toolbar.label4;"
 					  command="qfnotes_cmd_openappcontent"/>
-			<menuseparator/>
-			<menuitem label="&toolbar.label5;"
-					  command="qfnotes_cmd_openhome"/>
 		</menupopup>
 	</toolbarbutton>
 </toolbarpalette>
@@ -77,19 +75,19 @@
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip1;"
 					class="statusbarpanel-menu-iconic"
 					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInWindow(); else qfn_editor.qfn_openInSingleMode.openInTab();">
-		<image id="quickfox-notes-status-iconWindow"/>
+		<image class="qfn-statusicon qfn-iconWindow"/>
 	</statusbarpanel>
 	<statusbarpanel id="quickfox-notes-statusbarpanel2"
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip2;"
 					class="statusbarpanel-menu-iconic"
 					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInTab(); else qfn_editor.qfn_openInSingleMode.openInWindow();">
-		<image id="quickfox-notes-status-iconTab"/>
+		<image class="qfn-statusicon qfn-iconTab"/>
 	</statusbarpanel>
 	<statusbarpanel id="quickfox-notes-statusbarpanel3"
 					tooltiptext="&toolbar.label1;&#xa;&#xa;&status.tooltip3;"
 					class="statusbarpanel-menu-iconic"
 					onclick="if (event.button == 0) qfn_editor.qfn_openInSingleMode.openInSidebar(window); else qfn_editor.qfn_openInSingleMode.openInTab();">
-		<image id="quickfox-notes-status-iconSidebar"/>
+		<image class="qfn-statusicon qfn-iconContent"/>
 	</statusbarpanel>
 </statusbar>
 

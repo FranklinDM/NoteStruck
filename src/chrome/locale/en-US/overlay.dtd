@@ -2,7 +2,6 @@
 <!ENTITY toolbar.label2 "Open in new Window">
 <!ENTITY toolbar.label3 "Open in new Tab">
 <!ENTITY toolbar.label4 "Open in Application-content">
-<!ENTITY toolbar.label5 "Homepage">
 <!ENTITY toolbar.tooltip "Left-click: Open in Window. Middle-click: Open in Tab">
 <!ENTITY context.label1 "Send to &qfneditor;">
 <!ENTITY context.label2 "Send to &qfneditor; (details)">
