@@ -18,7 +18,7 @@ AboutNotes.prototype = {
 		return Ci.nsIAboutModule.ALLOW_SCRIPT;
 	},
 
-	newChannel: function(aURI, aSecurity_or_aLoadInfo) {
+	newChannel: function(aURI, aLoadInfo) {
 		var channel;
 		
 		//QFN is opened in Tab mode
@@ -27,14 +27,9 @@ AboutNotes.prototype = {
         qfnServices.prefs.setCharPref("qfnPrefCMD", "");
         qfnServices.prefs.setCharPref("qfnPrefCMD", "closeMe");
 		
-		if (Services.vc.compare(Services.appinfo.version, 27) > 0) {
-			// greater than or equal to PM 27 so aSecurity_or_aLoadInfo is aLoadInfo
-			let uri = Services.io.newURI("chrome://qfnotes/content/editor.xul", null, null);
-			channel = Services.io.newChannelFromURIWithLoadInfo(uri, aSecurity_or_aLoadInfo);
-		} else {
-			// less then PM 27 aSecurity_or_aLoadInfo is aSecurity
-			channel = Services.io.newChannel("chrome://qfnotes/content/editor.xul", null, null);
-		}
+        let uri = Services.io.newURI("chrome://qfnotes/content/editor.xul", null, null);
+        channel = Services.io.newChannelFromURIWithLoadInfo(uri, aLoadInfo);
+        
 		channel.originalURI = aURI;
 		return channel;
 	}
