@@ -95,6 +95,5 @@ pref("extensions.InBasic.QuickFoxNotes.evernote_username", "");
 pref("extensions.InBasic.QuickFoxNotes.sugarsync_username", "");
 pref("extensions.InBasic.QuickFoxNotes.simplenote_username", "");
 pref("extensions.InBasic.QuickFoxNotes.googleDocs_username", "");
-pref("extensions.InBasic.QuickFoxNotes.helipad_username", "");
     //Tasks notification
 pref("extensions.InBasic.QuickFoxNotes.counter", 0);

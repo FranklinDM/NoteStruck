@@ -49,7 +49,7 @@ toolbar = {
             canFile = false;
         //Overwrite
         var canOverwrite = false;
-        if(service == "simplenote" || service == "local" || service == "helipad" || service == "googleDocs" || service == "dropbox")
+        if(service == "simplenote" || service == "local" || service == "googleDocs" || service == "dropbox")
             canOverwrite = true;
         //Backup
         var canBackup = false;
@@ -162,9 +162,6 @@ toolbar = {
                 case "local":
                     requirejs("network/" + service).readFile(elem.url, function(){neworkGUI.fprint(1);}, [], function(e){neworkGUI.error(e)});
                     break;
-                case "helipad":
-                    requirejs("network/" + service).getNoteContent(elem.id, function(content){neworkGUI.fprint(1); QuickFoxNotes.api.insertTextAtCursorPoint(content)}, [], function(e){neworkGUI.error(e)});
-                    break;
                 case "dropbox":
                     requirejs("network/" + service).getContents(elem.url, function(content){neworkGUI.fprint(1); QuickFoxNotes.api.insertTextAtCursorPoint(content)}, [], function(e){neworkGUI.error(e)});
                     break;
@@ -219,9 +216,6 @@ toolbar = {
                 case "local":
                     requirejs("network/" + service).kill(elem.url, treeView.isContainer(row), function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e)});
                     break;
-                case "helipad":
-                    requirejs("network/" + service).deleteFile (elem.id, function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e)});
-                    break;
                 case "dropbox":
                     requirejs("network/" + service).deleteFile (elem.url, function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e)});
                     break;
@@ -269,9 +263,6 @@ toolbar = {
                 case "local":
                     requirejs("network/" + service).writeFile(elem.url, title, content.replace(/\n/g, String.fromCharCode(13, 10)), false, function(){toolbar.doRefresh()}, [], function(e){neworkGUI.error(e)});
                     break;
-                case "helipad":
-                    requirejs("network/" + service).createNote (null, title, content, function(){toolbar.doRefresh()}, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
                 case "dropbox":
                     requirejs("network/" + service).createFile (elem.url, title + ".txt", content.replace(/\n/g, String.fromCharCode(13, 10)), false, function(){toolbar.doRefresh()}, [], function(e){neworkGUI.error(e.responseText)});
                     break;
@@ -310,9 +301,6 @@ toolbar = {
                     break;
                 case "simplenote":
                     requirejs("network/" + service).write (token, elem.key, content, function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
-                case "helipad":
-                    requirejs("network/" + service).createNote (elem.id, title, content, function(){neworkGUI.fprint(1);}, [], function(e){neworkGUI.error(e.responseText)});
                     break;
                 case "dropbox":
                     requirejs("network/" + service).createFile (elem.url, title + ".txt", content, true, function(){toolbar.doRefresh()}, [], function(e){neworkGUI.error(e.responseText)});
@@ -519,9 +507,6 @@ var treeView = {
         ],
         [{name: "Simplenote",
           path: "service://simplenote"}
-        ],
-        [{name: "Helipad",
-          path: "service://helipad"}
         ],
         [{name: "Dropbox",
           path: "service://dropbox"}
@@ -932,21 +917,6 @@ var neworkGUI = {
                         neworkGUI.fprint(1);
                         if (fun) fun.apply(treeView, params);
                     }, [path], function(e){neworkGUI.error(e)});
-                    break;
-                case "helipad":
-                    requirejs("network/" + service).listTitles(function(notes, rootPath){
-                        for (i in notes){
-                            var item = {
-                                name: notes[i].title,
-                                id: notes[i].id,
-                                path: rootPath + "/" + notes[i].title
-                            }
-                            element.splice(element.length, 0, item);
-                        }
-                        neworkGUI.fprint(1);
-                        if (fun) fun.apply(treeView, params);
-                    }, [path], function(e){neworkGUI.error(e)});
-
                     break;
                 case "dropbox":
                     var url = (aPath.length == 1) ? null : element[0].url;
