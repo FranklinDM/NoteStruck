@@ -14,6 +14,3 @@ tabpanels {
 #editor-tabbox-tabcontainer > autorepeatbutton {
     border-width: 0px;
 }
-.net-splitter-img {
-    list-style-image: url('chrome://qfnotes/skin/splitter.png');
-}

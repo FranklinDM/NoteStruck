@@ -10,6 +10,3 @@ tabpanels {
     -moz-border-right-colors: transparent;
     -moz-border-bottom-colors: transparent;
 }
-.net-splitter-img {
-    list-style-image: url('chrome://qfnotes/skin/splitter.png');
-}
