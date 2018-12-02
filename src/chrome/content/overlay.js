@@ -319,4 +319,4 @@ var qfn_editor = {
     }
 };
 
-window.addEventListener("load", function() {qfn_editor.initialize()}, false);
+window.addEventListener("load", qfn_editor.initialize, false);
