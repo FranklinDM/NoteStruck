@@ -513,8 +513,8 @@ var treeView = {
         {name: "database"},        //first element is mandatory
         [{name: "Local Disk",
           path: "service://local"}
-        ],
-        [{name: "Google Docs",
+        ]
+/*        [{name: "Google Docs",
           path: "service://googleDocs"}
         ],
         [{name: "Simplenote",
@@ -528,7 +528,7 @@ var treeView = {
         ],
         [{name: "Sugarsync",
           path: "service://sugarsync"}
-        ]
+        ]*/
     ],
 
     /* Tree functions */
