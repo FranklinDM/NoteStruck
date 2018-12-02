@@ -22,7 +22,6 @@ style   chrome://global/content/customizeToolbar.xul                     chrome:
 
 override chrome://qfnotes/skin/editor-extras.css chrome://qfnotes/skin/editor-extras-mac.css os=Darwin
 override chrome://qfnotes/skin/editor-extras.css chrome://qfnotes/skin/editor-extras-linux.css os=Linux
-override chrome://qfnotes/skin/overlay.css       chrome://qfnotes/skin/overlay-mac.css os=Darwin
 
 resource qfn      modules/
 
