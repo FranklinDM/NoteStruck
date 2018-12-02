@@ -22,7 +22,6 @@
 	<command id="qfnotes_cmd_opentab" oncommand="qfn_editor.qfn_openInSingleMode.openInTab();"/>
 	<command id="qfnotes_cmd_openappcontent" oncommand="qfn_editor.qfn_openInSingleMode.openInSidebar(window);"/>
 	<command id="qfnotes_cmd_send_type3" oncommand="qfn_editor.sendToQFN(false, '', parseInt(event.originalTarget.value));"/>
-    <command id="qfnotes_cmd_send_type4" oncommand="qfn_editor.sendToQFN(true, '', parseInt(event.originalTarget.value));"/>
 </commandset>
 
 <!-- ==== Toolbar Button menu ==== -->
@@ -56,13 +55,6 @@
         insertafter="mailContext-copy"
         hidden="true">
 		<menupopup id="qfn-context3-popup" command="qfnotes_cmd_send_type3"/>
-	</menu>
-	<menu id="qfn-context4"
-		label="&context.label2;"
-		class="menu-iconic quickfox-contextmenu"
-		insertafter="qfn-context3, mailContext-copy"
-        hidden="true">
-		<menupopup id="qfn-context4-popup" command="qfnotes_cmd_send_type4"/>
 	</menu>
 </popup>
 
