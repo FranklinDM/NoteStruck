@@ -88,7 +88,7 @@ pref("extensions.InBasic.QuickFoxNotes.timeFormat", true);    				//True: 12 (AM
 pref("extensions.InBasic.QuickFoxNotes.timeString", "[now] [dd]/[mm]/[yy]");
 pref("extensions.InBasic.QuickFoxNotes.showGroupInTab", true);
 pref("extensions.InBasic.QuickFoxNotes.wordWrap", true);
-pref("extensions.InBasic.QuickFoxNotes.doNoteShowInContext", true);			//True: don't show send to context menu; False: show send to context menu
+pref("extensions.InBasic.QuickFoxNotes.showSendInMenu", true);			    //True: show send menu item; False: hide send menu item
 pref("extensions.InBasic.QuickFoxNotes.rDelayedInits", 1);    				//rDelayedInits times init time is the actual time
     //network
 pref("extensions.InBasic.QuickFoxNotes.evernote_username", "");

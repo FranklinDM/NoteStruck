@@ -22,7 +22,7 @@
 <!ENTITY editor.toolbar3.label4 "Autocopy selected text">
 <!ENTITY editor.toolbar3.label5 "Confirm when removing tab">
 <!ENTITY editor.toolbar3.label6 "Always on top (Windows only)">
-<!ENTITY editor.toolbar3.label7 "Don't show quick send context menu">
+<!ENTITY editor.toolbar3.label7 "Show Send To menu item">
 <!ENTITY editor.toolbar3.menu0 "Advance settings">
 <!ENTITY editor.toolbar3.menu0.item2 "Change the notes font-family">
 <!ENTITY editor.toolbar3.menu0.item2.description "Change the notes font-family (e.g. Arial, Courier)">

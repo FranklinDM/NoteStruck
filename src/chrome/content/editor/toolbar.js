@@ -18,6 +18,7 @@ QuickFoxNotes.toolbar = {
             ["editor-tabbox-toolbar-menuitem4", "copySelected"],
             ["editor-tabbox-toolbar-menuitem5", "showConfirmClose"],
             ["editor-tabbox-toolbar-menuitem6", "alwaysOnTop"],
+            ["editor-tabbox-toolbar-menuitem7", "showSendInMenu"],
             ["editor-tabbox-toolbar-menu7-item1", "statusbarWindowIcon"],
             ["editor-tabbox-toolbar-menu7-item2", "statusbarTabIcon"],
             ["editor-tabbox-toolbar-menu7-item3", "statusbarAppcontentIcon"],

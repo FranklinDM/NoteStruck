@@ -207,7 +207,7 @@ var qfn_editor = {
 
         //gContextMenu.isContentSelected is for Thunderbird
         const dShowMe = !(gContextMenu.onLink || gContextMenu.isTextSelected || gContextMenu.isContentSelected || e.shiftKey) ||
-                       qfn_editor.qfnServices.prefs.getBoolPref ("doNoteShowInContext");
+                        !qfn_editor.qfnServices.prefs.getBoolPref("showSendInMenu");
 
         menu1.hidden = menu2.hidden = dShowMe;
         if (dShowMe)
