@@ -37,14 +37,10 @@ toolbar = {
         var canUnlink = (level == 0 && service != "local") ? true : false
         //canDelete
         var canDelete = false;
-        if(service == "evernote" && level > 0)
-            canDelete = true;
         if(service == "googleDocs")
             canDelete = true;
         //Check file status
         var canFile = true;
-        if(service == "evernote" && level == 0)
-            canFile = false;
         if(service == "sugarsync" && level < 2)
             canFile = false;
         //Overwrite
@@ -53,7 +49,7 @@ toolbar = {
             canOverwrite = true;
         //Backup
         var canBackup = false;
-        if(service == "evernote" || service == "googleDocs" || service == "dropbox")
+        if(service == "googleDocs" || service == "dropbox")
             canBackup = true;
         if (service == "local" && level > 0)
             canBackup = true;
@@ -63,9 +59,6 @@ toolbar = {
             switch (service) {
                 case "simplenote":
                     canFolder = false;
-                    break;
-                case "evernote":
-                    canFolder = (level == 0) ? true : false;
                     break;
                 case "sugarsync":
                     canFolder = (level > 1) ? true : false;
@@ -147,9 +140,6 @@ toolbar = {
         neworkGUI.initialize(service, function(){
             var token = neworkGUI.token[service];
             switch (service) {
-                case "evernote":
-                    requirejs("network/" + service).getNoteContent (token, elem.guid, function(content){neworkGUI.fprint(1); QuickFoxNotes.api.insertTextAtCursorPoint(content)}, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
                 case "googleDocs":
                     requirejs("network/" + service).readFile (token, elem.contentURL, function(content){neworkGUI.fprint(1); QuickFoxNotes.api.insertTextAtCursorPoint(content)}, [], function(e){neworkGUI.error(e.responseText)});
                     break;
@@ -198,12 +188,6 @@ toolbar = {
         neworkGUI.initialize(service, function(){
             var token = neworkGUI.token[service];
             switch (service) {
-                case "evernote":
-                    if (treeView.isContainer(row))
-                        requirejs("network/" + service).deleteNotebook (token, elem.notebookGuid, function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e.responseText)});
-                    else
-                        requirejs("network/" + service).deleteNote (token, elem.guid, function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
                 case "googleDocs":
                     requirejs("network/" + service).deleteFile (token, elem.editURL, function(){toolbar.doRefresh();}, [], function(e){neworkGUI.error(e.responseText)});
                     break;
@@ -245,9 +229,6 @@ toolbar = {
         neworkGUI.initialize(service, function(){
             var token = neworkGUI.token[service];
             switch (service) {
-                case "evernote":
-                    requirejs("network/" + service).createNote (token, elem.notebookGuid, title, content, function(){toolbar.doRefresh()}, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
                 case "googleDocs":
                     var url = elem.contentURL ? elem.contentURL : "https://docs.google.com/feeds/default/private/full";
 
@@ -286,7 +267,6 @@ toolbar = {
         neworkGUI.initialize(service, function(){
             var token = neworkGUI.token[service];
             switch (service) {
-                case "evernote":
                 case "sugarsync":
                     break;
                 case "googleDocs":
@@ -334,9 +314,6 @@ toolbar = {
         neworkGUI.initialize(service, function(){
             var token = neworkGUI.token[service];
             switch (service) {
-                case "evernote":
-                    requirejs("network/" + service).createNotebook (token, title, function(){toolbar.doRefresh()}, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
                 case "googleDocs":
                     var hidden = treeView.getLevel(row) == 0 ? false : true;    //Do not hide notes inside root
                     requirejs("network/" + service).createFolder (token, hidden, elem.contentURL, title, function(){toolbar.doRefresh()}, []);
@@ -362,8 +339,8 @@ toolbar = {
         var elem = this.getElem(row);
         var service = neworkGUI.pathToArray(elem.path)[0];
 
-        //If file, go to top folder or level zero in case of evernote
-        while (!treeView.isContainer(row) || (service == "evernote" ? (treeView.getLevel(row) != 0) : false)) {
+        //If file, go to top folder
+        while (!treeView.isContainer(row)) {
             row = treeView.getParentIndex(row);
             tree.currentIndex = row;
             elem = this.getElem(row);
@@ -404,11 +381,6 @@ toolbar = {
                     }
 
                     switch (service) {
-                        case "evernote":
-                            requirejs("network/" + service).createNote (token, notebookGuid_or_url, tData.title, tData.content, function(){
-                                return con();
-                            }, [], function(e){neworkGUI.error(e.responseText)});
-                            break;
                         case "googleDocs":
                             requirejs("network/" + service).createFile (token, notebookGuid_or_url, false, true, tData.title, tData.content.replace(/\n/g, String.fromCharCode(13, 10)), function(){
                                 return con();
@@ -431,11 +403,6 @@ toolbar = {
 
             //Create Folder
             switch (service) {
-                case "evernote":
-                    requirejs("network/" + service).createNotebook (token, title, function(notebookGuid){
-                        mBackup(notebookGuid);
-                    }, [], function(e){neworkGUI.error(e.responseText)});
-                    break;
                 case "googleDocs":
                     var hidden = treeView.getLevel(row) == 0 ? false : true;    //Do not hide notes inside root
                     requirejs("network/" + service).createFolder (token, hidden, elem.contentURL, title, function(contentURL){
@@ -870,37 +837,6 @@ var neworkGUI = {
                             return neworkGUI.error (10);
                         }
                     });
-                    break;
-                case "evernote":
-                    if (aPath.length == 1) {    //Get list of notebooks
-                        requirejs("network/" + service).listNotebooks(token, function(notebooks, rootPath){
-                            for (i in notebooks)
-                                element.splice(element.length, 0,
-                                    [{
-                                        name: notebooks[i].name,
-                                        path: rootPath + "/" + notebooks[i].name,
-                                        notebookGuid: notebooks[i].guid
-                                    }]
-                                );
-                            neworkGUI.fprint(1);
-                            if (fun) fun.apply(treeView, params);
-                        }, [path], function(e){neworkGUI.error(e.responseText)});
-                    }
-                    else {
-                        requirejs("network/" + service).findNotes(token, element[0].notebookGuid, function(notes, rootPath){
-                            for (i in notes)
-                                element.splice(element.length, 0,
-                                    {
-                                        name: notes[i].title,
-                                        path: rootPath + "/" + notes[i].name,
-                                        tagGuids: notes[i].tagGuids,
-                                        guid: notes[i].guid
-                                    }
-                                );
-                            neworkGUI.fprint(1);
-                            if (fun) fun.apply(treeView, params);
-                        }, [path], function(e){neworkGUI.error(e.responseText)})
-                    }
                     break;
                 case "local":
                     var url = (aPath.length == 1) ? "/qfn_shortcuts" : element[0].url;

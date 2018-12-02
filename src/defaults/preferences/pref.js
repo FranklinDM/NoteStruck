@@ -91,7 +91,6 @@ pref("extensions.InBasic.QuickFoxNotes.wordWrap", true);
 pref("extensions.InBasic.QuickFoxNotes.showSendInMenu", true);			    //True: show send menu item; False: hide send menu item
 pref("extensions.InBasic.QuickFoxNotes.rDelayedInits", 1);    				//rDelayedInits times init time is the actual time
     //network
-pref("extensions.InBasic.QuickFoxNotes.evernote_username", "");
 pref("extensions.InBasic.QuickFoxNotes.sugarsync_username", "");
 pref("extensions.InBasic.QuickFoxNotes.simplenote_username", "");
 pref("extensions.InBasic.QuickFoxNotes.googleDocs_username", "");
