@@ -96,7 +96,6 @@ var qfn_editor = {
             this.prefObserver.observe("", "nsPref:changed", "counter");
         }
         menu.addEventListener("popupshowing", this.contextMenu, false);
-        this.show_welcome_screen_if_needed();
     },
 
     install_buttons: function () {
@@ -141,28 +140,6 @@ var qfn_editor = {
           contentPage: url
         });
       }
-    },
-    show_welcome_screen_if_needed : function() {
-        //Detect Firefox version
-        var version = "";
-        try {
-            version = (navigator.userAgent.match(/PaleMoon\/([\d\.]*)/) || navigator.userAgent.match(/Thunderbird\/([\d\.]*)/))[1];
-        } catch (e) {}
-        function welcome (version) {
-            if(qfn_editor.qfnServices.prefs.getCharPref("currentVersion") == version)
-                return;
-            //Showing welcome screen
-/*            setTimeout(function() {
-              openURL("http://add0n.com/quickfox.html?version=" + version);
-            }, 5000);*/
-            qfn_editor.qfnServices.prefs.setCharPref("currentVersion", version);
-        }
-
-        //FF > 4.*
-            Components.utils.import("resource://gre/modules/AddonManager.jsm");
-            AddonManager.getAddonByID("notestruck@franklindm", function(addon) {
-                welcome(addon.version);
-            });
     },
     clickHandle: function (e) {
         var mode = qfn_editor.qfnServices.prefs.getIntPref('toolbarClick');
