@@ -1,5 +1,15 @@
 # Changelog
 
+### 1.0.3
+- Add support for Basilisk and Interlink
+- New icon
+- Use CSS for note tabs (same style used by Pale Moon's default theme)
+- Restore missing icons from toolbar button context menu
+- Show Send To menu items by default
+- Remove custom style for OSX
+- Remove non-functional network sync services
+- Remove welcome screen code
+
 ### 1.0.2
 - Add an option to show/hide quick send context menu
 - Close other instances when using about:notes
