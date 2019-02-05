@@ -39,10 +39,14 @@ var qfn_editor = {
         Components.utils.import("resource://qfn/openInSingleMode.js", qfn_editor);
         //Which application the code is running on.
         const PM_ID = "{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}"
+        const FF_ID = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}";
         const THUNDERBIRD_ID = "{3550f703-e582-4d05-9a08-453d09bdfdc6}";
 
-        if(qfn_editor.qfnServices.prefs.getCharPref("currentVersion") == "0" && qfn_editor.qfnServices.appInfo.ID != PM_ID) //Running under !PM for First time!
-            qfn_editor.qfnServices.prefs.setIntPref("repositoryType", 1); //Switch to local mode
+        // Always use local mode when application is not a browser
+        if (qfn_editor.qfnServices.prefs.getCharPref("currentVersion") == "0" &&
+            qfn_editor.qfnServices.appInfo.ID != PM_ID &&
+            qfn_editor.qfnServices.appInfo.ID != FF_ID)
+            qfn_editor.qfnServices.prefs.setIntPref("repositoryType", 1);
 
         this.get("qfn.keyset.Key1").setAttribute("modifiers", qfn_editor.qfnServices.prefs.getCharPref("modifier"));
         this.get("qfn.keyset.Key1").setAttribute("key", qfn_editor.qfnServices.prefs.getCharPref("key"));
@@ -91,7 +95,7 @@ var qfn_editor = {
             menu = this.get("mailContext");
 
         //Notification observer for Firefox
-        if (qfn_editor.qfnServices.appInfo.ID == PM_ID) {
+        if (qfn_editor.qfnServices.appInfo.ID == PM_ID || qfn_editor.qfnServices.appInfo.ID == FF_ID) {
             qfn_editor.qfnServices.prefs.addObserver("", this.prefObserver, false);
             this.prefObserver.observe("", "nsPref:changed", "counter");
         }

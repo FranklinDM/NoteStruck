@@ -80,8 +80,9 @@ var qfn_openInSingleMode = {
             recentWindow = qfnServices.wm.getMostRecentWindow("mail:3pane");    //Thunderbird
         
         const PM_ID = "{8de7fcbb-c55c-4fbe-bfc5-fc555c87dbc4}";
+        const FF_ID = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}";
         const THUNDERBIRD_ID = "{3550f703-e582-4d05-9a08-453d09bdfdc6}";
-        if (qfnServices.appInfo.ID == PM_ID) {
+        if (qfnServices.appInfo.ID == PM_ID || qfnServices.appInfo.ID == FF_ID) {
             if (recentWindow)
                 recentWindow.delayedOpenTab(this._url, null, null, null, null);
             else
