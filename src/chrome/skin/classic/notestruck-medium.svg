@@ -1,0 +1,11 @@
+<svg width="24" height="24" version="1.1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+ <path d="m0 2h24v20h-24z" fill="#41494e" style="paint-order:fill markers stroke"/>
+ <path d="m1 3h22v18h-22z" fill="#cc8c32" style="paint-order:fill markers stroke"/>
+ <path d="m2 6h20v14h-20z" fill="#fff" style="paint-order:fill markers stroke"/>
+ <path d="m2 4h6v2h-6z" fill="#d5af44" style="paint-order:fill markers stroke"/>
+ <path d="m8 4h6v2h-6z" fill="#9e8232" style="paint-order:fill markers stroke"/>
+ <path d="m3 8v2h18v-2h-9z" fill="#d5af44" style="paint-order:fill markers stroke"/>
+ <path d="m3 11v2h18v-2h-9z" fill="#d5af44" style="paint-order:fill markers stroke"/>
+ <path d="m3 14v2h18v-2h-9z" fill="#d5af44" style="paint-order:fill markers stroke"/>
+ <path d="m3 17v2h18v-2h-9z" fill="#d5af44" style="paint-order:fill markers stroke"/>
+</svg>
