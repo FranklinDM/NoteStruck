@@ -1,5 +1,8 @@
 # Changelog
 
+### 1.0.4
+- Update install manifest to use separate target application blocks
+
 ### 1.0.3
 - Add support for Basilisk and Interlink
 - New icon
