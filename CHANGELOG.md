@@ -1,5 +1,9 @@
 # Changelog
 
+### 1.0.6
+- Add support for Epyrus
+- Mark as compatible with Pale Moon 32
+
 ### 1.0.5
 - Update install manifest
 
